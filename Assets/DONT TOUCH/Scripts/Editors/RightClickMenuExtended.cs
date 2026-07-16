@@ -55,8 +55,8 @@ public class RightClickMenuExtended
 	[MenuItem("GameObject/🛠️ MER Blocks/Lights/Spot", false, -1)]
 	private static void CreateSpotLight(MenuCommand menuCommand) => CreateLight(menuCommand, LightType.Spot);
 
-	[MenuItem("GameObject/🛠️ MER Blocks/Lights/Area", false, -1)]
-	private static void CreateAreaLight(MenuCommand menuCommand) => CreateLight(menuCommand, LightType.Area);
+	[MenuItem("GameObject/🛠️ MER Blocks/Lights/Rectangle", false, -1)]
+	private static void CreateRectangleLight(MenuCommand menuCommand) => CreateLight(menuCommand, LightType.Rectangle);
 
 	private static void CreateLight(MenuCommand menuCommand, LightType lightType) => CreateBlock(menuCommand, $"Assets/Resources/Blocks/Lights/{lightType} Light.prefab");
 	#endregion

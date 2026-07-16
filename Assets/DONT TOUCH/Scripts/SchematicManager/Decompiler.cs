@@ -238,7 +238,7 @@ public static class Decompiler
 
 	private static void CreateTeleporters(List<SchematicBlockData> blocks)
 	{
-		var teleports = GameObject.FindObjectsOfType<TeleportComponent>();
+		var teleports = GameObject.FindObjectsByType<TeleportComponent>();
 		foreach (var block in blocks)
 		{
 			if (block.BlockType != BlockType.Teleport) continue;

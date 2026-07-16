@@ -34,6 +34,7 @@ public class Schematic : SchematicBlock
         if (TryGetComponent(out Rigidbody rigidbody))
             RigidbodyDictionary.Add(rootObjectId, new SerializableRigidbody(rigidbody));
 
+        var builds = new List<AssetBundleBuild>();
         foreach (SchematicBlock block in GetComponentsInChildren<SchematicBlock>())
         {
             if (block.CompareTag("EditorOnly") || block == this)
@@ -75,17 +76,30 @@ public class Schematic : SchematicBlock
             {
                 RuntimeAnimatorController runtimeAnimatorController = animator.runtimeAnimatorController;
                 data.AnimatorName = runtimeAnimatorController.name;
-
-                BuildPipeline.BuildAssetBundle(runtimeAnimatorController,
-                    runtimeAnimatorController.animationClips,
-                    Path.Combine(schematicDirectoryPath, runtimeAnimatorController.name),
-                    AssetBundleBuildOptions, EditorUserBuildSettings.activeBuildTarget);
+                builds.Add(new AssetBundleBuild()
+                {
+                    assetBundleName = runtimeAnimatorController.name,
+                    assetNames = new [] { AssetDatabase.GetAssetPath(runtimeAnimatorController) }
+                });
+                // BuildPipeline.BuildAssetBundles(runtimeAnimatorController,
+                //     runtimeAnimatorController.animationClips,
+                //     Path.Combine(schematicDirectoryPath, runtimeAnimatorController.name),
+                //     AssetBundleBuildOptions, EditorUserBuildSettings.activeBuildTarget);
             }
 
             if (block.TryGetComponent(out rigidbody))
                 RigidbodyDictionary.Add(block.transform.GetInstanceID(), new SerializableRigidbody(rigidbody));
 
             BlockList.Blocks.Add(data);
+        }
+
+        if (builds.Count > 0)
+        {
+            BuildPipeline.BuildAssetBundles(
+                schematicDirectoryPath,
+                builds.ToArray(),
+                AssetBundleBuildOptions,
+                EditorUserBuildSettings.activeBuildTarget); 
         }
 
         File.WriteAllText(Path.Combine(schematicDirectoryPath, $"{name}.json"),
@@ -131,13 +145,13 @@ public class Schematic : SchematicBlock
     public override void Compile(SchematicBlockData block)
     {
         return;
-        block.Rotation = transform.localEulerAngles;
-
-        block.BlockType = BlockType.Schematic;
-        block.Properties = new Dictionary<string, object>
-        {
-            { "SchematicName", name }
-        };
+        // block.Rotation = transform.localEulerAngles;
+        //
+        // block.BlockType = BlockType.Schematic;
+        // block.Properties = new Dictionary<string, object>
+        // {
+        //     { "SchematicName", name }
+        // };
 
         // return false;
     }
@@ -178,9 +192,9 @@ public class Schematic : SchematicBlock
         Directory.Delete(path, false);
     }
 
-    internal readonly SchematicObjectDataList BlockList = new SchematicObjectDataList();
-    internal readonly Dictionary<int, SerializableRigidbody> RigidbodyDictionary = new Dictionary<int, SerializableRigidbody>();
-    internal readonly List<SerializableTeleport> Teleports = new List<SerializableTeleport>();
+    internal readonly SchematicObjectDataList BlockList = new();
+    internal readonly Dictionary<int, SerializableRigidbody> RigidbodyDictionary = new();
+    internal readonly List<SerializableTeleport> Teleports = new();
 
     private static BuildAssetBundleOptions AssetBundleBuildOptions => BuildAssetBundleOptions.ChunkBasedCompression |
                                                                       BuildAssetBundleOptions.ForceRebuildAssetBundle |
