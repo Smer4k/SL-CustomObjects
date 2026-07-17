@@ -134,6 +134,10 @@ public static class Decompiler
 		Transform childGameObjectTransform =
 			CreateObject(blocks.Find(c => c.ObjectId == id), parentGameObject) ??
 			_rootTransform; // Create the object first before creating children.
+		if (childGameObjectTransform.TryGetComponent<SchematicBlock>(out var blockComponent))
+		{
+			blockComponent.ObjectId = id;
+		} 
 		int[] parentSchematics =
 			blocks.Where(bl => bl.BlockType == BlockType.Schematic).Select(bl => bl.ObjectId).ToArray();
 

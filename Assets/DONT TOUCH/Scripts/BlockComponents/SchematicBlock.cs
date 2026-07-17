@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DONT_TOUCH.Enums;
+using DONT_TOUCH.Scripts;
 using DONT_TOUCH.Scripts.BlockSerialization;
 using UnityEditor;
 using UnityEngine;
@@ -14,6 +15,8 @@ public abstract class SchematicBlock : MonoBehaviour
     [Tooltip("Object movement smoothing"), Range(0, 255)]
     public byte MovementSmoothing = 60;
 
+    [HideInInspector] public int ObjectId;
+    
     public static T Create<T>(string prefabPath) where T : Object
     {
         T prefab = AssetDatabase.LoadAssetAtPath<T>(prefabPath);
@@ -35,8 +38,8 @@ public abstract class SchematicBlock : MonoBehaviour
 
         Transform t = transform;
         block.Name = t.name;
-        block.ObjectId = t.GetInstanceID();
-        block.ParentId = t.parent.GetInstanceID();
+        block.ObjectId = ObjectId;
+        block.ParentId = t.parent.GetComponent<SchematicBlock>().ObjectId;
 
         t.GetLocalPositionAndRotation(out Vector3 localPosition, out Quaternion localRotation);
         block.Position = localPosition;
@@ -81,6 +84,34 @@ public abstract class SchematicBlock : MonoBehaviour
     public void Awake()
     {
         LockChildrenRecursive(transform);
+    }
+
+    protected virtual void Reset()
+    {
+        if (ObjectId == 0)
+        {
+            GenerateId();
+        }
+    }
+
+    protected virtual void OnValidate()
+    {
+        if (ObjectId == 0)
+        {
+            GenerateId();
+        }
+    }
+
+    public void GenerateId()
+    {
+        var schematic = GetComponentInParent<Schematic>();
+        if (schematic == null)
+        {
+            schematic = GetComponent<Schematic>();
+        }
+        if (schematic == null)
+            return;
+        SchematicIdAllocator.GetOrAssignId(schematic, this);
     }
     
     [ContextMenu("Center Pivot To Children")]

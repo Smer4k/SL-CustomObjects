@@ -34,13 +34,15 @@ namespace DONT_TOUCH.Scripts.BlockComponents
             ActionEventSerialization.EnsureEventLists(ActionEvents);
         }
 
-        protected virtual void Reset()
+        protected override void Reset()
         {
+            base.Reset();
             EnsureActionEventsInitialized();
         }
 
-        protected virtual void OnValidate()
+        protected override void OnValidate()
         {
+            base.OnValidate();
             EnsureActionEventsInitialized();
         }
     }

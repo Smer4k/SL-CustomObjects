@@ -25,7 +25,7 @@ public class Schematic : SchematicBlock
     {
         SetupOutput(out string schematicDirectoryPath);
 
-        int rootObjectId = transform.GetInstanceID();
+        int rootObjectId = ObjectId;
         BlockList.RootObjectId = rootObjectId;
         BlockList.Blocks.Clear();
         RigidbodyDictionary.Clear();
@@ -88,7 +88,7 @@ public class Schematic : SchematicBlock
             }
 
             if (block.TryGetComponent(out rigidbody))
-                RigidbodyDictionary.Add(block.transform.GetInstanceID(), new SerializableRigidbody(rigidbody));
+                RigidbodyDictionary.Add(block.ObjectId, new SerializableRigidbody(rigidbody));
 
             BlockList.Blocks.Add(data);
         }

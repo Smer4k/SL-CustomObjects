@@ -55,8 +55,9 @@ public class PickupComponent : SchematicBlock
         base.Decompile(ref gameObject, block, parent);
     }
 
-    private void OnValidate()
+    protected override void OnValidate()
     {
+        base.OnValidate();
         if (!uint.TryParse(AttachmentsCode, out uint _))
             AttachmentsCode = "-1";
     }

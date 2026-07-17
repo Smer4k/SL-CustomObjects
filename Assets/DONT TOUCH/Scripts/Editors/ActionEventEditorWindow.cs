@@ -405,7 +405,7 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                int newTargetIdProp = targetPropObj != null ? targetPropObj.transform.GetInstanceID() : 0;
+                int newTargetIdProp = targetPropObj != null ? targetPropObj.GetComponent<SchematicBlock>().ObjectId : 0;
                 if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
                 y += LineWithSpacing();
 
@@ -418,14 +418,14 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                int newTargetIdProp = targetPropObj != null ? targetPropObj.transform.GetInstanceID() : 0;
+                int newTargetIdProp = targetPropObj != null ? targetPropObj.GetComponent<SchematicBlock>().ObjectId : 0;
                 if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
                 return;
             }
 
             EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), targetProperty);
             GameObject targetObject = targetProperty.objectReferenceValue as GameObject;
-            int newTargetId = targetObject != null ? targetObject.GetInstanceID() : 0;
+            int newTargetId = targetObject != null ? targetObject.GetComponent<SchematicBlock>().ObjectId : 0;
             if (targetIdProperty.intValue != newTargetId) targetIdProperty.intValue = newTargetId;
             y += LineWithSpacing();
 

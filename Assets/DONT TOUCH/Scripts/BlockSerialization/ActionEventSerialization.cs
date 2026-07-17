@@ -76,7 +76,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                     if (action.Type == ActionType.Animation)
                     {
                         action.TargetId = action.Target != null
-                            ? action.Target.transform.GetInstanceID()
+                            ? action.Target.GetComponent<SchematicBlock>().ObjectId
                             : 0;
                     
                         var resolvedType = ResolveAnimatorParamType(action.Target, action.Param);
@@ -88,7 +88,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                     if (action.Type == ActionType.SetComponentProperty)
                     {
                         action.TargetId = action.Target != null
-                            ? action.Target.transform.GetInstanceID()
+                            ? action.Target.GetComponent<SchematicBlock>().ObjectId
                             : 0;
                         if (action.TargetId != 0 && action.Target.TryGetComponent(out SchematicBlock block))
                         {
@@ -99,7 +99,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                     if (action.Type == ActionType.Destroy)
                     {
                         action.TargetId = action.Target != null
-                            ? action.Target.transform.GetInstanceID()
+                            ? action.Target.GetComponent<SchematicBlock>().ObjectId
                             : 0;
                     }
                 
