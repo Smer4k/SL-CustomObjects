@@ -36,8 +36,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 
         public override void Decompile(ref GameObject gameObject, SchematicBlockData block, Transform parent)
         {
-            TriggerComponent trigger =
-                Instantiate(AssetDatabase.LoadAssetAtPath<TriggerComponent>("Assets/Resources/Blocks/Trigger.prefab"));
+            TriggerComponent trigger = Create<TriggerComponent>("Assets/Resources/Blocks/Trigger.prefab");
             gameObject = trigger.gameObject;
 
             trigger.Type = (PrimitiveType)Convert.ToInt32(block.Properties["PrimitiveType"]);

@@ -19,7 +19,6 @@ public class Schematic : SchematicBlock
     [SerializeField] private SchematicClusterOptimizerSettings clusterOptimizer = new();
 
     public SchematicClusterOptimizerSettings ClusterOptimizer => clusterOptimizer;
-
     public int OptimizeClusters() => SchematicClusterOptimizer.Optimize(this);
 
     public void CompileSchematic()
@@ -35,7 +34,6 @@ public class Schematic : SchematicBlock
         if (TryGetComponent(out Rigidbody rigidbody))
             RigidbodyDictionary.Add(rootObjectId, new SerializableRigidbody(rigidbody));
 
-        var builds = new List<AssetBundleBuild>();
         foreach (SchematicBlock block in GetComponentsInChildren<SchematicBlock>())
         {
             if (block.CompareTag("EditorOnly") || block == this)
@@ -65,30 +63,18 @@ public class Schematic : SchematicBlock
             {
                 RuntimeAnimatorController runtimeAnimatorController = animator.runtimeAnimatorController;
                 data.AnimatorName = runtimeAnimatorController.name;
-                builds.Add(new AssetBundleBuild()
-                {
-                    assetBundleName = runtimeAnimatorController.name,
-                    assetNames = new [] { AssetDatabase.GetAssetPath(runtimeAnimatorController) }
-                });
-                // BuildPipeline.BuildAssetBundles(runtimeAnimatorController,
-                //     runtimeAnimatorController.animationClips,
-                //     Path.Combine(schematicDirectoryPath, runtimeAnimatorController.name),
-                //     AssetBundleBuildOptions, EditorUserBuildSettings.activeBuildTarget);
+#if UNITY_2021
+                BuildPipeline.BuildAssetBundles(runtimeAnimatorController,
+                    runtimeAnimatorController.animationClips,
+                    Path.Combine(schematicDirectoryPath, runtimeAnimatorController.name),
+                    AssetBundleBuildOptions, EditorUserBuildSettings.activeBuildTarget);
+#endif
             }
 
             if (block.TryGetComponent(out rigidbody))
                 RigidbodyDictionary.Add(block.transform.GetId(), new SerializableRigidbody(rigidbody));
 
             BlockList.Blocks.Add(data);
-        }
-
-        if (builds.Count > 0)
-        {
-            BuildPipeline.BuildAssetBundles(
-                schematicDirectoryPath,
-                builds.ToArray(),
-                AssetBundleBuildOptions,
-                EditorUserBuildSettings.activeBuildTarget); 
         }
 
         File.WriteAllText(Path.Combine(schematicDirectoryPath, $"{name}.json"),

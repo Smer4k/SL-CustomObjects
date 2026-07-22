@@ -27,10 +27,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 
         public override void Decompile(ref GameObject gameObject, SchematicBlockData block, Transform parent)
         {
-            CullingParentComponent cullingParent =
-                Instantiate(
-                    AssetDatabase.LoadAssetAtPath<CullingParentComponent>(
-                        "Assets/Resources/Blocks/CullingParent.prefab"));
+            CullingParentComponent cullingParent = Create<CullingParentComponent>("Assets/Resources/Blocks/CullingParent.prefab");
             gameObject = cullingParent.gameObject;
 
             if (block.Properties.TryGetValue("BoundsSize", out object boundsSizeObj))
