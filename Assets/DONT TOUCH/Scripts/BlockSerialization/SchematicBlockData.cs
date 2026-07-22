@@ -14,6 +14,8 @@ public class SchematicBlockData
     public ulong ParentId { get; set; }
 
     public virtual string AnimatorName { get; set; }
+        
+    public string VisualScriptGraphName { get; set; }
 
     public SerializableVector Position { get; set; }
 

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using DONT_TOUCH.Enums;
-using DONT_TOUCH.Scripts;
-using DONT_TOUCH.Scripts.BlockSerialization;
 using DONT_TOUCH.Scripts.Extensions;
+using DONT_TOUCH.Scripts.VisualScriptSystem.NodeSerialization;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -16,7 +15,9 @@ public abstract class SchematicBlock : MonoBehaviour
 
     [Tooltip("Object movement smoothing"), Range(0, 255)]
     public byte MovementSmoothing = 60;
-    
+
+    public VisualScriptRuntimeGraph ScriptGraph;
+
     public static T Create<T>(string prefabPath) where T : Object
     {
         T prefab = AssetDatabase.LoadAssetAtPath<T>(prefabPath);
