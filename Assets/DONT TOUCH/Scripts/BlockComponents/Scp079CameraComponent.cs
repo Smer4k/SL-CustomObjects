@@ -10,6 +10,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 	[ExecuteInEditMode, SelectionBase]
 	public class Scp079CameraComponent : SchematicBlock
 	{
+		public override bool RequiredUniqName { get; } = true;
 		public override BlockType BlockType { get; } = BlockType.Camera;
 		public CameraType CameraType;
 		public string Label;

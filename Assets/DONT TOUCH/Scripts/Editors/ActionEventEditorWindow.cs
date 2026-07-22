@@ -4,6 +4,7 @@ using System.Globalization;
 using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts.BlockComponents;
 using DONT_TOUCH.Scripts.BlockSerialization;
+using DONT_TOUCH.Scripts.Extensions;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEditorInternal;
@@ -405,8 +406,8 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                int newTargetIdProp = targetPropObj != null ? targetPropObj.GetComponent<SchematicBlock>().ObjectId : 0;
-                if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
+                ulong newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+                if (targetIdProperty.ulongValue != newTargetIdProp) targetIdProperty.ulongValue = newTargetIdProp;
                 y += LineWithSpacing();
 
                 DrawComponentPropertySelection(paramProperty, valueProperty, targetPropObj, rect.x, ref y, rect.width);
@@ -418,15 +419,15 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                int newTargetIdProp = targetPropObj != null ? targetPropObj.GetComponent<SchematicBlock>().ObjectId : 0;
-                if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
+                ulong newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+                if (targetIdProperty.ulongValue != newTargetIdProp) targetIdProperty.ulongValue = newTargetIdProp;
                 return;
             }
 
             EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), targetProperty);
             GameObject targetObject = targetProperty.objectReferenceValue as GameObject;
-            int newTargetId = targetObject != null ? targetObject.GetComponent<SchematicBlock>().ObjectId : 0;
-            if (targetIdProperty.intValue != newTargetId) targetIdProperty.intValue = newTargetId;
+            ulong newTargetId = targetObject != null ? targetObject.GetId() : 0;
+            if (targetIdProperty.ulongValue != newTargetId) targetIdProperty.ulongValue = newTargetId;
             y += LineWithSpacing();
 
             Animator animator = GetAnimator(targetObject);

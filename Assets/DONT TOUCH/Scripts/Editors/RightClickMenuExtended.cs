@@ -220,7 +220,5 @@ public class RightClickMenuExtended
 		Undo.RegisterCreatedObjectUndo(instance, $"Create {instance.name}");
 
 		Selection.activeGameObject = instance;
-		if (instance.TryGetComponent<SchematicBlock>(out var block))
-			block.GenerateId();
 	}
 }

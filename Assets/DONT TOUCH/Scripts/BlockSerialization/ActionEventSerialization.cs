@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts.BlockComponents;
+using DONT_TOUCH.Scripts.Extensions;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
@@ -76,7 +77,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                     if (action.Type == ActionType.Animation)
                     {
                         action.TargetId = action.Target != null
-                            ? action.Target.GetComponent<SchematicBlock>().ObjectId
+                            ? action.Target.GetId()
                             : 0;
                     
                         var resolvedType = ResolveAnimatorParamType(action.Target, action.Param);
@@ -88,7 +89,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                     if (action.Type == ActionType.SetComponentProperty)
                     {
                         action.TargetId = action.Target != null
-                            ? action.Target.GetComponent<SchematicBlock>().ObjectId
+                            ? action.Target.GetId()
                             : 0;
                         if (action.TargetId != 0 && action.Target.TryGetComponent(out SchematicBlock block))
                         {
@@ -99,7 +100,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                     if (action.Type == ActionType.Destroy)
                     {
                         action.TargetId = action.Target != null
-                            ? action.Target.GetComponent<SchematicBlock>().ObjectId
+                            ? action.Target.GetId()
                             : 0;
                     }
                 
@@ -142,7 +143,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
             }
         }
 
-        public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<int, Transform> objectFromId)
+        public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<ulong, Transform> objectFromId)
         {
             if (objectFromId == null)
                 return;

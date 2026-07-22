@@ -9,6 +9,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 	[ExecuteInEditMode, SelectionBase]
 	public class DoorComponent : SchematicBlock
 	{
+		public override bool RequiredUniqName { get; } = true;
 		public override BlockType BlockType => BlockType.Door;
 		public DoorType DoorType;
 		public bool IsOpen;

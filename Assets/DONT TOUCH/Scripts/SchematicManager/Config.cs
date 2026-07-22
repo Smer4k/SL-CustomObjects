@@ -15,7 +15,7 @@ public class Config
         OpenDirectoryAfterCompiling = source.OpenDirectoryAfterCompiling;
         ExportPath = source.ExportPath;
         ZipCompiledSchematics = source.ZipCompiledSchematics;
-
+        SafeBackwardCompatibility = source.SafeBackwardCompatibility;
         return this;
     }
 
@@ -24,11 +24,14 @@ public class Config
     public string ExportPath { get; set; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "MapEditorReborn_CompiledSchematics");
 
     public bool ZipCompiledSchematics { get; set; } = false;
+    
+    public bool SafeBackwardCompatibility { get; set; } = false;
 
     public static bool operator ==(Config config, Config other) =>
         config.OpenDirectoryAfterCompiling == other.OpenDirectoryAfterCompiling &&
         config.ExportPath == other.ExportPath &&
-        config.ZipCompiledSchematics == other.ZipCompiledSchematics;
+        config.ZipCompiledSchematics == other.ZipCompiledSchematics &&
+        config.SafeBackwardCompatibility == other.SafeBackwardCompatibility;
 
     public static bool operator !=(Config config, Config other) => !(config == other);
 }

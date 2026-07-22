@@ -103,7 +103,7 @@ public static class Decompiler
 	private static void PortBack()
 	{
 		_rootTransform = new GameObject(_schematicName).AddComponent<Schematic>().transform;
-		_objectFromId = new Dictionary<int, Transform>(_schematicData.Blocks.Count + 1)
+		_objectFromId = new Dictionary<ulong, Transform>(_schematicData.Blocks.Count + 1)
 		{
 			{ _schematicData.RootObjectId, _rootTransform },
 		};
@@ -129,16 +129,12 @@ public static class Decompiler
 		Object.DestroyImmediate(_schematicBuilder.gameObject);
 	}
 
-	private static void CreateRecursiveFromID(int id, List<SchematicBlockData> blocks, Transform parentGameObject)
+	private static void CreateRecursiveFromID(ulong id, List<SchematicBlockData> blocks, Transform parentGameObject)
 	{
 		Transform childGameObjectTransform =
 			CreateObject(blocks.Find(c => c.ObjectId == id), parentGameObject) ??
 			_rootTransform; // Create the object first before creating children.
-		if (childGameObjectTransform.TryGetComponent<SchematicBlock>(out var blockComponent))
-		{
-			blockComponent.ObjectId = id;
-		} 
-		int[] parentSchematics =
+		ulong[] parentSchematics =
 			blocks.Where(bl => bl.BlockType == BlockType.Schematic).Select(bl => bl.ObjectId).ToArray();
 
 		// Gets all the ObjectIds of all the schematic blocks inside "blocks" argument.
@@ -340,8 +336,8 @@ public static class Decompiler
 		if (!File.Exists(rigidbodyPath))
 			return;
 
-		foreach (KeyValuePair<int, SerializableRigidbody> dict in JsonConvert
-			         .DeserializeObject<Dictionary<int, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
+		foreach (KeyValuePair<ulong, SerializableRigidbody> dict in JsonConvert
+			         .DeserializeObject<Dictionary<ulong, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
 		{
 			if (!_objectFromId[dict.Key].gameObject.TryGetComponent(out Rigidbody rigidbody))
 				rigidbody = _objectFromId[dict.Key].gameObject.AddComponent<Rigidbody>();
@@ -367,5 +363,5 @@ public static class Decompiler
 	private static string _schematicName;
 	private static string _schematicDirectoryPath;
 	private static SchematicObjectDataList _schematicData;
-	private static Dictionary<int, Transform> _objectFromId;
+	private static Dictionary<ulong, Transform> _objectFromId;
 }

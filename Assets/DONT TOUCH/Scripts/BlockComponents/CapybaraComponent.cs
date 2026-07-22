@@ -7,6 +7,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 	[ExecuteInEditMode, SelectionBase]
 	public class CapybaraComponent : SchematicBlock
 	{
+		public override bool RequiredUniqName { get; } = true;
 		public override BlockType BlockType { get; } = BlockType.Capybara;
 
 		public override void Compile(SchematicBlockData block)

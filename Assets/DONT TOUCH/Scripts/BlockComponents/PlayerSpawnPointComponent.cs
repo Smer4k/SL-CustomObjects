@@ -9,6 +9,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 	[ExecuteInEditMode, SelectionBase]
 	public class PlayerSpawnPointComponent : SchematicBlock
 	{
+		public override bool RequiredUniqName { get; } = true;
 		public override BlockType BlockType { get; } = BlockType.PlayerSpawnPoint;
 		public List<DefaultRoleTypeId> Roles = new();
 	

@@ -6,6 +6,7 @@ using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts;
 using DONT_TOUCH.Scripts.BlockComponents;
 using DONT_TOUCH.Scripts.BlockSerialization;
+using DONT_TOUCH.Scripts.Extensions;
 using UnityEditor;
 using UnityEngine;
 
@@ -25,7 +26,7 @@ public class Schematic : SchematicBlock
     {
         SetupOutput(out string schematicDirectoryPath);
 
-        int rootObjectId = ObjectId;
+        ulong rootObjectId = transform.GetId();
         BlockList.RootObjectId = rootObjectId;
         BlockList.Blocks.Clear();
         RigidbodyDictionary.Clear();
@@ -45,21 +46,9 @@ public class Schematic : SchematicBlock
             
             foreach (var blockData in BlockList.Blocks)
             {
-                if (block.BlockType is 
-                    BlockType.Light or 
-                    BlockType.Empty or 
-                    BlockType.Interactable or 
-                    BlockType.Primitive or 
-                    BlockType.Schematic or 
-                    BlockType.Pickup or
-                    BlockType.Waypoint or 
-                    BlockType.Text or 
-                    BlockType.Workstation or 
-                    BlockType.Clutter or 
-                    BlockType.MirrorPrefab or 
-                    BlockType.PlayerBlocker or 
-                    BlockType.Trigger or 
-                    BlockType.CullingParent)
+                if (!Config.SafeBackwardCompatibility)
+                    break;
+                if (!block.RequiredUniqName)
                     continue;
                 if (blockData.Name != block.name) continue;
                 string errorMsg = $"Multiple blocks found with the name '{blockData.Name}'! Rename them so that each has a unique name.";
@@ -88,7 +77,7 @@ public class Schematic : SchematicBlock
             }
 
             if (block.TryGetComponent(out rigidbody))
-                RigidbodyDictionary.Add(block.ObjectId, new SerializableRigidbody(rigidbody));
+                RigidbodyDictionary.Add(block.transform.GetId(), new SerializableRigidbody(rigidbody));
 
             BlockList.Blocks.Add(data);
         }
@@ -193,7 +182,7 @@ public class Schematic : SchematicBlock
     }
 
     internal readonly SchematicObjectDataList BlockList = new();
-    internal readonly Dictionary<int, SerializableRigidbody> RigidbodyDictionary = new();
+    internal readonly Dictionary<ulong, SerializableRigidbody> RigidbodyDictionary = new();
     internal readonly List<SerializableTeleport> Teleports = new();
 
     private static BuildAssetBundleOptions AssetBundleBuildOptions => BuildAssetBundleOptions.ChunkBasedCompression |

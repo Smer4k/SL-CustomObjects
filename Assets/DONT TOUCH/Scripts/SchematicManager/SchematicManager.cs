@@ -95,6 +95,11 @@ public class SchematicManager : EditorWindow
             Config.ZipCompiledSchematics,
             UnityRichTextStyle);
 
+        Config.SafeBackwardCompatibility = EditorGUILayout.ToggleLeft(
+            "<color=white><i>Check the schematic for errors for backward compatibility (if <b>backwardCompatibility</b> is enabled in the ProjectMER config).</i></color>",
+            Config.SafeBackwardCompatibility,
+            UnityRichTextStyle);
+
         EditorGUILayout.Space();
 
         EditorGUILayout.Space();

@@ -1,13 +1,17 @@
 ﻿using System.Collections.Generic;
 using DONT_TOUCH.Enums;
+using DONT_TOUCH.Scripts;
+using Newtonsoft.Json;
 
 
 public class SchematicBlockData
 {
     public string Name { get; set; }
 
-    public int ObjectId { get; set; }
-    public int ParentId { get; set; }
+    [JsonConverter(typeof(UncheckedULongConverter))]
+    public ulong ObjectId { get; set; }
+    [JsonConverter(typeof(UncheckedULongConverter))]
+    public ulong ParentId { get; set; }
 
     public virtual string AnimatorName { get; set; }
 

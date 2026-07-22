@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts;
 using DONT_TOUCH.Scripts.BlockSerialization;
+using DONT_TOUCH.Scripts.Extensions;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -10,12 +11,11 @@ using Object = UnityEngine.Object;
 
 public abstract class SchematicBlock : MonoBehaviour
 {
+    public virtual bool RequiredUniqName { get; } = false;
     public abstract BlockType BlockType { get; }
 
     [Tooltip("Object movement smoothing"), Range(0, 255)]
     public byte MovementSmoothing = 60;
-
-    [HideInInspector] public int ObjectId;
     
     public static T Create<T>(string prefabPath) where T : Object
     {
@@ -38,8 +38,8 @@ public abstract class SchematicBlock : MonoBehaviour
 
         Transform t = transform;
         block.Name = t.name;
-        block.ObjectId = ObjectId;
-        block.ParentId = t.parent.GetComponent<SchematicBlock>().ObjectId;
+        block.ObjectId = t.GetId();
+        block.ParentId = t.parent.GetId();
 
         t.GetLocalPositionAndRotation(out Vector3 localPosition, out Quaternion localRotation);
         block.Position = localPosition;
@@ -86,34 +86,6 @@ public abstract class SchematicBlock : MonoBehaviour
         LockChildrenRecursive(transform);
     }
 
-    protected virtual void Reset()
-    {
-        if (ObjectId == 0)
-        {
-            GenerateId();
-        }
-    }
-
-    protected virtual void OnValidate()
-    {
-        if (ObjectId == 0)
-        {
-            GenerateId();
-        }
-    }
-
-    public void GenerateId()
-    {
-        var schematic = GetComponentInParent<Schematic>();
-        if (schematic == null)
-        {
-            schematic = GetComponent<Schematic>();
-        }
-        if (schematic == null)
-            return;
-        SchematicIdAllocator.GetOrAssignId(schematic, this);
-    }
-    
     [ContextMenu("Center Pivot To Children")]
     public void CenterPivotToChildren()
     {

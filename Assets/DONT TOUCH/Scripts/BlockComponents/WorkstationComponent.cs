@@ -11,7 +11,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
     {
         [Tooltip("Whether the workstation should be interactable in game. If set to false it won't be enabled in game.")]
         public bool IsInteractable = true;
-
+        public override bool RequiredUniqName { get; } = true;
         public override BlockType BlockType => BlockType.Workstation;
 
         public override void Compile(SchematicBlockData block)
