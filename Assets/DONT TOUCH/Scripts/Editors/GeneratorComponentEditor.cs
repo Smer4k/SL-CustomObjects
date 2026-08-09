@@ -1,4 +1,5 @@
-﻿using DONT_TOUCH.Scripts.BlockComponents;
+﻿using DONT_TOUCH.Enums;
+using DONT_TOUCH.Scripts.BlockComponents;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,10 +11,21 @@ namespace DONT_TOUCH.Scripts.Editors
     {
         public override void OnInspectorGUI()
         {
-            DrawDefaultInspector();
+            serializedObject.Update();
+            DrawPropertiesExcluding(
+                serializedObject,
+                nameof(GeneratorComponent.RequiredPermissions));
+            
+            var permissionProp = serializedObject.FindProperty(nameof(GeneratorComponent.RequiredPermissions));
+            permissionProp.intValue = EditorGUILayout.MaskField(
+                permissionProp.displayName,
+                permissionProp.intValue,
+                System.Enum.GetNames(typeof(DoorPermissionFlags)));
+            
+            serializedObject.ApplyModifiedProperties();
             var generator = (GeneratorComponent)target;
             GUILayout.Label(
-                $"<color=gray>Dropdown Speed: {generator.TotalActivationTime / generator.TotalDeactivationTime}</color>",
+                $"<color=white>Dropdown Speed: {generator.TotalActivationTime / generator.TotalDeactivationTime}</color>",
                 SchematicManager.UnityRichTextStyle);
         }
     }
