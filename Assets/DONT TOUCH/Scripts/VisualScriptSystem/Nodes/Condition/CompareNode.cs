@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_6000_5_OR_NEWER && UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using DONT_TOUCH.Scripts.VisualScriptSystem.Enums;
 using DONT_TOUCH.Scripts.VisualScriptSystem.NodeSerialization;
@@ -40,3 +41,4 @@ namespace DONT_TOUCH.Scripts.VisualScriptSystem.Nodes.Condition
         }
     }
 }
+#endif

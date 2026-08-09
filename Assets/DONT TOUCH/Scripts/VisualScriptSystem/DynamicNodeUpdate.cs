@@ -1,3 +1,4 @@
+#if UNITY_6000_5_OR_NEWER && UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -129,3 +130,4 @@ namespace DONT_TOUCH.Scripts.VisualScriptSystem
         }
     }
 }
+#endif

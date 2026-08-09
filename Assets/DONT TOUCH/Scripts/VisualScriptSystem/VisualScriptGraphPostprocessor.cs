@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿#if UNITY_6000_5_OR_NEWER && UNITY_EDITOR
+using System.Collections.Generic;
 using System.Linq;
 using DONT_TOUCH.Scripts.VisualScriptSystem.Enums;
 using DONT_TOUCH.Scripts.VisualScriptSystem.Nodes;
@@ -183,3 +184,4 @@ namespace DONT_TOUCH.Scripts.VisualScriptSystem
         }
     }
 }
+#endif

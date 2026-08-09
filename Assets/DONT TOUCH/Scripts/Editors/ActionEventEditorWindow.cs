@@ -406,8 +406,12 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                ulong newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+                var newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+#if UNITY_6000_5_OR_NEWER
                 if (targetIdProperty.ulongValue != newTargetIdProp) targetIdProperty.ulongValue = newTargetIdProp;
+#else
+                if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
+#endif
                 y += LineWithSpacing();
 
                 DrawComponentPropertySelection(paramProperty, valueProperty, targetPropObj, rect.x, ref y, rect.width);
@@ -419,15 +423,23 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                ulong newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+                var newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+#if UNITY_6000_5_OR_NEWER
                 if (targetIdProperty.ulongValue != newTargetIdProp) targetIdProperty.ulongValue = newTargetIdProp;
+#else
+                if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
+#endif
                 return;
             }
 
             EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), targetProperty);
             GameObject targetObject = targetProperty.objectReferenceValue as GameObject;
-            ulong newTargetId = targetObject != null ? targetObject.GetId() : 0;
+            var newTargetId = targetObject != null ? targetObject.GetId() : 0;
+#if UNITY_6000_5_OR_NEWER
             if (targetIdProperty.ulongValue != newTargetId) targetIdProperty.ulongValue = newTargetId;
+#else
+            if (targetIdProperty.intValue != newTargetId) targetIdProperty.intValue = newTargetId;
+#endif
             y += LineWithSpacing();
 
             Animator animator = GetAnimator(targetObject);

@@ -16,7 +16,6 @@ namespace DONT_TOUCH.Scripts.BlockComponents.Locker
 		public List<LockerItem> Loot = new();
 		public LockerType LockerType;
 		public override BlockType BlockType => BlockType.Locker;
-		public override bool RequiredUniqName { get; } = true;
 
 		public override void Compile(SchematicBlockData block)
 		{

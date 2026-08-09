@@ -1,6 +1,6 @@
-﻿using System;
+﻿#if UNITY_6000_5_OR_NEWER && UNITY_EDITOR
+using System;
 using System.Collections.Generic;
-using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts.VisualScriptSystem.Enums;
 using DONT_TOUCH.Scripts.VisualScriptSystem.NodeSerialization;
 using DONT_TOUCH.Scripts.VisualScriptSystem.Types;
@@ -33,3 +33,4 @@ namespace DONT_TOUCH.Scripts.VisualScriptSystem.Nodes.Player.Condition
         }
     }
 }
+#endif

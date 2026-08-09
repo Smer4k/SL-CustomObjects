@@ -1,4 +1,5 @@
-﻿using DONT_TOUCH.Scripts.VisualScriptSystem.NodeSerialization;
+﻿#if UNITY_6000_5_OR_NEWER && UNITY_EDITOR
+using DONT_TOUCH.Scripts.VisualScriptSystem.NodeSerialization;
 using Unity.GraphToolkit.Editor;
 using UnityEditor.AssetImporters;
 using UnityEngine;
@@ -22,3 +23,4 @@ namespace DONT_TOUCH.Scripts.VisualScriptSystem
         }
     }
 }
+#endif

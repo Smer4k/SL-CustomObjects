@@ -79,12 +79,12 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                         action.TargetId = action.Target != null
                             ? action.Target.GetId()
                             : 0;
-                    
+
                         var resolvedType = ResolveAnimatorParamType(action.Target, action.Param);
                         if (resolvedType != default)
                             action.ParamType = resolvedType;
                     }
-                
+
                     // For SetComponentProperty type, resolve TargetId
                     if (action.Type == ActionType.SetComponentProperty)
                     {
@@ -103,7 +103,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                             ? action.Target.GetId()
                             : 0;
                     }
-                
+
                     // Clear irrelevant parameters for all types
                     action.EnsureDefaults();
                 }
@@ -143,7 +143,11 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
             }
         }
 
+#if UNITY_6000_5_OR_NEWER
         public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<ulong, Transform> objectFromId)
+#else
+        public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<int, Transform> objectFromId)
+#endif
         {
             if (objectFromId == null)
                 return;
@@ -216,6 +220,5 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
                 action.EnsureDefaults();
             }
         }
-
     }
 }
