@@ -11,6 +11,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents.Locker
 	[ExecuteInEditMode, SelectionBase]
 	public class LockerComponent : SchematicBlock
 	{
+		public override bool RequiredUniqName { get; } = true;
 		public List<LockerChamber> Chambers = new();
 		public List<LockerItem> Loot = new();
 		public LockerType LockerType;

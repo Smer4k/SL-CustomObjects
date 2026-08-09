@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using DONT_TOUCH.Scripts.BlockComponents;
 using UnityEditor;
 using UnityEngine;
@@ -15,9 +16,9 @@ namespace DONT_TOUCH.Scripts.Editors
             serializedObject.Update();
             EditorGUILayout.PropertyField(serializedObject.FindProperty("clusterOptimizer"), true);
             serializedObject.ApplyModifiedProperties();
-
-            GUILayout.Label($"<color=white>Number of blocks: <b>{schematic.GetComponentsInChildren<SchematicBlock>().Length - 1}</b></color>", SchematicManager.UnityRichTextStyle);
-
+            var blocks = schematic.GetComponentsInChildren<SchematicBlock>(true);
+            GUILayout.Label($"<color=white>Number of blocks: <b>{blocks.Length - 1}</b></color>", SchematicManager.UnityRichTextStyle);
+            GUILayout.Label($"<color=white>Static blocks: <b>{blocks.Count(x => x.gameObject.isStatic)}</b></color>", SchematicManager.UnityRichTextStyle);
             if (GUILayout.Button("Apply Rotation to Empty Objects"))
             {
                 int i = ApplyTransformProperty(schematic, true, false);

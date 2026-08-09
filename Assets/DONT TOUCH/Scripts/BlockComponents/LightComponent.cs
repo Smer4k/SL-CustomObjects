@@ -101,6 +101,9 @@ namespace DONT_TOUCH.Scripts.BlockComponents
                 ? (LightType)Convert.ToInt32(objLightType)
                 : LightType.Point;
             
+            if (lightType == LightType.Area)
+                lightType = LightType.Rectangle;
+            
             var lightComponent = Create<LightComponent>($"Assets/Resources/Blocks/Lights/{lightType} Light.prefab");
             var light = lightComponent.GetComponent<Light>();
             gameObject = light.gameObject;

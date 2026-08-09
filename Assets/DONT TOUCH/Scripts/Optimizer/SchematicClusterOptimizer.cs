@@ -13,7 +13,7 @@ public class SchematicClusterOptimizerSettings
     {
         BlockType.Schematic, BlockType.CullingParent, BlockType.Door, BlockType.Interactable, BlockType.Trigger,
         BlockType.PlayerSpawnPoint, BlockType.Pickup,
-        BlockType.Waypoint, BlockType.PlayerBlocker, BlockType.Light
+        BlockType.Waypoint, BlockType.PlayerBlocker, BlockType.Light, BlockType.CullingZone
     };
 
     [Min(0f)] public float MaxDistanceForPrimitiveCluster = 2.5f;
@@ -107,7 +107,7 @@ public static class SchematicClusterOptimizer
 
         void Recurse(Transform node)
         {
-            if (node == null || node == schematicRoot)
+            if (node == null || node == schematicRoot || node.TryGetComponent<CullingZoneComponent>(out _))
                 return;
 
             if (TryGetBlockType(node, out BlockType blockType))

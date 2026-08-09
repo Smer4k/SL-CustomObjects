@@ -5,6 +5,7 @@ using UnityEngine;
 namespace DONT_TOUCH.Scripts.Editors
 {
     [CustomEditor(typeof(EmptyComponent))]
+    [CanEditMultipleObjects]
     public sealed class EmptyComponentEditor : Editor
     {
         private SerializedProperty _damageable;

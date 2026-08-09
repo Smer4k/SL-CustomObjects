@@ -45,6 +45,8 @@ public static class Decompiler
 			Dict.Add(BlockType.Clutter, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.ClutterComponent>());
 			Dict.Add(BlockType.Trigger, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.TriggerComponent>());
 			Dict.Add(BlockType.AudioPlayer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.AudioPlayerComponent>());
+			Dict.Add(BlockType.CullingZone, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingZoneComponent>());
+			Dict.Add(BlockType.Generator, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.GeneratorComponent>());
 			return this;
 		}
 	}
@@ -114,6 +116,7 @@ public static class Decompiler
 		_schematicBuilder = new GameObject("SchematicBuilder").AddComponent<SchematicBuilder>().Init();
 
 		CreateRecursiveFromID(_schematicData.RootObjectId, _schematicData.Blocks, _rootTransform);
+		CreateCullingZone(_schematicData.Blocks);
 		CreateTeleporters(_schematicData.Blocks);
 		CreateActionTargets(_schematicData.Blocks);
 		if (_schematicDirectoryPath != null)
@@ -159,6 +162,10 @@ public static class Decompiler
 		{
 			schematicBlock.Decompile(ref gameObject, block, rootObject);
 			_objectFromId.Add(block.ObjectId, gameObject.transform);
+		}
+		else
+		{
+			Debug.LogError($"{block.BlockType} not implemented");
 		}
 
 		if (_schematicDirectoryPath != null &&
@@ -327,6 +334,23 @@ public static class Decompiler
 
 			actionEventHost.EnsureActionEventsInitialized();
 			ActionEventSerialization.RebindTargets(actionEventHost.ActionEvents, _objectFromId);
+		}
+	}
+
+	private static void CreateCullingZone(List<SchematicBlockData> blocks)
+	{
+		foreach (var block in blocks)
+		{
+			if (block.BlockType != BlockType.CullingZone)
+				continue;
+			var connector = _objectFromId[block.ObjectId].GetComponent<CullingZoneComponent>();
+			foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<int>>())
+			{
+				if (!_objectFromId.TryGetValue(id, out Transform objectTransform) 
+				    || !objectTransform.TryGetComponent<CullingZoneComponent>(out var zoneComponent))
+					continue;
+				connector.ConnectedZones.Add(zoneComponent);
+			}
 		}
 	}
 

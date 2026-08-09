@@ -9,6 +9,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
     [ExecuteInEditMode, SelectionBase]
     public class WorkstationComponent : SchematicBlock
     {
+        public override bool RequiredUniqName { get; } = true;
         [Tooltip("Whether the workstation should be interactable in game. If set to false it won't be enabled in game.")]
         public bool IsInteractable = true;
         public override bool RequiredUniqName { get; } = true;

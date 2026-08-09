@@ -19,6 +19,9 @@ public class PrimitiveComponent : SchematicBlock
     [Tooltip("Whether the primitive should be visible in game.")]
     public bool Visible = true;
 
+    [Tooltip("Can SCP-106 pass through the object?")]
+    public bool Scp106Passable = false;
+
     public override BlockType BlockType => BlockType.Primitive;
 
     public override void Compile(SchematicBlockData block)
@@ -34,7 +37,8 @@ public class PrimitiveComponent : SchematicBlock
         {
             { "PrimitiveType", (PrimitiveType)Enum.Parse(typeof(PrimitiveType), tag) },
             { "Color", ColorString },
-            { "PrimitiveFlags", primitiveFlags }
+            { "PrimitiveFlags", primitiveFlags },
+            { nameof(Scp106Passable), Scp106Passable }
         };
 
         base.Compile(block);
@@ -65,6 +69,9 @@ public class PrimitiveComponent : SchematicBlock
         primitiveComponent.Collidable = primitiveFlags.HasFlag(PrimitiveFlags.Collidable);
         primitiveComponent.Visible = primitiveFlags.HasFlag(PrimitiveFlags.Visible);
 
+        if (block.Properties.TryGetValue(nameof(Scp106Passable), out object scp106PassableObj))
+            primitiveComponent.Scp106Passable = Convert.ToBoolean(scp106PassableObj);
+        
         base.Decompile(ref gameObject, block, parent);
     }
 

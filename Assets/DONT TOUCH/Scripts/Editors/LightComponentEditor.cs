@@ -5,6 +5,7 @@ using UnityEngine;
 namespace DONT_TOUCH.Scripts.Editors
 {
     [CustomEditor(typeof(LightComponent))]
+    [CanEditMultipleObjects]
     public class LightComponentEditor : Editor
     {
         private SerializedProperty _flicker;

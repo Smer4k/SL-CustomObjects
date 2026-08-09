@@ -163,8 +163,11 @@ public class RightClickMenuExtended
 	[MenuItem("GameObject/🛠️ MER Blocks/PlayerBlocker", false, -1)]
 	private static void CreatePlayerBlocker(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/PlayerBlocker.prefab");
 	
-	[MenuItem("GameObject/🛠️ MER Blocks/CullingParent", false, -1)]
+	[MenuItem("GameObject/🛠️ MER Blocks/Culling/Culling Parent", false, -1)]
 	private static void CreateCullingParent(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/CullingParent.prefab");
+	
+	[MenuItem("GameObject/🛠️ MER Blocks/Culling/Culling Zone", false, -1)]
+	private static void CreateCullingZone(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/CullingZone.prefab");
 	
 	#region MirrorPrefabs
 	
@@ -202,7 +205,9 @@ public class RightClickMenuExtended
 
 	[MenuItem("GameObject/🛠️ MER Blocks/AudioPlayer", false, -1)]
 	private static void CreateAudioPlayer(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/AudioPlayer.prefab");
-
+	
+	[MenuItem("GameObject/🛠️ MER Blocks/Generator", false, -1)]
+	private static void CreateGenerator(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/Generator.prefab");
 	
 	private static void CreateBlock(MenuCommand menuCommand, string prefabPath)
 	{

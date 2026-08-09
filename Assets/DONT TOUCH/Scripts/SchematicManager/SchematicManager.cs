@@ -94,6 +94,11 @@ public class SchematicManager : EditorWindow
             "<color=white><i>Put compiled schematics directly into .zip archives</i></color>",
             Config.ZipCompiledSchematics,
             UnityRichTextStyle);
+        
+        Config.SafeBackwardCompatibility = EditorGUILayout.ToggleLeft(
+            "<color=white><i>Check the schematic for errors for backward compatibility (if <b>backwardCompatibility</b> is enabled in the ProjectMER config).</i></color>",
+            Config.SafeBackwardCompatibility,
+            UnityRichTextStyle);
 
         Config.SafeBackwardCompatibility = EditorGUILayout.ToggleLeft(
             "<color=white><i>Check the schematic for errors for backward compatibility (if <b>backwardCompatibility</b> is enabled in the ProjectMER config).</i></color>",
