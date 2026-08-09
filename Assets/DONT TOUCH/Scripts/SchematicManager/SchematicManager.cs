@@ -28,7 +28,11 @@ public class SchematicManager : EditorWindow
 
         if (!EditorApplication.isPlayingOrWillChangePlaymode)
         {
+#if UNITY_6000_5_OR_NEWER
             if (FindObjectsByType<ModifierBase>().Length > 0)
+#else
+            if (FindObjectsOfType<ModifierBase>().Length > 0)
+#endif
             {
                 EditorApplication.ExecuteMenuItem("Edit/Play");
                 return;
@@ -68,7 +72,11 @@ public class SchematicManager : EditorWindow
 
     private static void CompileAll()
     {
+#if UNITY_6000_5_OR_NEWER
         foreach (Schematic schematic in FindObjectsByType<Schematic>())
+#else
+        foreach (Schematic schematic in FindObjectsOfType<Schematic>())
+#endif
         {
             schematic.CompileSchematic();
         }

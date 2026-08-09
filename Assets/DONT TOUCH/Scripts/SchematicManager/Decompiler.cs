@@ -105,7 +105,12 @@ public static class Decompiler
     private static void PortBack()
     {
         _rootTransform = new GameObject(_schematicName).AddComponent<Schematic>().transform;
+        
+#if UNITY_6000_5_OR_NEWER
         _objectFromId = new Dictionary<ulong, Transform>(_schematicData.Blocks.Count + 1)
+#else
+        _objectFromId = new Dictionary<int, Transform>(_schematicData.Blocks.Count + 1)
+#endif
         {
             { _schematicData.RootObjectId, _rootTransform },
         };
@@ -251,7 +256,11 @@ public static class Decompiler
 
     private static void CreateTeleporters(List<SchematicBlockData> blocks)
     {
+#if UNITY_6000_5_OR_NEWER
         var teleports = GameObject.FindObjectsByType<TeleportComponent>();
+#else
+        var teleports = GameObject.FindObjectsOfType<TeleportComponent>();
+#endif
         foreach (var block in blocks)
         {
             if (block.BlockType != BlockType.Teleport) continue;

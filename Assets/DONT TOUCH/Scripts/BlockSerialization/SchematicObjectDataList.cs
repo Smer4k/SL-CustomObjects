@@ -8,8 +8,11 @@ using Newtonsoft.Json;
 [Serializable]
 public class SchematicObjectDataList
 {
+#if UNITY_6000_5_OR_NEWER
     [JsonConverter(typeof(UncheckedULongConverter))]
     public ulong RootObjectId { get; set; }
-
+#else
+    public int RootObjectId { get; set; }
+#endif
     public List<SchematicBlockData> Blocks { get; set; } = new List<SchematicBlockData>();
 }
