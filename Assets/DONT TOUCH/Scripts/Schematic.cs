@@ -64,7 +64,7 @@ public class Schematic : SchematicBlock
                 RuntimeAnimatorController runtimeAnimatorController = animator.runtimeAnimatorController;
                 data.AnimatorName = runtimeAnimatorController.name;
 #if UNITY_2021
-                BuildPipeline.BuildAssetBundles(runtimeAnimatorController,
+                BuildPipeline.BuildAssetBundle(runtimeAnimatorController,
                     runtimeAnimatorController.animationClips,
                     Path.Combine(schematicDirectoryPath, runtimeAnimatorController.name),
                     AssetBundleBuildOptions, EditorUserBuildSettings.activeBuildTarget);
