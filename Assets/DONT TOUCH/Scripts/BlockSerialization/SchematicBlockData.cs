@@ -8,11 +8,9 @@ public class SchematicBlockData
     public string Name { get; set; }
 
 #if UNITY_6000_5_OR_NEWER
-    [JsonConverter(typeof(UncheckedULongConverter))]
-    public ulong ObjectId { get; set; }
+    public long ObjectId { get; set; }
 
-    [JsonConverter(typeof(UncheckedULongConverter))]
-    public ulong ParentId { get; set; }
+    public long ParentId { get; set; }
     
     public string VisualScriptGraphName { get; set; }
 #else

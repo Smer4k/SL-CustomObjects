@@ -107,7 +107,7 @@ public static class Decompiler
         _rootTransform = new GameObject(_schematicName).AddComponent<Schematic>().transform;
         
 #if UNITY_6000_5_OR_NEWER
-        _objectFromId = new Dictionary<ulong, Transform>(_schematicData.Blocks.Count + 1)
+        _objectFromId = new Dictionary<long, Transform>(_schematicData.Blocks.Count + 1)
 #else
         _objectFromId = new Dictionary<int, Transform>(_schematicData.Blocks.Count + 1)
 #endif
@@ -138,7 +138,7 @@ public static class Decompiler
     }
 
 #if UNITY_6000_5_OR_NEWER
-    private static void CreateRecursiveFromID(ulong id, List<SchematicBlockData> blocks, Transform parentGameObject)
+    private static void CreateRecursiveFromID(long id, List<SchematicBlockData> blocks, Transform parentGameObject)
 #else
     private static void CreateRecursiveFromID(int id, List<SchematicBlockData> blocks, Transform parentGameObject)
 #endif
@@ -360,7 +360,7 @@ public static class Decompiler
                 continue;
             var connector = _objectFromId[block.ObjectId].GetComponent<CullingZoneComponent>();
 #if UNITY_6000_5_OR_NEWER
-            foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<ulong>>())
+            foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<long>>())
 #else
             foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<int>>())
 #endif
@@ -380,10 +380,10 @@ public static class Decompiler
             return;
 
 #if UNITY_6000_5_OR_NEWER
-        foreach (KeyValuePair<ulong, SerializableRigidbody> dict in JsonConvert
-                     .DeserializeObject<Dictionary<ulong, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
+        foreach (var dict in JsonConvert
+                     .DeserializeObject<Dictionary<long, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
 #else
-        foreach (KeyValuePair<int, SerializableRigidbody> dict in JsonConvert
+        foreach (var dict in JsonConvert
                      .DeserializeObject<Dictionary<int, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
 #endif
         {
@@ -412,7 +412,7 @@ public static class Decompiler
     private static string _schematicDirectoryPath;
     private static SchematicObjectDataList _schematicData;
 #if UNITY_6000_5_OR_NEWER
-    private static Dictionary<ulong, Transform> _objectFromId;
+    private static Dictionary<long, Transform> _objectFromId;
 #else
 	private static Dictionary<int, Transform> _objectFromId;
 #endif

@@ -38,7 +38,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
                 targetCenter = Vector3.zero;
 
 #if UNITY_6000_5_OR_NEWER
-            var ids = new List<ulong>();
+            var ids = new List<long>();
 #else
             var ids = new List<int>();
 #endif

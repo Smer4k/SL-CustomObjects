@@ -9,8 +9,7 @@ using Newtonsoft.Json;
 public class SchematicObjectDataList
 {
 #if UNITY_6000_5_OR_NEWER
-    [JsonConverter(typeof(UncheckedULongConverter))]
-    public ulong RootObjectId { get; set; }
+    public long RootObjectId { get; set; }
 #else
     public int RootObjectId { get; set; }
 #endif

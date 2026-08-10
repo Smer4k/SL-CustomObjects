@@ -16,8 +16,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
         public BlockType BlockType;
 
 #if UNITY_6000_5_OR_NEWER
-        [JsonConverter(typeof(UncheckedULongConverter))]
-        public ulong TargetId;
+        public long TargetId;
 #else
         public int TargetId;
 #endif

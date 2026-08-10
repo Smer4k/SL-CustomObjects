@@ -144,7 +144,7 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
         }
 
 #if UNITY_6000_5_OR_NEWER
-        public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<ulong, Transform> objectFromId)
+        public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<long, Transform> objectFromId)
 #else
         public static void RebindTargets(List<ActionEventList> eventLists, IReadOnlyDictionary<int, Transform> objectFromId)
 #endif

@@ -408,7 +408,7 @@ namespace DONT_TOUCH.Scripts.Editors
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
                 var newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
 #if UNITY_6000_5_OR_NEWER
-                if (targetIdProperty.ulongValue != newTargetIdProp) targetIdProperty.ulongValue = newTargetIdProp;
+                if (targetIdProperty.longValue != newTargetIdProp) targetIdProperty.longValue = newTargetIdProp;
 #else
                 if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
 #endif
@@ -425,7 +425,7 @@ namespace DONT_TOUCH.Scripts.Editors
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
                 var newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
 #if UNITY_6000_5_OR_NEWER
-                if (targetIdProperty.ulongValue != newTargetIdProp) targetIdProperty.ulongValue = newTargetIdProp;
+                if (targetIdProperty.longValue != newTargetIdProp) targetIdProperty.longValue = newTargetIdProp;
 #else
                 if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
 #endif
@@ -436,7 +436,7 @@ namespace DONT_TOUCH.Scripts.Editors
             GameObject targetObject = targetProperty.objectReferenceValue as GameObject;
             var newTargetId = targetObject != null ? targetObject.GetId() : 0;
 #if UNITY_6000_5_OR_NEWER
-            if (targetIdProperty.ulongValue != newTargetId) targetIdProperty.ulongValue = newTargetId;
+            if (targetIdProperty.longValue != newTargetId) targetIdProperty.longValue = newTargetId;
 #else
             if (targetIdProperty.intValue != newTargetId) targetIdProperty.intValue = newTargetId;
 #endif

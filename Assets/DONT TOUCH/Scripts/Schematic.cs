@@ -25,7 +25,7 @@ public class Schematic : SchematicBlock
     {
         SetupOutput(out string schematicDirectoryPath);
 
-        ulong rootObjectId = transform.GetId();
+        var rootObjectId = transform.GetId();
         BlockList.RootObjectId = rootObjectId;
         BlockList.Blocks.Clear();
         RigidbodyDictionary.Clear();
@@ -168,7 +168,13 @@ public class Schematic : SchematicBlock
     }
 
     internal readonly SchematicObjectDataList BlockList = new();
-    internal readonly Dictionary<ulong, SerializableRigidbody> RigidbodyDictionary = new();
+    
+#if UNITY_6000_5_OR_NEWER
+    internal readonly Dictionary<long, SerializableRigidbody> RigidbodyDictionary = new();
+#else 
+    internal readonly Dictionary<int, SerializableRigidbody> RigidbodyDictionary = new();
+#endif
+    
     internal readonly List<SerializableTeleport> Teleports = new();
 
     private static BuildAssetBundleOptions AssetBundleBuildOptions => BuildAssetBundleOptions.ChunkBasedCompression |
