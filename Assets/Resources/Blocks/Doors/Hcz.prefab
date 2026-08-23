@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4579202040628570}
   - component: {fileID: 33454203357824576}
   - component: {fileID: 23690015919770744}
+  - component: {fileID: 1014245828231767320}
   m_Layer: 0
   m_Name: Door_Left
   m_TagString: EditorOnly
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1014245828231767320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016074385352283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1050015462021942
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +108,7 @@ GameObject:
   - component: {fileID: 4805112278389351}
   - component: {fileID: 33282010101975635}
   - component: {fileID: 23797420850462876}
+  - component: {fileID: 3798703201425786298}
   m_Layer: 0
   m_Name: Lock_Up
   m_TagString: EditorOnly
@@ -168,6 +182,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3798703201425786298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050015462021942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1117375075287729
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4970555310300339}
+  - component: {fileID: 848261550590491243}
   m_Layer: 0
   m_Name: Stator
   m_TagString: EditorOnly
@@ -199,6 +226,18 @@ Transform:
   m_Father: {fileID: 4406482872540679}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: -0, z: 180}
+--- !u!114 &848261550590491243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117375075287729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1117725781894728
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4406482872540679}
+  - component: {fileID: 8897340260456172828}
   m_Layer: 0
   m_Name: Frame
   m_TagString: EditorOnly
@@ -235,6 +275,18 @@ Transform:
   m_Father: {fileID: 4382907420484891}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8897340260456172828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117725781894728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1129101691238932
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4016745735867293}
+  - component: {fileID: 298041527856274328}
   m_Layer: 0
   m_Name: GFX
   m_TagString: EditorOnly
@@ -384,6 +437,18 @@ Transform:
   m_Father: {fileID: 4406482872540679}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &298041527856274328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155726034530320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1166050591795793
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ae4544d3661e4a9ef0c287b94ec20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   DoorType: 1
   IsOpen: 0
   IsLocked: 0
@@ -533,6 +599,7 @@ GameObject:
   - component: {fileID: 4989810571463851}
   - component: {fileID: 33555846210403863}
   - component: {fileID: 23103162497151930}
+  - component: {fileID: 7122580033396146399}
   m_Layer: 0
   m_Name: Door_Left_001
   m_TagString: EditorOnly
@@ -606,6 +673,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7122580033396146399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244215445097175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1394677858224669
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +696,7 @@ GameObject:
   - component: {fileID: 4559657955801603}
   - component: {fileID: 33113552713716944}
   - component: {fileID: 23752493621680841}
+  - component: {fileID: 1758824984020652633}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: EditorOnly
@@ -689,6 +769,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1758824984020652633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394677858224669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449789174167791
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4676731111563678}
+  - component: {fileID: 8426769903070419048}
   m_Layer: 0
   m_Name: HCZ_Doors_Doorframe
   m_TagString: EditorOnly
@@ -754,6 +847,18 @@ Transform:
   m_Father: {fileID: 4406482872540679}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8426769903070419048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525686420892986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1526527913574099
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +902,7 @@ GameObject:
   - component: {fileID: 4237096256364592}
   - component: {fileID: 33976670565116750}
   - component: {fileID: 23250412076558487}
+  - component: {fileID: 6775290327222475748}
   m_Layer: 0
   m_Name: HCZ_Doors_Smalll (forward - blue)
   m_TagString: EditorOnly
@@ -869,6 +975,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6775290327222475748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565634323331319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1585725323350999
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +998,7 @@ GameObject:
   - component: {fileID: 4898740060127748}
   - component: {fileID: 33258735138853818}
   - component: {fileID: 23713583962573505}
+  - component: {fileID: 3728708815450272430}
   m_Layer: 0
   m_Name: HCZ_Doors_Doorframe
   m_TagString: EditorOnly
@@ -952,6 +1071,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3728708815450272430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585725323350999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650542349452268
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +1094,7 @@ GameObject:
   - component: {fileID: 4011408384453455}
   - component: {fileID: 33230371129465705}
   - component: {fileID: 23671047214900536}
+  - component: {fileID: 1182284895006934660}
   m_Layer: 0
   m_Name: HczButton (1)
   m_TagString: EditorOnly
@@ -1035,6 +1167,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1182284895006934660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650542349452268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672370797149366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1190,7 @@ GameObject:
   - component: {fileID: 4309023319303920}
   - component: {fileID: 33854253829179361}
   - component: {fileID: 23341763509330054}
+  - component: {fileID: 8970337751241729055}
   m_Layer: 0
   m_Name: HCZ_Doors_Smalll (back - yellow)
   m_TagString: EditorOnly
@@ -1118,6 +1263,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8970337751241729055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672370797149366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1685403254042277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4575254582530973}
+  - component: {fileID: 5836842550887877479}
   m_Layer: 0
   m_Name: Movable Part
   m_TagString: EditorOnly
@@ -1149,6 +1307,18 @@ Transform:
   m_Father: {fileID: 4805112278389351}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5836842550887877479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685403254042277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1747710685898715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1362,7 @@ GameObject:
   - component: {fileID: 4740083233107280}
   - component: {fileID: 33300278640580624}
   - component: {fileID: 23654763576010479}
+  - component: {fileID: 805248508069560544}
   m_Layer: 0
   m_Name: HczButton
   m_TagString: EditorOnly
@@ -1264,6 +1435,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &805248508069560544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749440912178672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1884818975964461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1490,7 @@ GameObject:
   - component: {fileID: 4838858840629531}
   - component: {fileID: 33640662218982020}
   - component: {fileID: 23371732623295612}
+  - component: {fileID: 3587845952073166886}
   m_Layer: 0
   m_Name: Quad
   m_TagString: EditorOnly
@@ -1379,6 +1563,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3587845952073166886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906864487059437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1910188608582495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1669,7 @@ GameObject:
   - component: {fileID: 4001200113490182}
   - component: {fileID: 33047837231175871}
   - component: {fileID: 23095063972864643}
+  - component: {fileID: 4802765878376632891}
   m_Layer: 0
   m_Name: HCZ_Doors_Doorframe
   m_TagString: EditorOnly
@@ -1545,6 +1742,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4802765878376632891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913536508977220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1935174379384236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1765,7 @@ GameObject:
   - component: {fileID: 4481721436862387}
   - component: {fileID: 33497045131801225}
   - component: {fileID: 23589237581167930}
+  - component: {fileID: 6265227863710294918}
   m_Layer: 0
   m_Name: Lock_Down
   m_TagString: EditorOnly
@@ -1628,6 +1838,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6265227863710294918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935174379384236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1977756293585319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,6 +1859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4441651556277880}
+  - component: {fileID: 9203926525217505400}
   m_Layer: 0
   m_Name: Cable Tray
   m_TagString: EditorOnly
@@ -1661,3 +1884,15 @@ Transform:
   m_Father: {fileID: 4382907420484891}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9203926525217505400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977756293585319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

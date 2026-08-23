@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6386882161939925839}
+  - component: {fileID: 4102105156947052702}
   m_Layer: 30
   m_Name: Small Chamber
   m_TagString: EditorOnly
@@ -33,6 +34,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4102105156947052702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388364298533057410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388382385820400059
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,6 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394041757237034676}
+  - component: {fileID: 463565561869103327}
   m_Layer: 0
   m_Name: Chamber 9
   m_TagString: EditorOnly
@@ -65,6 +79,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463565561869103327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388382385820400059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388429109988912749
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,6 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387020944572773453}
+  - component: {fileID: 602018571563113740}
   m_Layer: 30
   m_Name: Small Chamber (3)
   m_TagString: EditorOnly
@@ -98,6 +125,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &602018571563113740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388429109988912749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388483750065349549
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +148,7 @@ GameObject:
   - component: {fileID: 6387145830478295357}
   - component: {fileID: 6402577475673007772}
   - component: {fileID: 6411204876287815971}
+  - component: {fileID: 786312586396137694}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -181,6 +221,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &786312586396137694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388483750065349549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388486223563070667
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +244,7 @@ GameObject:
   - component: {fileID: 6386836380068475011}
   - component: {fileID: 6400786532257864028}
   - component: {fileID: 6411113711933976849}
+  - component: {fileID: 8788023873881891257}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -264,6 +317,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8788023873881891257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388486223563070667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388504865845066331
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387228160791480208}
+  - component: {fileID: 4508119693345934824}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -295,6 +361,18 @@ Transform:
   m_Father: {fileID: 6386882161939925839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 110.1352, y: -26.31814, z: -51.8016}
+--- !u!114 &4508119693345934824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388504865845066331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388539598981607941
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +386,7 @@ GameObject:
   - component: {fileID: 6412748487150044785}
   - component: {fileID: 6361663258926446456}
   - component: {fileID: 6362426918691172007}
+  - component: {fileID: 5994129139518961760}
   m_Layer: 0
   m_Name: Drawer
   m_TagString: EditorOnly
@@ -408,6 +487,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01989142, y: 0.02575872, z: 0.0006973605}
   m_Center: {x: 0.009549702, y: -0.007346455, z: -0.01407464}
+--- !u!114 &5994129139518961760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388539598981607941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388547933998171901
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387177763043530907}
+  - component: {fileID: 6876309046438482974}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -439,6 +531,18 @@ Transform:
   m_Father: {fileID: 6387091756442661056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -72.1218, z: 0}
+--- !u!114 &6876309046438482974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388547933998171901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388592563727665184
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387107733991124422}
+  - component: {fileID: 3964024973193849904}
   m_Layer: 30
   m_Name: Small Chamber (1)
   m_TagString: EditorOnly
@@ -472,6 +577,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3964024973193849904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388592563727665184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388601226389649487
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +600,7 @@ GameObject:
   - component: {fileID: 6387157670890551445}
   - component: {fileID: 6402805184988346142}
   - component: {fileID: 6412873288826519413}
+  - component: {fileID: 7187546502316651933}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -555,6 +673,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7187546502316651933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388601226389649487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388604399881574442
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394293130972008555}
+  - component: {fileID: 7335367373219539137}
   m_Layer: 30
   m_Name: Large Chamber (2)
   m_TagString: EditorOnly
@@ -588,6 +719,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7335367373219539137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388604399881574442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388607051618867949
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +742,7 @@ GameObject:
   - component: {fileID: 6386879065388431477}
   - component: {fileID: 6402672494009258191}
   - component: {fileID: 6413079291778352208}
+  - component: {fileID: 1353656517851070733}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -671,6 +815,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1353656517851070733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388607051618867949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388630827382789900
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +838,7 @@ GameObject:
   - component: {fileID: 6394463399914651459}
   - component: {fileID: 6400914060607630157}
   - component: {fileID: 6412864341905867211}
+  - component: {fileID: 8403794737506023468}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -754,6 +911,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8403794737506023468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388630827382789900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388636304563656642
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6386784876726874035}
+  - component: {fileID: 1482117458349174761}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -785,6 +955,18 @@ Transform:
   m_Father: {fileID: 6387107733991124422}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 110.1352, y: -26.31814, z: -51.8016}
+--- !u!114 &1482117458349174761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388636304563656642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388682549785275623
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394455849627607743}
+  - component: {fileID: 8460547913223843619}
   m_Layer: 30
   m_Name: Small Chamber (2)
   m_TagString: EditorOnly
@@ -818,6 +1001,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8460547913223843619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388682549785275623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388685020531320863
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,6 +1022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394045040514850230}
+  - component: {fileID: 3225418386734527654}
   m_Layer: 30
   m_Name: Large Chamber
   m_TagString: EditorOnly
@@ -851,6 +1047,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3225418386734527654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388685020531320863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388699218404884166
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +1068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394166716555534025}
+  - component: {fileID: 6168868479774047617}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -882,6 +1091,18 @@ Transform:
   m_Father: {fileID: 6394455849627607743}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 110.1352, y: -26.31814, z: -51.8016}
+--- !u!114 &6168868479774047617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388699218404884166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388726263549709286
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +1112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394065315618879750}
+  - component: {fileID: 3032070232162418729}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -913,6 +1135,18 @@ Transform:
   m_Father: {fileID: 6394293130972008555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -72.1218, z: 0}
+--- !u!114 &3032070232162418729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388726263549709286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388749123648327949
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +1156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387091756442661056}
+  - component: {fileID: 1263177217502588468}
   m_Layer: 30
   m_Name: Large Chamber (1)
   m_TagString: EditorOnly
@@ -946,6 +1181,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263177217502588468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388749123648327949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388773926853261482
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394503719219796404}
+  - component: {fileID: 2223919818248481191}
   m_Layer: 30
   m_Name: Large Chamber (4)
   m_TagString: EditorOnly
@@ -979,6 +1227,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2223919818248481191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388773926853261482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388788826549804535
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387195682057895348}
+  - component: {fileID: 5702393178703865958}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -1010,6 +1271,18 @@ Transform:
   m_Father: {fileID: 6387020944572773453}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 110.1352, y: -26.31814, z: -51.8016}
+--- !u!114 &5702393178703865958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388788826549804535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388790090236069173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1294,7 @@ GameObject:
   - component: {fileID: 6387040161797161689}
   - component: {fileID: 6402681559673166687}
   - component: {fileID: 6412648439907139215}
+  - component: {fileID: 8429880677852362218}
   m_Layer: 0
   m_Name: LockerGFX
   m_TagString: EditorOnly
@@ -1106,6 +1380,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8429880677852362218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388790090236069173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388870870817224557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394340951678577087}
+  - component: {fileID: 1730705521946951225}
   m_Layer: 0
   m_Name: ForceTarget
   m_TagString: EditorOnly
@@ -1137,6 +1424,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730705521946951225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388870870817224557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388889880728203668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387032864036710325}
+  - component: {fileID: 7253555285582321436}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -1168,6 +1468,18 @@ Transform:
   m_Father: {fileID: 6394503719219796404}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -72.1218, z: 0}
+--- !u!114 &7253555285582321436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388889880728203668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388935019127958316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a1663237b9463697c2bacc0b552379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   Chambers:
   - AcceptableItems: 15000000170000001e000000240000002500000026000000
     IsOpen: 0
@@ -1327,6 +1640,7 @@ GameObject:
   - component: {fileID: 6386977536818084041}
   - component: {fileID: 6402810137540729806}
   - component: {fileID: 6412523431836492428}
+  - component: {fileID: 8783874730319624111}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -1399,6 +1713,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8783874730319624111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388988591046369321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6388990847804416666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1736,7 @@ GameObject:
   - component: {fileID: 6394047759021000204}
   - component: {fileID: 6402439675127580201}
   - component: {fileID: 6412669972237951751}
+  - component: {fileID: 1366120709375281060}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -1482,6 +1809,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1366120709375281060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388990847804416666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6389005256567161785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,6 +1830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394212553248416447}
+  - component: {fileID: 5949367898142078566}
   m_Layer: 30
   m_Name: Large Chamber (3)
   m_TagString: EditorOnly
@@ -1515,6 +1855,18 @@ Transform:
   m_Father: {fileID: 6387040161797161689}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5949367898142078566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389005256567161785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6389055352334128327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1878,7 @@ GameObject:
   - component: {fileID: 6387045599593964431}
   - component: {fileID: 6402278442427574536}
   - component: {fileID: 6412788300701472745}
+  - component: {fileID: 4969686782570433587}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -1598,6 +1951,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4969686782570433587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389055352334128327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6389079121936023211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394085683541361861}
+  - component: {fileID: 1919136176333597812}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -1629,6 +1995,18 @@ Transform:
   m_Father: {fileID: 6394045040514850230}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -72.1218, z: 0}
+--- !u!114 &1919136176333597812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389079121936023211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6389092808323537248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +2016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394309960484880234}
+  - component: {fileID: 4869756642872721528}
   m_Layer: 0
   m_Name: Spawnpoint (9)
   m_TagString: EditorOnly
@@ -1660,6 +2039,18 @@ Transform:
   m_Father: {fileID: 6387056465765500991}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 88.61256, y: -0.762455, z: 61.24911}
+--- !u!114 &4869756642872721528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389092808323537248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6389154573655407433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,6 +2062,7 @@ GameObject:
   - component: {fileID: 6394054085317188170}
   - component: {fileID: 6402393566300550260}
   - component: {fileID: 6412650774921325893}
+  - component: {fileID: 2715877096727870426}
   m_Layer: 0
   m_Name: Screen
   m_TagString: EditorOnly
@@ -1743,6 +2135,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2715877096727870426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389154573655407433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6389186162856178818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +2158,7 @@ GameObject:
   - component: {fileID: 6394349380131550343}
   - component: {fileID: 6402530281845402864}
   - component: {fileID: 6412774051337627622}
+  - component: {fileID: 737805287743433633}
   m_Layer: 30
   m_Name: Door
   m_TagString: EditorOnly
@@ -1826,6 +2231,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &737805287743433633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389186162856178818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6390514233569591408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +2254,7 @@ GameObject:
   - component: {fileID: 6387197160570231724}
   - component: {fileID: 6402599667044515506}
   - component: {fileID: 6410909415597768239}
+  - component: {fileID: 3595487742140602409}
   m_Layer: 0
   m_Name: leaflet
   m_TagString: EditorOnly
@@ -1909,6 +2327,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3595487742140602409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390514233569591408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6390599320965811426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +2348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6394106634966117842}
+  - component: {fileID: 8371419636050180716}
   m_Layer: 30
   m_Name: Spawnpoint
   m_TagString: EditorOnly
@@ -1940,3 +2371,15 @@ Transform:
   m_Father: {fileID: 6394212553248416447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -72.1218, z: 0}
+--- !u!114 &8371419636050180716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390599320965811426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

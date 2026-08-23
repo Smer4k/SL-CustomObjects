@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4970382025177208}
   - component: {fileID: 33090048716670946}
   - component: {fileID: 23147989831918694}
+  - component: {fileID: 6557857449608788728}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet_LOD0
   m_TagString: Untagged
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6557857449608788728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088576941299724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1090067945167993
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4038520054452698}
+  - component: {fileID: 7685027290300968562}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_CrateB
   m_TagString: Untagged
@@ -116,6 +130,18 @@ Transform:
   m_Father: {fileID: 4784927182222584}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -180, y: -2.7213914, z: 180}
+--- !u!114 &7685027290300968562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090067945167993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1187435619333411
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +153,7 @@ GameObject:
   - component: {fileID: 4478485935827359}
   - component: {fileID: 33455439279144481}
   - component: {fileID: 23960390087379225}
+  - component: {fileID: 8775536919745352500}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_BoxB
   m_TagString: Untagged
@@ -200,6 +227,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8775536919745352500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187435619333411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399153531340073
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +250,7 @@ GameObject:
   - component: {fileID: 4164813665703039}
   - component: {fileID: 33826609716704233}
   - component: {fileID: 23530725033379040}
+  - component: {fileID: 7546849771772273305}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_BoxA (1)
   m_TagString: Untagged
@@ -284,6 +324,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7546849771772273305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399153531340073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1438855613408892
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +347,7 @@ GameObject:
   - component: {fileID: 4585543637844008}
   - component: {fileID: 33109515202225575}
   - component: {fileID: 23558271448118035}
+  - component: {fileID: 3881548703118600387}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_CrateB
   m_TagString: Untagged
@@ -368,6 +421,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3881548703118600387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438855613408892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1630027962551106
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +444,7 @@ GameObject:
   - component: {fileID: 4206810023001608}
   - component: {fileID: 33289880223239971}
   - component: {fileID: 23657278527437951}
+  - component: {fileID: 668629519309934373}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_Cratelarge_LOD0
   m_TagString: Untagged
@@ -452,6 +518,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &668629519309934373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630027962551106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1674346578573111
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4784927182222584}
+  - component: {fileID: 7040229333595858076}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ClutterB
   m_TagString: Untagged
@@ -492,6 +571,18 @@ Transform:
   m_Father: {fileID: 4134478172582008}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &7040229333595858076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674346578573111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680602335970184
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4084442221436822}
+  - component: {fileID: 3757809973437625674}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet (1)
   m_TagString: Untagged
@@ -524,6 +616,18 @@ Transform:
   m_Father: {fileID: 4784927182222584}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -180, y: -11.884205, z: 180}
+--- !u!114 &3757809973437625674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680602335970184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1774996649011952
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4418253114562183}
+  - component: {fileID: 4482459440582463952}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Cratelarge
   m_TagString: Untagged
@@ -556,6 +661,18 @@ Transform:
   m_Father: {fileID: 4784927182222584}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -180, y: -27.5732, z: 180}
+--- !u!114 &4482459440582463952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774996649011952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1784076305770171
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +684,7 @@ GameObject:
   - component: {fileID: 4139438482871600}
   - component: {fileID: 33547407952245854}
   - component: {fileID: 23564317296721898}
+  - component: {fileID: 2130018328578162208}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet_LOD0
   m_TagString: Untagged
@@ -640,6 +758,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2130018328578162208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784076305770171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1801937120304810
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4733792083279030}
+  - component: {fileID: 2773705719047353936}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_CrateA
   m_TagString: Untagged
@@ -672,6 +803,18 @@ Transform:
   m_Father: {fileID: 4784927182222584}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 85.87058, z: 0}
+--- !u!114 &2773705719047353936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801937120304810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1835494403667554
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +874,7 @@ GameObject:
   - component: {fileID: 4088496245498058}
   - component: {fileID: 33038903506512716}
   - component: {fileID: 23379703121092943}
+  - component: {fileID: 5512565637360112186}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_BoxA
   m_TagString: Untagged
@@ -804,6 +948,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5512565637360112186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866019970602501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1868888189174914
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +971,7 @@ GameObject:
   - component: {fileID: 4965415106149042}
   - component: {fileID: 33920098345561312}
   - component: {fileID: 23479638960243044}
+  - component: {fileID: 8597844359987234521}
   m_Layer: 0
   m_Name: cabletray_Deadend
   m_TagString: Untagged
@@ -889,6 +1046,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8597844359987234521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868888189174914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897419529344795
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +1067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4166604819941250}
+  - component: {fileID: 4740633606436653533}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet
   m_TagString: Untagged
@@ -921,6 +1091,18 @@ Transform:
   m_Father: {fileID: 4784927182222584}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -180, y: -11.884205, z: 180}
+--- !u!114 &4740633606436653533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897419529344795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1901711859333126
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +1114,7 @@ GameObject:
   - component: {fileID: 4011665376250132}
   - component: {fileID: 33468466517061909}
   - component: {fileID: 23499463202948926}
+  - component: {fileID: 7024832276337786452}
   m_Layer: 0
   m_Name: Atlas_WoodCardboard_CrateA
   m_TagString: Untagged
@@ -1005,6 +1188,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7024832276337786452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901711859333126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1944907500122849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4969920619158306}
+  - component: {fileID: 3180194119192155022}
   m_Layer: 0
   m_Name: seal
   m_TagString: Untagged
@@ -1037,6 +1233,18 @@ Transform:
   m_Father: {fileID: 4134478172582008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &3180194119192155022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944907500122849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1984872666878654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1256,7 @@ GameObject:
   - component: {fileID: 4852553714141050}
   - component: {fileID: 33875878940591799}
   - component: {fileID: 23890061896732149}
+  - component: {fileID: 2491596001328817320}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Cratedoublelarge
   m_TagString: Untagged
@@ -1121,3 +1330,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2491596001328817320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984872666878654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

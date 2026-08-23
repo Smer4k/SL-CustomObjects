@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4001370271473261}
   - component: {fileID: 33709549211985880}
   - component: {fileID: 23052250882465005}
+  - component: {fileID: 4609096217059737209}
   m_Layer: 18
   m_Name: szklo
   m_TagString: Untagged
@@ -83,6 +84,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4609096217059737209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054174762694002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1330215074463493
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a14b8a6a164edaa3b28e1dac1edcd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   CameraType: 2
   Label: 
 --- !u!1 &1348511819884580
@@ -140,6 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4675985061044036}
+  - component: {fileID: 391113227976070189}
   m_Layer: 18
   m_Name: Zoom Pivot
   m_TagString: Untagged
@@ -162,6 +177,18 @@ Transform:
   m_Father: {fileID: 4533547542099229}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &391113227976070189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348511819884580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458170324708992
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4563692695233934}
+  - component: {fileID: 2899965203302685028}
   m_Layer: 18
   m_Name: CameraPosition
   m_TagString: Untagged
@@ -193,6 +221,18 @@ Transform:
   m_Father: {fileID: 4533547542099229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &2899965203302685028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458170324708992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1711920499354289
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +244,7 @@ GameObject:
   - component: {fileID: 4584712825671332}
   - component: {fileID: 33837604170836675}
   - component: {fileID: 23325009736495085}
+  - component: {fileID: 9159682905231069014}
   m_Layer: 18
   m_Name: Base
   m_TagString: Untagged
@@ -276,6 +317,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9159682905231069014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711920499354289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1740355703142239
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4533547542099229}
+  - component: {fileID: 5346488660412974003}
   m_Layer: 18
   m_Name: Vertical Pivot
   m_TagString: Untagged
@@ -309,6 +363,18 @@ Transform:
   m_Father: {fileID: 4718707951094389}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 14.999996, y: -0, z: -0}
+--- !u!114 &5346488660412974003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740355703142239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1776549764678749
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4718707951094389}
+  - component: {fileID: 5255419094087593529}
   m_Layer: 18
   m_Name: Horizontal Pivot
   m_TagString: Untagged
@@ -342,6 +409,18 @@ Transform:
   m_Father: {fileID: 4848780072831241}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &5255419094087593529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776549764678749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1997169718194205
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +432,7 @@ GameObject:
   - component: {fileID: 4614969276622995}
   - component: {fileID: 33404526736940090}
   - component: {fileID: 23318803493387850}
+  - component: {fileID: 4750400408993227744}
   m_Layer: 18
   m_Name: CamModel
   m_TagString: Untagged
@@ -426,3 +506,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4750400408993227744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997169718194205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4735698850767000}
   - component: {fileID: 33999735442775078}
   - component: {fileID: 23235314724177356}
+  - component: {fileID: 4816913794194624993}
   m_Layer: 0
   m_Name: LockerDoorLeft_LOD0
   m_TagString: Untagged
@@ -85,6 +86,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4816913794194624993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003123775581359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1009183430135455
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +109,7 @@ GameObject:
   - component: {fileID: 4808485288808446}
   - component: {fileID: 33762200965256427}
   - component: {fileID: 23642610319559139}
+  - component: {fileID: 7870935278242884457}
   m_Layer: 0
   m_Name: LockerBase_LOD0
   m_TagString: Untagged
@@ -168,6 +182,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7870935278242884457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009183430135455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1037081128410172
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +205,7 @@ GameObject:
   - component: {fileID: 4010785328647127}
   - component: {fileID: 33645846635974524}
   - component: {fileID: 23569517075774013}
+  - component: {fileID: 3911186956038241180}
   m_Layer: 0
   m_Name: LockerDoorRight_LOD0
   m_TagString: Untagged
@@ -251,6 +278,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3911186956038241180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037081128410172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053898335731617
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +301,7 @@ GameObject:
   - component: {fileID: 4877356830540026}
   - component: {fileID: 33554155820128020}
   - component: {fileID: 23759281166148455}
+  - component: {fileID: 2148732047083616107}
   m_Layer: 0
   m_Name: LockerLockhole_LOD0
   m_TagString: Untagged
@@ -334,6 +374,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2148732047083616107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053898335731617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1082109982190665
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4777232753668414}
+  - component: {fileID: 8184446602791877479}
   m_Layer: 0
   m_Name: Spawnpoint_A
   m_TagString: DoNotCull
@@ -365,6 +418,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 164.92592, y: 14.843722, z: -139.56392}
+--- !u!114 &8184446602791877479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082109982190665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1090600972919438
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4261292256262137}
+  - component: {fileID: 7688725104408288332}
   m_Layer: 0
   m_Name: Spawnpoint_1
   m_TagString: DoNotCull
@@ -396,6 +462,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 161.94452, y: 52.403057, z: 162.85402}
+--- !u!114 &7688725104408288332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090600972919438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1095612790807476
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4418937510629169}
   - component: {fileID: 64317032490043587}
+  - component: {fileID: 3964224406454259477}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -442,6 +521,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 653f520a0dea13c4686e158fff959b1f, type: 2}
+--- !u!114 &3964224406454259477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095612790807476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101457450743317
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4346219938665341}
+  - component: {fileID: 5652014806052887938}
   m_Layer: 0
   m_Name: Spawnpoint_B
   m_TagString: DoNotCull
@@ -473,6 +565,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 89.18244, y: 18.870462, z: 94.72744}
+--- !u!114 &5652014806052887938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101457450743317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1247415709822860
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +588,7 @@ GameObject:
   - component: {fileID: 4644019432515030}
   - component: {fileID: 33801697558217772}
   - component: {fileID: 23662425229181219}
+  - component: {fileID: 8882997695811053202}
   m_Layer: 0
   m_Name: LockerDeadbolt_LOD0
   m_TagString: Untagged
@@ -556,6 +661,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8882997695811053202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247415709822860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1492094595276189
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4038566697351364}
+  - component: {fileID: 6831986887108409973}
   m_Layer: 0
   m_Name: Spawnpoint_2
   m_TagString: DoNotCull
@@ -587,6 +705,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 151.58745, y: 26.355112, z: 161.86601}
+--- !u!114 &6831986887108409973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492094595276189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1533560889312397
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4352219296677959}
+  - component: {fileID: 9076101197912697407}
   m_Layer: 9
   m_Name: DoorA
   m_TagString: Untagged
@@ -619,6 +750,18 @@ Transform:
   m_Father: {fileID: 4426336113887850}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &9076101197912697407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533560889312397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1683368060899996
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4551828653713255}
+  - component: {fileID: 4690531750917876097}
   m_Layer: 9
   m_Name: DoorB
   m_TagString: Untagged
@@ -651,6 +795,18 @@ Transform:
   m_Father: {fileID: 4426336113887850}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &4690531750917876097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683368060899996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1734395518923196
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a1663237b9463697c2bacc0b552379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   Chambers:
   - AcceptableItems: 
     IsOpen: 0
@@ -774,6 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4833760635830481}
+  - component: {fileID: 794685577960633301}
   m_Layer: 0
   m_Name: Spawnpoint_4
   m_TagString: DoNotCull
@@ -796,6 +954,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 28.059002, y: 34.54323, z: 39.758472}
+--- !u!114 &794685577960633301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778969084875791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918214665507059
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4333819256877813}
+  - component: {fileID: 7982807573660891723}
   m_Layer: 0
   m_Name: Locker Inner Spot Light
   m_TagString: Untagged
@@ -827,6 +998,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90.00004, y: 1.6284438e-12, z: -0.000004829673}
+--- !u!114 &7982807573660891723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918214665507059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1926219133579150
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +1019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4592797687516923}
+  - component: {fileID: 2903433535320107027}
   m_Layer: 0
   m_Name: Spawnpoint_3
   m_TagString: DoNotCull
@@ -858,6 +1042,18 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 164.63116, y: 26.228508, z: 161.79272}
+--- !u!114 &2903433535320107027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926219133579150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1965103052178570
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +1063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4426336113887850}
+  - component: {fileID: 6231405634853984624}
   m_Layer: 0
   m_Name: LockerLODs
   m_TagString: Untagged
@@ -892,3 +1089,15 @@ Transform:
   m_Father: {fileID: 4594145264658493}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &6231405634853984624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965103052178570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

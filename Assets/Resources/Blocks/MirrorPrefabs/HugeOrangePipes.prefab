@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4155212376190354}
   - component: {fileID: 33528543007996792}
   - component: {fileID: 23020319989983578}
+  - component: {fileID: 7721209186111201451}
   m_Layer: 29
   m_Name: Trim_Vents_GridFence_Door
   m_TagString: Untagged
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7721209186111201451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023970559391376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024377765412434
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +108,7 @@ GameObject:
   - component: {fileID: 4399731073458987}
   - component: {fileID: 33163406197776878}
   - component: {fileID: 23731227690306934}
+  - component: {fileID: 8457371197585095250}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_5m_LOD0
   m_TagString: Untagged
@@ -167,6 +181,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8457371197585095250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024377765412434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1104667597887710
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324040139582550}
+  - component: {fileID: 170666698484233119}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Wetsign (1)
   m_TagString: Untagged
@@ -199,6 +226,18 @@ Transform:
   m_Father: {fileID: 4312995579091720}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 13.602645, y: -24.2014, z: -5.665}
+--- !u!114 &170666698484233119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104667597887710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1152501153604283
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4175406968172013}
+  - component: {fileID: 6779536446382139285}
   m_Layer: 0
   m_Name: Collisions (1)
   m_TagString: Untagged
@@ -230,6 +270,18 @@ Transform:
   m_Father: {fileID: 4185004979920619}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: 0.0003380943, z: 180}
+--- !u!114 &6779536446382139285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152501153604283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1161391511987912
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4312995579091720}
+  - component: {fileID: 1266136535308861830}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ClutterG (P2)
   m_TagString: Untagged
@@ -265,6 +318,18 @@ Transform:
   m_Father: {fileID: 4089766374576168}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -0, y: -90, z: 0}
+--- !u!114 &1266136535308861830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161391511987912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1206633574739138
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4873320203806561}
+  - component: {fileID: 2166677215473535354}
   m_Layer: 0
   m_Name: Decal_Puddle
   m_TagString: Untagged
@@ -296,6 +362,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: -0, z: 0}
+--- !u!114 &2166677215473535354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206633574739138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1213652955446602
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4508710164901505}
+  - component: {fileID: 5505385318873681994}
   m_Layer: 0
   m_Name: Decal_Blood_Foot_C
   m_TagString: Untagged
@@ -327,6 +406,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90.000015, y: -31.875292, z: -180}
+--- !u!114 &5505385318873681994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213652955446602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1243882212223380
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4248946460478038}
+  - component: {fileID: 5902200541195535011}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_Door
   m_TagString: Untagged
@@ -360,6 +452,18 @@ Transform:
   m_Father: {fileID: 4312995579091720}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 0.0003380943, z: 180}
+--- !u!114 &5902200541195535011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243882212223380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1274329082853944
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4528684791067411}
+  - component: {fileID: 2870411462897677966}
   m_Layer: 0
   m_Name: Decal_Blood_HandSlide
   m_TagString: Untagged
@@ -391,6 +496,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 23.597881, y: -9.679747, z: -73.32714}
+--- !u!114 &2870411462897677966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274329082853944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1276600375013410
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4857724217839508}
+  - component: {fileID: 5498961509875559150}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ClutterG (P1)
   m_TagString: Untagged
@@ -431,6 +549,18 @@ Transform:
   m_Father: {fileID: 4089766374576168}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -0, y: -90, z: 0}
+--- !u!114 &5498961509875559150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276600375013410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1303163851929860
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4703742511677726}
+  - component: {fileID: 6588093397944235553}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m
   m_TagString: Untagged
@@ -463,6 +594,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -89.999825, y: 0, z: 0}
+--- !u!114 &6588093397944235553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303163851929860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1318506613821623
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4271146264365655}
+  - component: {fileID: 8509154211191244008}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_5m
   m_TagString: Untagged
@@ -495,6 +639,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -89.999825, y: 0, z: 0}
+--- !u!114 &8509154211191244008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318506613821623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1356532507818262
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +662,7 @@ GameObject:
   - component: {fileID: 4757991925622415}
   - component: {fileID: 33913659583205225}
   - component: {fileID: 23585231670264845}
+  - component: {fileID: 4893411743243827667}
   m_Layer: 0
   m_Name: Modular_Large_Pipe_Angle55degre_LOD0
   m_TagString: Untagged
@@ -578,6 +735,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4893411743243827667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356532507818262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1379251708892544
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4380243415087129}
+  - component: {fileID: 5963309949792858077}
   m_Layer: 0
   m_Name: Decal_Blood_Hand_D
   m_TagString: Untagged
@@ -609,6 +779,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: -43.883007, z: 0}
+--- !u!114 &5963309949792858077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379251708892544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1385656556415047
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +802,7 @@ GameObject:
   - component: {fileID: 4413499771129374}
   - component: {fileID: 33493446854804239}
   - component: {fileID: 23624249644984485}
+  - component: {fileID: 740388389154269559}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angle45degre_LOD0
   m_TagString: Untagged
@@ -692,6 +875,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &740388389154269559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385656556415047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1391455682541644
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +898,7 @@ GameObject:
   - component: {fileID: 4988070423588932}
   - component: {fileID: 33292035105343587}
   - component: {fileID: 23858424907507432}
+  - component: {fileID: 5724166235355750195}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m_LOD0
   m_TagString: Untagged
@@ -775,6 +971,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5724166235355750195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391455682541644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1406227209784865
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4084857252490193}
+  - component: {fileID: 6952914568369324776}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angle45degre
   m_TagString: Untagged
@@ -807,6 +1016,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -44.99992, y: -0.00024027584, z: 179.99976}
+--- !u!114 &6952914568369324776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406227209784865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412589126880235
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +1039,7 @@ GameObject:
   - component: {fileID: 4809521971833883}
   - component: {fileID: 33958674823590855}
   - component: {fileID: 23917518545842165}
+  - component: {fileID: 4301450498101678514}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_BucketA_LOD0
   m_TagString: Untagged
@@ -890,6 +1112,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4301450498101678514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412589126880235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1437434368798338
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +1135,7 @@ GameObject:
   - component: {fileID: 4111435658995477}
   - component: {fileID: 33482444158519981}
   - component: {fileID: 23556253144079381}
+  - component: {fileID: 8004736872262709472}
   m_Layer: 0
   m_Name: Atlas_WetSign_LOD0
   m_TagString: Untagged
@@ -973,6 +1208,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8004736872262709472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437434368798338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1442188431288161
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1231,7 @@ GameObject:
   - component: {fileID: 4788911531409900}
   - component: {fileID: 33105453766847965}
   - component: {fileID: 23280910649190019}
+  - component: {fileID: 6271072318493408634}
   m_Layer: 29
   m_Name: Trim_Vents_GridFence_1m
   m_TagString: Untagged
@@ -1057,6 +1305,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6271072318493408634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442188431288161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1464501254574962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,6 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4613135878655525}
+  - component: {fileID: 7830257541895189035}
   m_Layer: 0
   m_Name: Decal_Blood_Splat
   m_TagString: Untagged
@@ -1088,6 +1349,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: -0, z: 0}
+--- !u!114 &7830257541895189035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464501254574962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1469754208964706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,6 +1421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4073556779472453}
+  - component: {fileID: 2074460022063971372}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ClutterG (P4)
   m_TagString: Untagged
@@ -1177,6 +1451,18 @@ Transform:
   m_Father: {fileID: 4089766374576168}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -0, y: -90, z: 0}
+--- !u!114 &2074460022063971372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477836943534707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1525163913461455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4753088488070338}
+  - component: {fileID: 7395625303018930733}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_Door (1)
   m_TagString: Untagged
@@ -1210,6 +1497,18 @@ Transform:
   m_Father: {fileID: 4124252135476028}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7395625303018930733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525163913461455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1535214705942358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1520,7 @@ GameObject:
   - component: {fileID: 4570688239386380}
   - component: {fileID: 33413526879491984}
   - component: {fileID: 23142338667809977}
+  - component: {fileID: 8882704032798288926}
   m_Layer: 29
   m_Name: Trim_Vents_GridFence_Door
   m_TagString: Untagged
@@ -1294,6 +1594,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8882704032798288926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535214705942358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1535866953736599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1617,7 @@ GameObject:
   - component: {fileID: 4875977232574445}
   - component: {fileID: 33927797447549684}
   - component: {fileID: 23053163283601900}
+  - component: {fileID: 8017391534747834743}
   m_Layer: 29
   m_Name: Trim_Vents_GridFence_1m
   m_TagString: Untagged
@@ -1378,6 +1691,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8017391534747834743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535866953736599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554065570013235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1714,7 @@ GameObject:
   - component: {fileID: 4595980737662901}
   - component: {fileID: 33339379203025329}
   - component: {fileID: 23377357546811571}
+  - component: {fileID: 7551840424017595429}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort_LOD0
   m_TagString: Untagged
@@ -1461,6 +1787,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7551840424017595429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554065570013235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564433687923787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4122683232160092}
+  - component: {fileID: 5714089922950737415}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straightsolo_5m
   m_TagString: Untagged
@@ -1493,6 +1832,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -89.99983, y: 0, z: 0}
+--- !u!114 &5714089922950737415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564433687923787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590882180560358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,6 +1855,7 @@ GameObject:
   - component: {fileID: 4771260360410345}
   - component: {fileID: 33736276205427771}
   - component: {fileID: 23029038041274540}
+  - component: {fileID: 2303258874435783322}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Mop_LOD0
   m_TagString: Untagged
@@ -1576,6 +1928,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2303258874435783322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590882180560358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1623041025070848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1951,7 @@ GameObject:
   - component: {fileID: 4899029113193592}
   - component: {fileID: 33292538573102969}
   - component: {fileID: 23475439510783312}
+  - component: {fileID: 2968806231636853143}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_5m_LOD0
   m_TagString: Untagged
@@ -1659,6 +2024,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2968806231636853143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623041025070848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1623973565582775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +2045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4231108923610096}
+  - component: {fileID: 8361705698961997774}
   m_Layer: 0
   m_Name: Modular_Large_Pipe_Angle55degre
   m_TagString: Untagged
@@ -1691,6 +2069,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90.00019, y: -0.00034109564, z: -180}
+--- !u!114 &8361705698961997774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623973565582775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660693911571560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +2090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4017637941844888}
+  - component: {fileID: 3115600627032128007}
   m_Layer: 0
   m_Name: Decal_Blood_Hand_D (1)
   m_TagString: Untagged
@@ -1722,6 +2113,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 62.693214, z: 180}
+--- !u!114 &3115600627032128007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660693911571560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1671922403897148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +2134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4776659762442986}
+  - component: {fileID: 4475139786006866757}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort
   m_TagString: Untagged
@@ -1754,6 +2158,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 1.060833, y: -89.99982, z: 88.93909}
+--- !u!114 &4475139786006866757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671922403897148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1673397124492449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,6 +2181,7 @@ GameObject:
   - component: {fileID: 4097233870404687}
   - component: {fileID: 33682927734972225}
   - component: {fileID: 23165244037554288}
+  - component: {fileID: 3345188890462042291}
   m_Layer: 0
   m_Name: cabletray_Deadend
   m_TagString: Untagged
@@ -1839,6 +2256,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3345188890462042291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673397124492449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696609326124949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,6 +2277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4843563873172216}
+  - component: {fileID: 8561814954591944214}
   m_Layer: 0
   m_Name: Decal_Blood_Foot_C (1)
   m_TagString: Untagged
@@ -1870,6 +2300,18 @@ Transform:
   m_Father: {fileID: 4073556779472453}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90.000046, y: -54.45475, z: -180}
+--- !u!114 &8561814954591944214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696609326124949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1729848097804221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +2323,7 @@ GameObject:
   - component: {fileID: 4682569275257499}
   - component: {fileID: 33668590428814417}
   - component: {fileID: 23938077031902789}
+  - component: {fileID: 5931221892896507039}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet_LOD0
   m_TagString: Untagged
@@ -1954,6 +2397,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5931221892896507039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729848097804221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1758309659618925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,6 +2418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4901662931490746}
+  - component: {fileID: 9063238992892374380}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_1m (3)
   m_TagString: Untagged
@@ -1986,6 +2442,18 @@ Transform:
   m_Father: {fileID: 4312995579091720}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9063238992892374380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758309659618925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1772311542214891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4124252135476028}
+  - component: {fileID: 5709920697345035308}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ClutterG (P3)
   m_TagString: Untagged
@@ -2020,6 +2489,18 @@ Transform:
   m_Father: {fileID: 4089766374576168}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -0, y: -90, z: 0}
+--- !u!114 &5709920697345035308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772311542214891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1821570413619205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,6 +2510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4412977235212393}
+  - component: {fileID: 644240310338108331}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet
   m_TagString: Untagged
@@ -2052,6 +2534,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -74.99911, y: -78.506805, z: -0.000780568}
+--- !u!114 &644240310338108331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821570413619205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1863388067270063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2557,7 @@ GameObject:
   - component: {fileID: 4243390042122362}
   - component: {fileID: 33130447433864069}
   - component: {fileID: 23442590812647490}
+  - component: {fileID: 2445053951984730047}
   m_Layer: 29
   m_Name: Trim_Vents_GridFence_1m
   m_TagString: Untagged
@@ -2136,6 +2631,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2445053951984730047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863388067270063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1865197158713164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4185004979920619}
+  - component: {fileID: 4796404248761501901}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_BucketA
   m_TagString: Untagged
@@ -2169,6 +2677,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4796404248761501901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865197158713164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1886882645524780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,6 +2700,7 @@ GameObject:
   - component: {fileID: 4867255767312520}
   - component: {fileID: 33068215063117240}
   - component: {fileID: 23534272294493164}
+  - component: {fileID: 7216018718324342921}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_Doorfence
   m_TagString: Untagged
@@ -2252,6 +2773,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7216018718324342921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886882645524780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1894364301372687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,6 +2794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4634057988306469}
+  - component: {fileID: 488931528490769220}
   m_Layer: 0
   m_Name: seal
   m_TagString: Untagged
@@ -2284,6 +2818,18 @@ Transform:
   m_Father: {fileID: 4089766374576168}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &488931528490769220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894364301372687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1913305342295990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,6 +2839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4897764752196901}
+  - component: {fileID: 3108508846952840173}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_1m (1)
   m_TagString: Untagged
@@ -2316,6 +2863,18 @@ Transform:
   m_Father: {fileID: 4124252135476028}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3108508846952840173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913305342295990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1927871414449976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,6 +2886,7 @@ GameObject:
   - component: {fileID: 4509435658157861}
   - component: {fileID: 33140058322657836}
   - component: {fileID: 23897790429660225}
+  - component: {fileID: 4611768342671935846}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_Doorfence
   m_TagString: Untagged
@@ -2399,6 +2959,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4611768342671935846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927871414449976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1938875126403861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4046071558631144}
+  - component: {fileID: 5578554697548721055}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_1m (2)
   m_TagString: Untagged
@@ -2431,6 +3004,18 @@ Transform:
   m_Father: {fileID: 4312995579091720}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5578554697548721055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938875126403861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1964281090916612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,6 +3025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4980515990061768}
+  - component: {fileID: 5295274638628149798}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Mop
   m_TagString: Untagged
@@ -2463,6 +3049,18 @@ Transform:
   m_Father: {fileID: 4857724217839508}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -2.623286, y: 0, z: 0}
+--- !u!114 &5295274638628149798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964281090916612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1988515559094487
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,6 +3072,7 @@ GameObject:
   - component: {fileID: 4330273632762448}
   - component: {fileID: 33242133905173499}
   - component: {fileID: 23672961086523304}
+  - component: {fileID: 1798815526196273814}
   m_Layer: 29
   m_Name: Trim_Vents_GridFence_1m
   m_TagString: Untagged
@@ -2547,6 +3146,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1798815526196273814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988515559094487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1989612372421183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +3167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4931071837041744}
+  - component: {fileID: 8639356333149692259}
   m_Layer: 0
   m_Name: Trim_Vents_GridFence_1m
   m_TagString: Untagged
@@ -2579,3 +3191,15 @@ Transform:
   m_Father: {fileID: 4124252135476028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8639356333149692259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989612372421183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

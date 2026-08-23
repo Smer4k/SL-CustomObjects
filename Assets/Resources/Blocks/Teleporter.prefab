@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 222178390568075078}
   - component: {fileID: 8727609442784511029}
   - component: {fileID: 3893498260376050754}
+  - component: {fileID: 8580747185504808844}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -90,6 +91,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8580747185504808844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129146552522554847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &254159507964864611
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,8 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSmoothing: 60
-  ObjectId: 0
-  Id: c67802bb
+  Id: 
   TargetTeleporters: []
   Cooldown: 10
 --- !u!33 &254159507964864608

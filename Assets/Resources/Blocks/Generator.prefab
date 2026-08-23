@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4274303670636188}
   - component: {fileID: 33887312969816373}
   - component: {fileID: 23024252914577434}
+  - component: {fileID: 603233786207436458}
   m_Layer: 9
   m_Name: Right_Glass (1)
   m_TagString: Untagged
@@ -90,6 +91,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &603233786207436458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060945828524476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1371939378208658
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,6 +114,7 @@ GameObject:
   - component: {fileID: 4433013960508438}
   - component: {fileID: 33649986673806370}
   - component: {fileID: 23168105826085154}
+  - component: {fileID: 6142900840291148462}
   m_Layer: 9
   m_Name: Left_Glass (1)
   m_TagString: Untagged
@@ -180,6 +194,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6142900840291148462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371939378208658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587397909062814
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +217,7 @@ GameObject:
   - component: {fileID: 4011164340880974}
   - component: {fileID: 33056248600188076}
   - component: {fileID: 23992816746925483}
+  - component: {fileID: 5547280829315106004}
   m_Layer: 9
   m_Name: Left_Glass
   m_TagString: Untagged
@@ -270,6 +297,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5547280829315106004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587397909062814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672306508523268
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +320,7 @@ GameObject:
   - component: {fileID: 4689010887986514}
   - component: {fileID: 33901155395665742}
   - component: {fileID: 23955215445487071}
+  - component: {fileID: 8878458013546600095}
   m_Layer: 9
   m_Name: Right_Glass
   m_TagString: Untagged
@@ -360,6 +400,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8878458013546600095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672306508523268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1694121525821480
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +423,7 @@ GameObject:
   - component: {fileID: 4038333544927157}
   - component: {fileID: 33146109142143575}
   - component: {fileID: 23168775426067361}
+  - component: {fileID: 2259868572545041061}
   m_Layer: 9
   m_Name: EPS_DOOR2
   m_TagString: Untagged
@@ -452,6 +505,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2259868572545041061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694121525821480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709254077376921
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +579,7 @@ GameObject:
   - component: {fileID: 4719342369648492}
   - component: {fileID: 33726790013014859}
   - component: {fileID: 23436073260064126}
+  - component: {fileID: 3449275890650927484}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -593,6 +659,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3449275890650927484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724804207875695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1730242686860875
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4107629493147155}
+  - component: {fileID: 163898081820026308}
   m_Layer: 0
   m_Name: GeneratorAnims
   m_TagString: Untagged
@@ -627,6 +706,18 @@ Transform:
   - {fileID: 4038333544927157}
   m_Father: {fileID: 4220653531496868}
   m_LocalEulerAnglesHint: {x: 180, y: -0, z: -180}
+--- !u!114 &163898081820026308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918264173551851
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +729,7 @@ GameObject:
   - component: {fileID: 4091882994760266}
   - component: {fileID: 33232094423628703}
   - component: {fileID: 23592460329389196}
+  - component: {fileID: 8260864441565383140}
   m_Layer: 9
   m_Name: EPS_DOOR1
   m_TagString: Untagged
@@ -719,3 +811,15 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8260864441565383140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918264173551851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

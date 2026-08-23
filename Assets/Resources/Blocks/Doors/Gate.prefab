@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6699689901379921572}
   - component: {fileID: 6666087761718294382}
   - component: {fileID: 6674389130426191926}
+  - component: {fileID: 6520803816162280640}
   m_Layer: 27
   m_Name: Door 104
   m_TagString: Door
@@ -83,6 +84,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6520803816162280640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697190457063684996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6697194767555215003
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ae4544d3661e4a9ef0c287b94ec20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   DoorType: 4
   IsOpen: 0
   IsLocked: 0
@@ -146,6 +160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6700034825687134422}
+  - component: {fileID: 7541503213968640664}
   m_Layer: 0
   m_Name: Pry Position (1)
   m_TagString: Untagged
@@ -168,6 +183,18 @@ Transform:
   m_Father: {fileID: 6693848187625308044}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 180, y: 0.0000034151205, z: 180}
+--- !u!114 &7541503213968640664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697302391133658947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6697915019492456986
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6699698774412895323}
+  - component: {fileID: 7619211289503843071}
   m_Layer: 0
   m_Name: Pry Position
   m_TagString: Untagged
@@ -199,6 +227,18 @@ Transform:
   m_Father: {fileID: 6693848187625308044}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &7619211289503843071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697915019492456986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6698742326105114295
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6693997508557474722}
+  - component: {fileID: 3369883688945232475}
   m_Layer: 27
   m_Name: Door Stator
   m_TagString: Untagged
@@ -230,6 +271,18 @@ Transform:
   m_Father: {fileID: 6693848187625308044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 0.0000034151205, z: 180}
+--- !u!114 &3369883688945232475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698742326105114295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6698822705499079108
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +294,7 @@ GameObject:
   - component: {fileID: 6693587651169692076}
   - component: {fileID: 6665600281551396155}
   - component: {fileID: 6674695551150754625}
+  - component: {fileID: 2831801321039353484}
   m_Layer: 27
   m_Name: Door 104-second
   m_TagString: SecondDoor
@@ -313,3 +367,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2831801321039353484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698822705499079108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

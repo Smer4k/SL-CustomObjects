@@ -47,6 +47,7 @@ public static class Decompiler
             Dict.Add(BlockType.AudioPlayer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.AudioPlayerComponent>());
             Dict.Add(BlockType.CullingZone, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingZoneComponent>());
             Dict.Add(BlockType.Generator, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.GeneratorComponent>());
+          	Dict.Add(BlockType.CameraTransfer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.Scp079CameraTransferComponent>());
             return this;
         }
     }
@@ -122,6 +123,7 @@ public static class Decompiler
 
         CreateRecursiveFromID(_schematicData.RootObjectId, _schematicData.Blocks, _rootTransform);
         CreateCullingZone(_schematicData.Blocks);
+      	CreateCameraTransfers(_schematicData.Blocks);
         CreateTeleporters(_schematicData.Blocks);
         CreateActionTargets(_schematicData.Blocks);
         if (_schematicDirectoryPath != null)
@@ -167,6 +169,10 @@ public static class Decompiler
             return null;
 
         GameObject gameObject = null;
+      	if (block.Properties == null)
+		    {
+			      block.Properties = new();
+		    }
 
         if (_schematicBuilder.TryGetBlockFromType(block.BlockType, out SchematicBlock schematicBlock))
         {
@@ -372,6 +378,22 @@ public static class Decompiler
             }
         }
     }
+  
+    private static void CreateCameraTransfers(List<SchematicBlockData> blocks)
+	  {
+		    foreach (var block in blocks)
+		    {
+			    if (block.BlockType != BlockType.CameraTransfer)
+				    continue;
+			    var transfer = _objectFromId[block.ObjectId].GetComponent<Scp079CameraTransferComponent>();
+			    if (!block.Properties.TryGetValue(nameof(Scp079CameraTransferComponent.TargetCamera), out var targetCameraObj))
+				    continue;
+			    if (!_objectFromId.TryGetValue(Convert.ToInt32(targetCameraObj), out var target) ||
+			        !target.TryGetComponent(out Scp079CameraComponent targetCamera))
+				    continue;
+			    transfer.TargetCamera = targetCamera;
+		    }
+	  }
 
     private static void AddRigidbodies()
     {

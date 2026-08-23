@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4454019729059190}
+  - component: {fileID: 2382724920248521544}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m (3)
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 89.99986, y: -0.0005191904, z: -0.00051435956}
+--- !u!114 &2382724920248521544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023445578564937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030305900555125
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +56,7 @@ GameObject:
   - component: {fileID: 4597789566331921}
   - component: {fileID: 33976715525956827}
   - component: {fileID: 23837250152312292}
+  - component: {fileID: 5153740559036047371}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m_LOD0
   m_TagString: Untagged
@@ -115,6 +129,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5153740559036047371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030305900555125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1031641192503026
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4229132694646709}
+  - component: {fileID: 3859411194023638441}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ClutterC
   m_TagString: Untagged
@@ -151,6 +178,18 @@ Transform:
   m_Father: {fileID: 4938473047599943}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &3859411194023638441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031641192503026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1059017475077494
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +201,7 @@ GameObject:
   - component: {fileID: 4041845462316874}
   - component: {fileID: 33586145546508409}
   - component: {fileID: 23320305114687442}
+  - component: {fileID: 299907533756521468}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m_LOD0
   m_TagString: Untagged
@@ -234,6 +274,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &299907533756521468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059017475077494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1059943753813530
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4330844177548485}
+  - component: {fileID: 4429674667380781399}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet
   m_TagString: Untagged
@@ -266,6 +319,18 @@ Transform:
   m_Father: {fileID: 4229132694646709}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 89.75909, y: -89.99982, z: -5.432716}
+--- !u!114 &4429674667380781399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059943753813530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1105872637647569
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4758560997512029}
+  - component: {fileID: 2063637465110765389}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m
   m_TagString: Untagged
@@ -298,6 +364,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 89.99983, y: -0, z: 0}
+--- !u!114 &2063637465110765389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105872637647569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1124787378570025
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +387,7 @@ GameObject:
   - component: {fileID: 4996535101490852}
   - component: {fileID: 33142523757083000}
   - component: {fileID: 23688701934698163}
+  - component: {fileID: 6289373392847775149}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort_LOD0
   m_TagString: Untagged
@@ -381,6 +460,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6289373392847775149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124787378570025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1128397848101121
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +483,7 @@ GameObject:
   - component: {fileID: 4937494009956837}
   - component: {fileID: 33343352584443671}
   - component: {fileID: 23741097224524391}
+  - component: {fileID: 5800300170376825001}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m_LOD0
   m_TagString: Untagged
@@ -464,6 +556,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5800300170376825001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128397848101121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1147750210512699
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +579,7 @@ GameObject:
   - component: {fileID: 4019650862679918}
   - component: {fileID: 33186360794056549}
   - component: {fileID: 23794225626921699}
+  - component: {fileID: 8791102732391158379}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet_LOD0
   m_TagString: Untagged
@@ -548,6 +653,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8791102732391158379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147750210512699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1219639309342385
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +676,7 @@ GameObject:
   - component: {fileID: 4155625677160965}
   - component: {fileID: 33608513595938300}
   - component: {fileID: 23767311868230910}
+  - component: {fileID: 4120503280814100869}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m_LOD0
   m_TagString: Untagged
@@ -631,6 +749,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4120503280814100869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219639309342385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1220898179252462
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +772,7 @@ GameObject:
   - component: {fileID: 4910250846444863}
   - component: {fileID: 33741665206883551}
   - component: {fileID: 23666819579853984}
+  - component: {fileID: 6412212958590871432}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet_LOD0
   m_TagString: Untagged
@@ -715,6 +846,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6412212958590871432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220898179252462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1248991234978848
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4379409074375689}
+  - component: {fileID: 6905770618975657783}
   m_Layer: 0
   m_Name: seal
   m_TagString: Untagged
@@ -747,6 +891,18 @@ Transform:
   m_Father: {fileID: 4938473047599943}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &6905770618975657783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248991234978848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1299226820364210
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4290283214347151}
+  - component: {fileID: 6900308801828436135}
   m_Layer: 0
   m_Name: Small_Pipe (1)
   m_TagString: Untagged
@@ -788,6 +945,18 @@ Transform:
   m_Father: {fileID: 4229132694646709}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6900308801828436135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299226820364210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1433081845561498
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +968,7 @@ GameObject:
   - component: {fileID: 4284450077781143}
   - component: {fileID: 33818997910392543}
   - component: {fileID: 23838246774593775}
+  - component: {fileID: 1312427175018879610}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet_LOD0
   m_TagString: Untagged
@@ -872,6 +1042,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1312427175018879610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433081845561498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1437064394993766
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +1063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4441157174314710}
+  - component: {fileID: 4965774232561286513}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort (6)
   m_TagString: Untagged
@@ -904,6 +1087,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.000015080499, y: 0.000015367925, z: -179.99998}
+--- !u!114 &4965774232561286513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437064394993766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1455657285003129
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +1108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4274592137742592}
+  - component: {fileID: 5148510709810934440}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_1m (1)
   m_TagString: Untagged
@@ -936,6 +1132,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90.00017, y: 0.00017145362, z: 179.99982}
+--- !u!114 &5148510709810934440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455657285003129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1459295364784550
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +1155,7 @@ GameObject:
   - component: {fileID: 4053825470695880}
   - component: {fileID: 33607023007688800}
   - component: {fileID: 23453915252789849}
+  - component: {fileID: 5292097393900099550}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_1m_LOD0
   m_TagString: Untagged
@@ -1019,6 +1228,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5292097393900099550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459295364784550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1470762531199107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1251,7 @@ GameObject:
   - component: {fileID: 4848994058033021}
   - component: {fileID: 33722666383257359}
   - component: {fileID: 23311049669903328}
+  - component: {fileID: 4369420269483110205}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort_LOD0
   m_TagString: Untagged
@@ -1102,6 +1324,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4369420269483110205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470762531199107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1485905973063643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,6 +1345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4067526404076716}
+  - component: {fileID: 957942340117568168}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m (1)
   m_TagString: Untagged
@@ -1134,6 +1369,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 179.99966, y: 0.00033809335, z: -0.00033809428}
+--- !u!114 &957942340117568168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485905973063643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1491551192647657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4216863963613870}
+  - component: {fileID: 5822598151292487862}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort (7)
   m_TagString: Untagged
@@ -1166,6 +1414,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: 0.000015367925, z: 90.00015}
+--- !u!114 &5822598151292487862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491551192647657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1506341633500530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1437,7 @@ GameObject:
   - component: {fileID: 4542315465435296}
   - component: {fileID: 33728176960142585}
   - component: {fileID: 23699610943493528}
+  - component: {fileID: 3766405745554598369}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_1m_LOD0
   m_TagString: Untagged
@@ -1249,6 +1510,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3766405745554598369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506341633500530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1555878421960189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4175822636116679}
+  - component: {fileID: 5206965964342222478}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_3m (2)
   m_TagString: Untagged
@@ -1281,6 +1555,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 179.99966, y: 0.00033809335, z: -0.00033809428}
+--- !u!114 &5206965964342222478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555878421960189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1558774403824428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4566896317602542}
+  - component: {fileID: 161982701146176851}
   m_Layer: 0
   m_Name: Small_Pipe
   m_TagString: Untagged
@@ -1312,6 +1599,18 @@ Transform:
   m_Father: {fileID: 4229132694646709}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161982701146176851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558774403824428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1583062235139831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4209471820542946}
+  - component: {fileID: 9014492130400301081}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Straight_1m
   m_TagString: Untagged
@@ -1392,6 +1692,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 180, y: 0.00034833964, z: 180}
+--- !u!114 &9014492130400301081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608470503580371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1896969807015160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1715,7 @@ GameObject:
   - component: {fileID: 4409558028301310}
   - component: {fileID: 33777449885067376}
   - component: {fileID: 23803651743661638}
+  - component: {fileID: 2123639561011944443}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort_LOD0
   m_TagString: Untagged
@@ -1475,6 +1788,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2123639561011944443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896969807015160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1906602081722535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1811,7 @@ GameObject:
   - component: {fileID: 4148872865604015}
   - component: {fileID: 33112160099835698}
   - component: {fileID: 23436564038013898}
+  - component: {fileID: 541485716306532148}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort_LOD0
   m_TagString: Untagged
@@ -1558,6 +1884,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &541485716306532148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906602081722535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1916265133546587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1907,7 @@ GameObject:
   - component: {fileID: 4147073137716767}
   - component: {fileID: 33708120497997720}
   - component: {fileID: 23283622259796534}
+  - component: {fileID: 1531017014191655124}
   m_Layer: 0
   m_Name: cabletray_Deadend
   m_TagString: Untagged
@@ -1643,6 +1982,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1531017014191655124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916265133546587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1953250574249640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,6 +2003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4681456878200905}
+  - component: {fileID: 3621615688713416366}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort (9)
   m_TagString: Untagged
@@ -1675,6 +2027,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 180, y: 0.000015367925, z: 90.00015}
+--- !u!114 &3621615688713416366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953250574249640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1958324540813806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +2048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4230700517331590}
+  - component: {fileID: 1435840170689458805}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet (2)
   m_TagString: Untagged
@@ -1707,6 +2072,18 @@ Transform:
   m_Father: {fileID: 4229132694646709}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -0.9689968, y: -0.00015649803, z: 84.05462}
+--- !u!114 &1435840170689458805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958324540813806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1979940464064845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +2093,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4919608240885203}
+  - component: {fileID: 5909416034569030898}
   m_Layer: 0
   m_Name: Modular_Small_Pipe_Angleshort (8)
   m_TagString: Untagged
@@ -1739,6 +2117,18 @@ Transform:
   m_Father: {fileID: 4290283214347151}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -0.000015080499, y: 0.000015367925, z: -179.99998}
+--- !u!114 &5909416034569030898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979940464064845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1989439273706919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +2138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4720074585171997}
+  - component: {fileID: 2301927162396922286}
   m_Layer: 0
   m_Name: Atlas_Wood_Cardboard_Palet (1)
   m_TagString: Untagged
@@ -1771,3 +2162,15 @@ Transform:
   m_Father: {fileID: 4229132694646709}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -2.0459597, y: -2.7094328, z: 78.18427}
+--- !u!114 &2301927162396922286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989439273706919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

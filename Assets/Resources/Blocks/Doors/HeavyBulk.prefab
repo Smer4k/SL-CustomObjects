@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4894655979666824}
+  - component: {fileID: 6826793233260267282}
   m_Layer: 0
   m_Name: Door Stator Movable
   m_TagString: EditorOnly
@@ -31,6 +32,18 @@ Transform:
   m_Father: {fileID: 4274163584707498}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.99997, y: 0.000013660339, z: 90.00016}
+--- !u!114 &6826793233260267282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012065568430084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1032516571529274
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ae4544d3661e4a9ef0c287b94ec20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   DoorType: 3
   IsOpen: 0
   IsLocked: 0
@@ -98,6 +112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4761753234410014}
+  - component: {fileID: 8878133739712428188}
   m_Layer: 0
   m_Name: Door R
   m_TagString: EditorOnly
@@ -131,6 +146,18 @@ Transform:
   m_Father: {fileID: 4006361455686688}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90.00001, y: -89.99999, z: 0}
+--- !u!114 &8878133739712428188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038417553932194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1040479432610337
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4770502240781589}
+  - component: {fileID: 1642715985079329498}
   m_Layer: 0
   m_Name: ButtonRaycastOrigin 00
   m_TagString: EditorOnly
@@ -164,6 +192,18 @@ Transform:
   m_Father: {fileID: 4727539502356076}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &1642715985079329498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040479432610337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041226243509683
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4937402967879536}
+  - component: {fileID: 938045053910682760}
   m_Layer: 0
   m_Name: Door Stator
   m_TagString: EditorOnly
@@ -195,6 +236,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &938045053910682760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041226243509683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1056944912274038
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4883006399516922}
+  - component: {fileID: 1207509892258727248}
   m_Layer: 0
   m_Name: Door lock indicator L L 1
   m_TagString: EditorOnly
@@ -226,6 +280,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 179.99998, y: 29.956928, z: 179.99998}
+--- !u!114 &1207509892258727248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056944912274038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1091555813936114
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4504622510145637}
+  - component: {fileID: 3882714066481905035}
   m_Layer: 0
   m_Name: Pry Position
   m_TagString: EditorOnly
@@ -257,6 +324,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &3882714066481905035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091555813936114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1100592930424858
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4017061727975813}
+  - component: {fileID: 5203152242913174271}
   m_Layer: 0
   m_Name: Door piston L U 1
   m_TagString: EditorOnly
@@ -288,6 +368,18 @@ Transform:
   m_Father: {fileID: 4006361455686688}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 89.999985, z: 0}
+--- !u!114 &5203152242913174271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100592930424858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1109389464490026
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4006361455686688}
+  - component: {fileID: 3012590021535988569}
   m_Layer: 0
   m_Name: Door root
   m_TagString: EditorOnly
@@ -325,6 +418,18 @@ Transform:
   m_Father: {fileID: 4673282613766373}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: -0.000005122641, z: -90.00001}
+--- !u!114 &3012590021535988569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109389464490026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110240182311550
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4727539502356076}
+  - component: {fileID: 6316642299823495021}
   m_Layer: 0
   m_Name: Buttons
   m_TagString: EditorOnly
@@ -360,6 +466,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &6316642299823495021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110240182311550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1113651035319405
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +489,7 @@ GameObject:
   - component: {fileID: 4598997939545740}
   - component: {fileID: 33531997315269487}
   - component: {fileID: 23958120742214817}
+  - component: {fileID: 3459667039100969055}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm_LOD2
   m_TagString: EditorOnly
@@ -443,6 +562,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3459667039100969055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113651035319405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1117011423961796
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4440436797529217}
+  - component: {fileID: 6839746169760671734}
   m_Layer: 0
   m_Name: Passthrough
   m_TagString: EditorOnly
@@ -476,6 +608,18 @@ Transform:
   m_Father: {fileID: 4087519053110710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6839746169760671734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117011423961796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1132495222506662
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4608248722165159}
+  - component: {fileID: 5398059493092408245}
   m_Layer: 0
   m_Name: Door L wheels
   m_TagString: EditorOnly
@@ -507,6 +652,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.989414e-16, y: -2.2744856, z: -90}
+--- !u!114 &5398059493092408245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132495222506662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1135549702222520
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976439581196571}
+  - component: {fileID: 7151899833812748880}
   m_Layer: 0
   m_Name: Door lock R L 1
   m_TagString: EditorOnly
@@ -538,6 +696,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -180}
+--- !u!114 &7151899833812748880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135549702222520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1140012589323359
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4112389091534030}
   - component: {fileID: 137800398439639640}
+  - component: {fileID: 7405529074213457110}
   m_Layer: 0
   m_Name: hcz_bulkdoor_main_LOD0
   m_TagString: EditorOnly
@@ -652,6 +823,18 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 1.5491753, z: -0.0000003874302}
     m_Extent: {x: 2.0743942, y: 1.5593963, z: 0.3080229}
   m_DirtyAABB: 0
+--- !u!114 &7405529074213457110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140012589323359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156997795583089
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4487718267365977}
+  - component: {fileID: 1284670054117988980}
   m_Layer: 0
   m_Name: Door lock L U 2
   m_TagString: EditorOnly
@@ -683,6 +867,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -179.99998}
+--- !u!114 &1284670054117988980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156997795583089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163517049000238
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4370782325576138}
+  - component: {fileID: 1192512566020110345}
   m_Layer: 0
   m_Name: Door lock indicator R U 1
   m_TagString: EditorOnly
@@ -714,6 +911,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 3.2865817e-12, y: -59.973206, z: -2.2674963e-12}
+--- !u!114 &1192512566020110345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163517049000238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1174912335679357
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4698522520967042}
+  - component: {fileID: 1140237551018970710}
   m_Layer: 0
   m_Name: Collider
   m_TagString: EditorOnly
@@ -745,6 +955,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90.00001, y: 89.99999, z: 0}
+--- !u!114 &1140237551018970710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174912335679357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1204181986919567
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4576552554573472}
+  - component: {fileID: 2922631473260227868}
   m_Layer: 0
   m_Name: Door L
   m_TagString: EditorOnly
@@ -787,6 +1010,18 @@ Transform:
   m_Father: {fileID: 4006361455686688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 89.999985, z: 0}
+--- !u!114 &2922631473260227868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204181986919567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1205539380183286
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +1031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4471885891142980}
+  - component: {fileID: 8384269358278200426}
   m_Layer: 0
   m_Name: Door lock L L 1
   m_TagString: EditorOnly
@@ -818,6 +1054,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -179.99998}
+--- !u!114 &8384269358278200426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205539380183286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1225647145051224
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +1077,7 @@ GameObject:
   - component: {fileID: 4306731971628820}
   - component: {fileID: 33750590246376685}
   - component: {fileID: 23494245430712073}
+  - component: {fileID: 2334199520190717705}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_cabletraywallhole_LOD0
   m_TagString: EditorOnly
@@ -901,6 +1150,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2334199520190717705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225647145051224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240206358558226
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +1171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4505922510178052}
+  - component: {fileID: 8483685395415930182}
   m_Layer: 0
   m_Name: Door piston L L 1
   m_TagString: EditorOnly
@@ -932,6 +1194,18 @@ Transform:
   m_Father: {fileID: 4006361455686688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 89.999985, z: 0}
+--- !u!114 &8483685395415930182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240206358558226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1250892617863067
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +1215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4513249372249308}
+  - component: {fileID: 3090556441366444298}
   m_Layer: 0
   m_Name: Door piston R L 1
   m_TagString: EditorOnly
@@ -963,6 +1238,18 @@ Transform:
   m_Father: {fileID: 4006361455686688}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90.00001, y: -89.99999, z: 0}
+--- !u!114 &3090556441366444298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250892617863067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251299501633072
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +1261,7 @@ GameObject:
   - component: {fileID: 4947481870199960}
   - component: {fileID: 33444094750211850}
   - component: {fileID: 23443481190869270}
+  - component: {fileID: 9072912896768126263}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm_LOD2
   m_TagString: EditorOnly
@@ -1046,6 +1334,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9072912896768126263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251299501633072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1252455254803688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4443728631598328}
+  - component: {fileID: 5844046162845905209}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm (1)
   m_TagString: EditorOnly
@@ -1079,6 +1380,18 @@ Transform:
   m_Father: {fileID: 4818737729775025}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5844046162845905209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252455254803688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1302342665849874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1403,7 @@ GameObject:
   - component: {fileID: 4307457168988147}
   - component: {fileID: 33020089779490140}
   - component: {fileID: 23616447015862492}
+  - component: {fileID: 952921728066777285}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_cabletraywallhole_LOD0
   m_TagString: EditorOnly
@@ -1162,6 +1476,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &952921728066777285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302342665849874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1308412837673992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1499,7 @@ GameObject:
   - component: {fileID: 4152735465401569}
   - component: {fileID: 33134019343140005}
   - component: {fileID: 23818859335968680}
+  - component: {fileID: 466721124275641467}
   m_Layer: 0
   m_Name: TouchScreenPanel
   m_TagString: EditorOnly
@@ -1245,6 +1572,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &466721124275641467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308412837673992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1332545320422788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4257413769214048}
+  - component: {fileID: 741464539172744548}
   m_Layer: 0
   m_Name: Seal
   m_TagString: EditorOnly
@@ -1277,6 +1617,18 @@ Transform:
   m_Father: {fileID: 4087519053110710}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &741464539172744548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332545320422788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363620017063248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4792385921812192}
+  - component: {fileID: 4087819258051929952}
   m_Layer: 0
   m_Name: Door R wheels
   m_TagString: EditorOnly
@@ -1308,6 +1661,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 180, y: 2.274475, z: 90.00001}
+--- !u!114 &4087819258051929952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363620017063248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1376711985755277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4171623307729831}
+  - component: {fileID: 1012528730146759337}
   m_Layer: 0
   m_Name: Door piston R L 2
   m_TagString: EditorOnly
@@ -1339,6 +1705,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -1.6382208e-21, y: -0.0000018212332, z: 8.6647285e-13}
+--- !u!114 &1012528730146759337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376711985755277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386218007565548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4360849422376396}
+  - component: {fileID: 6909402374277816162}
   m_Layer: 0
   m_Name: Door lock indicator R L 2
   m_TagString: EditorOnly
@@ -1370,6 +1749,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 3.2865817e-12, y: -59.973206, z: -2.2674963e-12}
+--- !u!114 &6909402374277816162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386218007565548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1392866431082366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4411071345864099}
+  - component: {fileID: 7684029211809138217}
   m_Layer: 0
   m_Name: Door lock indicator L L 2
   m_TagString: EditorOnly
@@ -1401,6 +1793,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -0.000008306862, y: 29.961103, z: -0.00000830686}
+--- !u!114 &7684029211809138217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392866431082366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1397034943408016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4081778819053180}
+  - component: {fileID: 8605307649990386177}
   m_Layer: 0
   m_Name: Door lock R U 1
   m_TagString: EditorOnly
@@ -1432,6 +1837,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -180}
+--- !u!114 &8605307649990386177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397034943408016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1413927690926480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4918127282614279}
+  - component: {fileID: 565119849911631122}
   m_Layer: 6
   m_Name: TurningLightAlarm
   m_TagString: EditorOnly
@@ -1465,6 +1883,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -180, y: -0.00034338498, z: 180}
+--- !u!114 &565119849911631122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413927690926480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428047889430076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,6 +1904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4053428324995529}
+  - component: {fileID: 831461350157319659}
   m_Layer: 0
   m_Name: ButtonRaycastOrigin 01
   m_TagString: EditorOnly
@@ -1498,6 +1929,18 @@ Transform:
   m_Father: {fileID: 4727539502356076}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 180, y: 0.0000119528295, z: 180}
+--- !u!114 &831461350157319659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428047889430076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1436340224444465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,6 +1952,7 @@ GameObject:
   - component: {fileID: 4493721323023839}
   - component: {fileID: 33888264193560032}
   - component: {fileID: 23737162541289982}
+  - component: {fileID: 6623722911010275339}
   m_Layer: 0
   m_Name: TouchScreenPanel (1)
   m_TagString: EditorOnly
@@ -1581,6 +2025,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6623722911010275339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436340224444465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1442363437778648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,6 +2046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4818737729775025}
+  - component: {fileID: 2207233755976066590}
   m_Layer: 6
   m_Name: TurningLightAlarm (1)
   m_TagString: EditorOnly
@@ -1614,6 +2071,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0.00068301894, z: 0}
+--- !u!114 &2207233755976066590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442363437778648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1457858683264912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,6 +2092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4132033322777943}
+  - component: {fileID: 2466663509572004086}
   m_Layer: 0
   m_Name: Door lock indicator L U 1
   m_TagString: EditorOnly
@@ -1645,6 +2115,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -0.000008306862, y: 29.961103, z: -0.00000830686}
+--- !u!114 &2466663509572004086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457858683264912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1478619260932469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +2136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4469240687447773}
+  - component: {fileID: 716746174253977674}
   m_Layer: 0
   m_Name: Door lock indicator R U 2
   m_TagString: EditorOnly
@@ -1676,6 +2159,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -3.2878093e-12, y: 59.981323, z: -2.6111535e-12}
+--- !u!114 &716746174253977674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478619260932469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1479118760961538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +2180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4386245215385288}
+  - component: {fileID: 6547247275858545904}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_cabletraywallhole (1)
   m_TagString: EditorOnly
@@ -1708,6 +2204,18 @@ Transform:
   m_Father: {fileID: 4440436797529217}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: 0.00005976415, z: 180}
+--- !u!114 &6547247275858545904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479118760961538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1521462000547389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,6 +2225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4274163584707498}
+  - component: {fileID: 5208909857643358357}
   m_Layer: 0
   m_Name: Door lock L U 1
   m_TagString: EditorOnly
@@ -1740,6 +2249,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -179.99998}
+--- !u!114 &5208909857643358357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521462000547389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1524302463484842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +2270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4860284813795887}
+  - component: {fileID: 4220861853169984068}
   m_Layer: 0
   m_Name: Second
   m_TagString: EditorOnly
@@ -1771,6 +2293,18 @@ Transform:
   m_Father: {fileID: 4770502240781589}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &4220861853169984068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524302463484842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530265125718715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,6 +2314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4003568955758313}
+  - component: {fileID: 4421381272726860854}
   m_Layer: 0
   m_Name: Door lock R L 2
   m_TagString: EditorOnly
@@ -1802,6 +2337,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -180}
+--- !u!114 &4421381272726860854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530265125718715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1532302743360540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,6 +2360,7 @@ GameObject:
   - component: {fileID: 4762370131072298}
   - component: {fileID: 33811270041513453}
   - component: {fileID: 23919467782123016}
+  - component: {fileID: 6697559113817286671}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm_LOD2
   m_TagString: EditorOnly
@@ -1885,6 +2433,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6697559113817286671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532302743360540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1549660608455140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +2455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4430471141557575}
   - component: {fileID: 137979412102935223}
+  - component: {fileID: 8595882846640212169}
   m_Layer: 0
   m_Name: hcz_bulkdoor_floor_LOD0
   m_TagString: EditorOnly
@@ -1999,6 +2560,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0018854141, y: 0.012440894, z: 0}
     m_Extent: {x: 2.1918807, y: 0.013001893, z: 0.5430429}
   m_DirtyAABB: 0
+--- !u!114 &8595882846640212169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549660608455140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1551947085209336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,6 +2581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4654726764213626}
+  - component: {fileID: 2259997458027715768}
   m_Layer: 0
   m_Name: Door piston R U 1
   m_TagString: EditorOnly
@@ -2030,6 +2604,18 @@ Transform:
   m_Father: {fileID: 4006361455686688}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90.00001, y: -89.99999, z: 0}
+--- !u!114 &2259997458027715768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551947085209336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1576400735249501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,6 +2625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4599779277712546}
+  - component: {fileID: 8660200508473607963}
   m_Layer: 0
   m_Name: Door lock indicator R L 1
   m_TagString: EditorOnly
@@ -2061,6 +2648,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -3.2879133e-12, y: 59.982002, z: -2.611257e-12}
+--- !u!114 &8660200508473607963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576400735249501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601724976989866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,6 +2669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4989434007468228}
+  - component: {fileID: 5351264669160881274}
   m_Layer: 6
   m_Name: TurningLight
   m_TagString: EditorOnly
@@ -2092,6 +2692,18 @@ Transform:
   m_Father: {fileID: 4135358986966320}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 37.339867}
+--- !u!114 &5351264669160881274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601724976989866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1606501898415816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4681617672315124}
+  - component: {fileID: 9115342391089413230}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm
   m_TagString: EditorOnly
@@ -2124,6 +2737,18 @@ Transform:
   m_Father: {fileID: 4918127282614279}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9115342391089413230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606501898415816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1622696738180785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4122927984295991}
   - component: {fileID: 137925648485475562}
+  - component: {fileID: 5806682494968445805}
   m_Layer: 0
   m_Name: hcz_bulkdoor_pistons_LOD0
   m_TagString: EditorOnly
@@ -2238,6 +2864,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00000011920929, y: 1.5306544, z: -0.000000059604645}
     m_Extent: {x: 2.082645, y: 1.5460539, z: 0.49041155}
   m_DirtyAABB: 0
+--- !u!114 &5806682494968445805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622696738180785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643762911245893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,6 +2885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4698516334650371}
+  - component: {fileID: 4113473744370292982}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_cabletraywallhole
   m_TagString: EditorOnly
@@ -2270,6 +2909,18 @@ Transform:
   m_Father: {fileID: 4440436797529217}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4113473744370292982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643762911245893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1740578836272125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4642959113059777}
+  - component: {fileID: 2211212564274760379}
   m_Layer: 0
   m_Name: Door lock R U 2
   m_TagString: EditorOnly
@@ -2301,6 +2953,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -180}
+--- !u!114 &2211212564274760379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740578836272125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1751795403943454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,6 +2974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4087519053110710}
+  - component: {fileID: 6762374020791440834}
   m_Layer: 0
   m_Name: Cable Tray
   m_TagString: EditorOnly
@@ -2334,6 +2999,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6762374020791440834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751795403943454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1752804719007993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,6 +3020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4567224498050789}
+  - component: {fileID: 8006091016607264792}
   m_Layer: 0
   m_Name: Door lock indicator L U 2
   m_TagString: EditorOnly
@@ -2365,6 +3043,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 179.99998, y: 29.956928, z: 179.99998}
+--- !u!114 &8006091016607264792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752804719007993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1777309937099718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +3064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4196336834348592}
+  - component: {fileID: 1547423198757008053}
   m_Layer: 0
   m_Name: Door piston R U 2
   m_TagString: EditorOnly
@@ -2396,6 +3087,18 @@ Transform:
   m_Father: {fileID: 4761753234410014}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 3.2907748e-22, y: -0.0000018212332, z: 7.42691e-13}
+--- !u!114 &1547423198757008053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777309937099718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807556604315493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +3108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552014988182775}
+  - component: {fileID: 6063471943249009104}
   m_Layer: 0
   m_Name: HCZ_BulkDoor
   m_TagString: EditorOnly
@@ -2431,6 +3135,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0, y: -89.99982, z: 0}
+--- !u!114 &6063471943249009104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807556604315493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1827365131937191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,6 +3156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4107388363044615}
+  - component: {fileID: 1217578543471441763}
   m_Layer: 0
   m_Name: Pry Position (1)
   m_TagString: EditorOnly
@@ -2462,6 +3179,18 @@ Transform:
   m_Father: {fileID: 4249421183650327}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 180, y: 0.0000034151205, z: 180}
+--- !u!114 &1217578543471441763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827365131937191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1828882739637730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +3200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4451005779990456}
+  - component: {fileID: 3988993339910790123}
   m_Layer: 0
   m_Name: Second
   m_TagString: EditorOnly
@@ -2493,6 +3223,18 @@ Transform:
   m_Father: {fileID: 4053428324995529}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &3988993339910790123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828882739637730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1831357133414560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +3244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4424608514981955}
+  - component: {fileID: 2802579337724378262}
   m_Layer: 0
   m_Name: Door piston L L 2
   m_TagString: EditorOnly
@@ -2524,6 +3267,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -1.0522624e-19, y: 0.0000014766698, z: 0.0000010383574}
+--- !u!114 &2802579337724378262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831357133414560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1858065430099047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +3288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4933878150490867}
+  - component: {fileID: 8374774068917063819}
   m_Layer: 0
   m_Name: Door lock L L 2
   m_TagString: EditorOnly
@@ -2555,6 +3311,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -180, y: 0.000015258789, z: -179.99998}
+--- !u!114 &8374774068917063819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858065430099047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1870078724406819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +3332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4392000604767634}
+  - component: {fileID: 7197134680077296190}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_cabletraywallhole (1)
   m_TagString: EditorOnly
@@ -2587,6 +3356,18 @@ Transform:
   m_Father: {fileID: 4257413769214048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 0.00005976415, z: 180}
+--- !u!114 &7197134680077296190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870078724406819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1878548507561838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,6 +3379,7 @@ GameObject:
   - component: {fileID: 4827740351597553}
   - component: {fileID: 33724645083937755}
   - component: {fileID: 23031420598679128}
+  - component: {fileID: 6703509386704173836}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_cabletraywallhole_LOD0
   m_TagString: EditorOnly
@@ -2670,6 +3452,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6703509386704173836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878548507561838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1885306044595029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,6 +3473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4045737658071474}
+  - component: {fileID: 5904887362058105596}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm
   m_TagString: EditorOnly
@@ -2702,6 +3497,18 @@ Transform:
   m_Father: {fileID: 4818737729775025}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5904887362058105596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885306044595029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1887063823529783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +3518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4959765196482227}
+  - component: {fileID: 751945129400367505}
   m_Layer: 6
   m_Name: TurningLight
   m_TagString: EditorOnly
@@ -2733,6 +3541,18 @@ Transform:
   m_Father: {fileID: 4443728631598328}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751945129400367505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887063823529783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893819784325288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,6 +3562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4940497319964661}
+  - component: {fileID: 8266652285302191077}
   m_Layer: 0
   m_Name: First
   m_TagString: EditorOnly
@@ -2764,6 +3585,18 @@ Transform:
   m_Father: {fileID: 4053428324995529}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0, y: -89.99996, z: 0}
+--- !u!114 &8266652285302191077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893819784325288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1916434770731956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,6 +3608,7 @@ GameObject:
   - component: {fileID: 4638050298488327}
   - component: {fileID: 33279679172590966}
   - component: {fileID: 23207759633224775}
+  - component: {fileID: 5126461657133711923}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm_LOD2
   m_TagString: EditorOnly
@@ -2847,6 +3681,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5126461657133711923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916434770731956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1922087099944903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,6 +3704,7 @@ GameObject:
   - component: {fileID: 4589847442061956}
   - component: {fileID: 33971902341314716}
   - component: {fileID: 23269550378999633}
+  - component: {fileID: 2875193785041660496}
   m_Layer: 0
   m_Name: hcz_bulkdoor_arch_LOD0
   m_TagString: EditorOnly
@@ -2931,6 +3778,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2875193785041660496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922087099944903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1937041189722835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,6 +3799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4788609502020681}
+  - component: {fileID: 2776651933845308391}
   m_Layer: 0
   m_Name: Door piston L U 2
   m_TagString: EditorOnly
@@ -2962,6 +3822,18 @@ Transform:
   m_Father: {fileID: 4576552554573472}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -1.0522624e-19, y: 0.0000014766698, z: 0.0000010383574}
+--- !u!114 &2776651933845308391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937041189722835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1971462871601868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +3843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4766182350154350}
+  - component: {fileID: 2257180403974698087}
   m_Layer: 0
   m_Name: First
   m_TagString: EditorOnly
@@ -2993,6 +3866,18 @@ Transform:
   m_Father: {fileID: 4770502240781589}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0, y: -89.99996, z: 0}
+--- !u!114 &2257180403974698087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971462871601868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1977861327411594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4135358986966320}
+  - component: {fileID: 2213723306302415095}
   m_Layer: 6
   m_Name: Trim_Electronic_redAlarm (1)
   m_TagString: EditorOnly
@@ -3026,6 +3912,18 @@ Transform:
   m_Father: {fileID: 4918127282614279}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2213723306302415095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977861327411594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1985950898112487
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,6 +3933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4673282613766373}
+  - component: {fileID: 7606807577089659464}
   m_Layer: 0
   m_Name: hcz_bulkdoor
   m_TagString: EditorOnly
@@ -3059,3 +3958,15 @@ Transform:
   m_Father: {fileID: 4552014988182775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0.0000024148362, z: -0.0000024148367}
+--- !u!114 &7606807577089659464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985950898112487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

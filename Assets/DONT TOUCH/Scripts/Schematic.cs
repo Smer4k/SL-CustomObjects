@@ -24,7 +24,8 @@ public class Schematic : SchematicBlock
     public void CompileSchematic()
     {
         SetupOutput(out string schematicDirectoryPath);
-
+        CheckEmptyObjects();
+        
         var rootObjectId = transform.GetId();
         BlockList.RootObjectId = rootObjectId;
         BlockList.Blocks.Clear();
@@ -129,6 +130,50 @@ public class Schematic : SchematicBlock
         // };
 
         // return false;
+    }
+
+    private void CheckEmptyObjects()
+    {
+        foreach (var target in GetComponentsInChildren<Transform>())
+        {
+            if (target.TryGetComponent<SchematicBlock>(out _) || target.TryGetComponent<IgnoreObject>(out _))
+            {
+                continue;
+            }
+
+            if (target.TryGetComponent<Light>(out _))
+            {
+                target.gameObject.AddComponent<LightComponent>();
+                continue;
+            }
+
+            if (target.TryGetComponent<MeshRenderer>(out var meshRenderer) && target.TryGetComponent<MeshFilter>(out var meshFilter))
+            {
+                var primitiveComponent = target.gameObject.AddComponent<PrimitiveComponent>();
+                if (target.TryGetComponent(out Collider col))
+                {
+                    GameObject.DestroyImmediate(col);
+                }
+                else
+                {
+                    primitiveComponent.Collidable = false;
+                }
+                target.gameObject.tag = meshFilter.sharedMesh.name.ToLower() switch
+                {
+                    "cube" => "Cube",
+                    "sphere" => "Sphere",
+                    "capsule" => "Capsule",
+                    "cylinder" => "Cylinder",
+                    "plane" => "Plane",
+                    "quad" => "Quad",
+                    _ => target.gameObject.tag
+                };
+                primitiveComponent.Color = meshRenderer.sharedMaterial.color;
+                continue;
+            }
+
+            target.gameObject.AddComponent<EmptyComponent>();
+        }
     }
 
     private void SetupOutput(out string schematicDirectoryPath)

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7604239216085798949}
   - component: {fileID: 7637703250437693188}
   - component: {fileID: 7627809429928311845}
+  - component: {fileID: 6094220852142601347}
   m_Layer: 0
   m_Name: Door
   m_TagString: EditorOnly
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6094220852142601347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605033879623382471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605135522787957141
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +108,7 @@ GameObject:
   - component: {fileID: 7604235055704833769}
   - component: {fileID: 7637634368276409459}
   - component: {fileID: 7628436312810016576}
+  - component: {fileID: 3558981393573071209}
   m_Layer: 30
   m_Name: bolt (6)
   m_TagString: EditorOnly
@@ -167,6 +181,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3558981393573071209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605135522787957141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605168059524030563
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7604024960974898311}
+  - component: {fileID: 2130294803005246477}
   m_Layer: 30
   m_Name: Chambers & Spawnpoints
   m_TagString: EditorOnly
@@ -205,6 +232,18 @@ Transform:
   m_Father: {fileID: 7609044070917284618}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130294803005246477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605168059524030563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605492477207951410
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7608854158007412864}
+  - component: {fileID: 3002506328679883354}
   m_Layer: 9
   m_Name: E11spawn
   m_TagString: EditorOnly
@@ -236,6 +276,18 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &3002506328679883354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605492477207951410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605499006987425930
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7609111791952544695}
+  - component: {fileID: 3861442147943066806}
   m_Layer: 9
   m_Name: BulletSpawn (2)
   m_TagString: EditorOnly
@@ -267,6 +320,18 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 42.82294, y: -89.99966, z: -129.8079}
+--- !u!114 &3861442147943066806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605499006987425930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605507279849694413
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a1663237b9463697c2bacc0b552379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   Chambers:
   - AcceptableItems: 14000000
     IsOpen: 0
@@ -365,6 +431,7 @@ GameObject:
   - component: {fileID: 7609314601380066068}
   - component: {fileID: 7637841224739599359}
   - component: {fileID: 7627491406328887920}
+  - component: {fileID: 5653681754200683640}
   m_Layer: 30
   m_Name: bolt (2)
   m_TagString: EditorOnly
@@ -437,6 +504,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5653681754200683640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605524787538248659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605653574356432657
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +527,7 @@ GameObject:
   - component: {fileID: 7603914490525910620}
   - component: {fileID: 7637826685161206171}
   - component: {fileID: 7627571061934470232}
+  - component: {fileID: 1519615110154618025}
   m_Layer: 30
   m_Name: bolt (7)
   m_TagString: EditorOnly
@@ -520,6 +600,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1519615110154618025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605653574356432657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605668112177782662
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +623,7 @@ GameObject:
   - component: {fileID: 7608935964613188064}
   - component: {fileID: 7633952427200044463}
   - component: {fileID: 7627832482970511696}
+  - component: {fileID: 1918518087476354006}
   m_Layer: 30
   m_Name: bolt (4)
   m_TagString: EditorOnly
@@ -603,6 +696,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1918518087476354006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605668112177782662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605673306623887120
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +719,7 @@ GameObject:
   - component: {fileID: 7609352360935719229}
   - component: {fileID: 7637855287847083745}
   - component: {fileID: 7627650065967025143}
+  - component: {fileID: 3950211779396473488}
   m_Layer: 30
   m_Name: Sphere (1)
   m_TagString: EditorOnly
@@ -686,6 +792,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3950211779396473488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605673306623887120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605691842532352077
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +815,7 @@ GameObject:
   - component: {fileID: 7603778598413817175}
   - component: {fileID: 7637186943925245350}
   - component: {fileID: 7627612408234036358}
+  - component: {fileID: 2181076614367409625}
   m_Layer: 30
   m_Name: bolt (3)
   m_TagString: EditorOnly
@@ -769,6 +888,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2181076614367409625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605691842532352077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605908424587086492
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +911,7 @@ GameObject:
   - component: {fileID: 7609249762833271888}
   - component: {fileID: 7634128349173363802}
   - component: {fileID: 7628297592551465200}
+  - component: {fileID: 2308193453382474763}
   m_Layer: 30
   m_Name: bolt (8)
   m_TagString: EditorOnly
@@ -852,6 +984,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2308193453382474763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605908424587086492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605957770155848263
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +1007,7 @@ GameObject:
   - component: {fileID: 7603976197371195504}
   - component: {fileID: 7637236799728298948}
   - component: {fileID: 7627009601679763729}
+  - component: {fileID: 2595581575844921743}
   m_Layer: 30
   m_Name: Body
   m_TagString: EditorOnly
@@ -935,6 +1080,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2595581575844921743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605957770155848263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7605988108444963569
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1103,7 @@ GameObject:
   - component: {fileID: 7609044983915692345}
   - component: {fileID: 7637166464841440116}
   - component: {fileID: 7627010618079661098}
+  - component: {fileID: 8114293021154760286}
   m_Layer: 0
   m_Name: Keypad
   m_TagString: EditorOnly
@@ -1018,6 +1176,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8114293021154760286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605988108444963569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606304180526554867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7603977367893303685}
+  - component: {fileID: 3044775942080072591}
   m_Layer: 9
   m_Name: HEG Spawn (1)
   m_TagString: EditorOnly
@@ -1049,6 +1220,18 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -2.080293, y: -8.993134, z: -88.00076}
+--- !u!114 &3044775942080072591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606304180526554867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606315851567696669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7608967943713190193}
+  - component: {fileID: 2696094036591431137}
   m_Layer: 9
   m_Name: BulletSpawn (3)
   m_TagString: EditorOnly
@@ -1080,6 +1264,18 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 89.99999, y: 0.00003446857, z: -174.4586}
+--- !u!114 &2696094036591431137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606315851567696669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606337538843790480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1287,7 @@ GameObject:
   - component: {fileID: 7609052076213646836}
   - component: {fileID: 7633953117659748302}
   - component: {fileID: 7627739508493868361}
+  - component: {fileID: 1198928828480529818}
   m_Layer: 30
   m_Name: bolt (5)
   m_TagString: EditorOnly
@@ -1168,6 +1365,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1198928828480529818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606337538843790480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606426413598251904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7604033206168107907}
+  - component: {fileID: 6789512358860461159}
   m_Layer: 9
   m_Name: HEG Spawn
   m_TagString: EditorOnly
@@ -1199,6 +1409,18 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 150.3195, y: 85.78759, z: -131.4069}
+--- !u!114 &6789512358860461159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606426413598251904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606468571244829347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1432,7 @@ GameObject:
   - component: {fileID: 7608903857353302909}
   - component: {fileID: 7634114103876052250}
   - component: {fileID: 7627909092668363998}
+  - component: {fileID: 5517267767831541027}
   m_Layer: 30
   m_Name: bolt (1)
   m_TagString: EditorOnly
@@ -1282,6 +1505,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5517267767831541027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606468571244829347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606488654010088660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7609221861750148923}
+  - component: {fileID: 847325397859218916}
   m_Layer: 9
   m_Name: BulletSpawn (1)
   m_TagString: EditorOnly
@@ -1313,6 +1549,18 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: -2.116948, z: 165}
+--- !u!114 &847325397859218916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606488654010088660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606529663461235356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1572,7 @@ GameObject:
   - component: {fileID: 7609179989479595827}
   - component: {fileID: 7637188404034231116}
   - component: {fileID: 7627510566880853308}
+  - component: {fileID: 2681323316331614743}
   m_Layer: 30
   m_Name: Sphere
   m_TagString: EditorOnly
@@ -1396,6 +1645,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2681323316331614743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606529663461235356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606537149667935033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7608959853453309090}
+  - component: {fileID: 8643572140480602661}
   m_Layer: 30
   m_Name: Pegs
   m_TagString: EditorOnly
@@ -1432,6 +1694,18 @@ Transform:
   m_Father: {fileID: 7609044070917284618}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8643572140480602661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606537149667935033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7606573881375359919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7608886169337013083}
+  - component: {fileID: 7334806567369071653}
   m_Layer: 9
   m_Name: BulletSpawn (4)
   m_TagString: EditorOnly
@@ -1463,3 +1738,15 @@ Transform:
   m_Father: {fileID: 7604024960974898311}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 102.3464, y: -3.279065, z: -165.3546}
+--- !u!114 &7334806567369071653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606573881375359919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

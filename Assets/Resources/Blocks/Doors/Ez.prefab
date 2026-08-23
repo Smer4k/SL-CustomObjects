@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4327225584961070}
   - component: {fileID: 33270980282379467}
   - component: {fileID: 23896921952491018}
+  - component: {fileID: 7315572110033019231}
   m_Layer: 0
   m_Name: TouchScreenPanel (1)
   m_TagString: EditorOnly
@@ -116,6 +117,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7315572110033019231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196440657209675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1351530972723927
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ae4544d3661e4a9ef0c287b94ec20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   DoorType: 2
   IsOpen: 0
   IsLocked: 0
@@ -412,6 +426,7 @@ GameObject:
   - component: {fileID: 4792258816025622}
   - component: {fileID: 33906930242277304}
   - component: {fileID: 23256190730171746}
+  - component: {fileID: 2685949652068567172}
   m_Layer: 0
   m_Name: Frame
   m_TagString: EditorOnly
@@ -486,6 +501,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2685949652068567172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676393735155343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1722845768033387
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +786,7 @@ GameObject:
   - component: {fileID: 4085399982437638}
   - component: {fileID: 33080169067150424}
   - component: {fileID: 23295810451922642}
+  - component: {fileID: 383468378337810419}
   m_Layer: 0
   m_Name: TouchScreenPanel (2)
   m_TagString: EditorOnly
@@ -831,3 +859,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &383468378337810419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974867416430404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

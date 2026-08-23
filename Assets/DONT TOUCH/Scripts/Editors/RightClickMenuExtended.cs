@@ -143,7 +143,10 @@ public class RightClickMenuExtended
 
 	[MenuItem("GameObject/🛠️ MER Blocks/Cameras/Sz", false, -1)]
 	private static void CreateSzCamera(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/Cameras/Sz.prefab");
-
+	
+	[MenuItem("GameObject/🛠️ MER Blocks/Cameras/Camera Transfer", false, -1)]
+	private static void CreateCameraTransfer(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/Cameras/CameraTransfer.prefab");
+	
 	#endregion
 	
 	[MenuItem("GameObject/🛠️ MER Blocks/SpawnPoint", false, -1)]

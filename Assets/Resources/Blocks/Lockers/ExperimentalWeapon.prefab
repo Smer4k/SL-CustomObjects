@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4012691569127261}
   - component: {fileID: 33654450813297681}
   - component: {fileID: 23497249776263653}
+  - component: {fileID: 7712680605543124198}
   m_Layer: 0
   m_Name: EWL_Outer_Cylinder_Right
   m_TagString: Untagged
@@ -83,6 +84,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7712680605543124198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066407940416860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1132947925890146
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +107,7 @@ GameObject:
   - component: {fileID: 4455047704732136}
   - component: {fileID: 33637840503329907}
   - component: {fileID: 23634437533053393}
+  - component: {fileID: 7461421972590541989}
   m_Layer: 0
   m_Name: EWL_CenterDoor
   m_TagString: Untagged
@@ -169,6 +183,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7461421972590541989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132947925890146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1351303593209648
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +206,7 @@ GameObject:
   - component: {fileID: 4177766065483364}
   - component: {fileID: 33598114576786147}
   - component: {fileID: 23886433734704726}
+  - component: {fileID: 1505409380389335735}
   m_Layer: 0
   m_Name: EWL_OuterDoor_Right
   m_TagString: Untagged
@@ -252,6 +279,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1505409380389335735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351303593209648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412844453639195
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +302,7 @@ GameObject:
   - component: {fileID: 4400828520839076}
   - component: {fileID: 33460639935915726}
   - component: {fileID: 23014182613851716}
+  - component: {fileID: 2910636119650448082}
   m_Layer: 0
   m_Name: EWL_Outer_Cylinder_Left
   m_TagString: Untagged
@@ -335,6 +375,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2910636119650448082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412844453639195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1417968845332088
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +398,7 @@ GameObject:
   - component: {fileID: 4145569113425362}
   - component: {fileID: 33131293208543783}
   - component: {fileID: 23254034487845653}
+  - component: {fileID: 4151730836157849517}
   m_Layer: 0
   m_Name: EWL_Innter_Glass_Door
   m_TagString: Untagged
@@ -418,6 +471,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4151730836157849517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417968845332088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1486907183200165
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a1663237b9463697c2bacc0b552379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   Chambers:
   - AcceptableItems: 
     IsOpen: 0
@@ -490,6 +556,7 @@ GameObject:
   - component: {fileID: 4764311143179917}
   - component: {fileID: 33330542897866052}
   - component: {fileID: 23942806246931584}
+  - component: {fileID: 6703061570751397825}
   m_Layer: 0
   m_Name: EWL_OuterDoor_Left
   m_TagString: Untagged
@@ -562,6 +629,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6703061570751397825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620776099970812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1831331898659603
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +652,7 @@ GameObject:
   - component: {fileID: 4483349024676037}
   - component: {fileID: 33069454205719251}
   - component: {fileID: 23134529551706728}
+  - component: {fileID: 2475251955240489778}
   m_Layer: 0
   m_Name: EWL_Outer_Glass_Door
   m_TagString: Untagged
@@ -645,6 +725,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2475251955240489778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831331898659603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1839768435217107
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4765694283599773}
+  - component: {fileID: 6480360600740838061}
   m_Layer: 0
   m_Name: Spawnpoint Jailbird
   m_TagString: Untagged
@@ -676,6 +769,18 @@ Transform:
   m_Father: {fileID: 4455047704732136}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 1.3013912, y: -13.232309, z: 84.33226}
+--- !u!114 &6480360600740838061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839768435217107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1851587433957582
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +792,7 @@ GameObject:
   - component: {fileID: 4488516529621643}
   - component: {fileID: 33743587452096678}
   - component: {fileID: 23051088640378972}
+  - component: {fileID: 5121078104903057612}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -765,6 +871,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5121078104903057612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851587433957582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1907139832622842
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4410246198155940}
+  - component: {fileID: 1232454770674396844}
   m_Layer: 0
   m_Name: Spawnpoint Disruptor
   m_TagString: Untagged
@@ -796,3 +915,15 @@ Transform:
   m_Father: {fileID: 4455047704732136}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -173.54509, y: -0, z: 0}
+--- !u!114 &1232454770674396844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907139832622842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

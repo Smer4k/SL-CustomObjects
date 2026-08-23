@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSmoothing: 60
-  PrefabType: 0
+  MirrorType: 0
 --- !u!1 &1038740473253171
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,6 +57,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4309904486910339}
+  - component: {fileID: 2426696450745014925}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayCircle1
   m_TagString: Untagged
@@ -79,6 +80,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90.27753, y: -89.99982, z: 90.27753}
+--- !u!114 &2426696450745014925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038740473253171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1052861018826106
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4469125266824762}
+  - component: {fileID: 2216886344415004328}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Dustpan
   m_TagString: Untagged
@@ -111,6 +125,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -0, y: -65.728455, z: 0}
+--- !u!114 &2216886344415004328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052861018826106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1062932286784577
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4466700214131587}
+  - component: {fileID: 6948109042792093528}
   m_Layer: 0
   m_Name: seal
   m_TagString: Untagged
@@ -143,6 +170,18 @@ Transform:
   m_Father: {fileID: 4247665606949161}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &6948109042792093528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062932286784577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093714730155262
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626133205095913}
+  - component: {fileID: 1178517320505823092}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayLine2
   m_TagString: Untagged
@@ -174,6 +214,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90.00012, y: -89.99951, z: 180}
+--- !u!114 &1178517320505823092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093714730155262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1138168230663995
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4432974171362286}
+  - component: {fileID: 5618055541104426840}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayLine1
   m_TagString: Untagged
@@ -205,6 +258,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00004, y: 89.99984, z: 0}
+--- !u!114 &5618055541104426840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138168230663995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1182439503331731
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4975405718561389}
+  - component: {fileID: 4420532795326697636}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayLine3
   m_TagString: Untagged
@@ -236,6 +302,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: -0.000649591, z: 0}
+--- !u!114 &4420532795326697636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182439503331731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197887208905008
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +325,7 @@ GameObject:
   - component: {fileID: 4348056602153565}
   - component: {fileID: 33247724384389310}
   - component: {fileID: 23035139343340402}
+  - component: {fileID: 6908463672095105787}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_PowerboxA_lock_LOD0
   m_TagString: Untagged
@@ -319,6 +398,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6908463672095105787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197887208905008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1322709051745817
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +421,7 @@ GameObject:
   - component: {fileID: 4812135598180355}
   - component: {fileID: 33093317991275816}
   - component: {fileID: 23915098250333401}
+  - component: {fileID: 7394648443968843468}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_PowerboxA_lever_LOD0
   m_TagString: Untagged
@@ -402,6 +494,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7394648443968843468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322709051745817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1349282974704524
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4741398058357495}
+  - component: {fileID: 7987479935681320890}
   m_Layer: 0
   m_Name: Modular_Doors_Empty_ConstructA
   m_TagString: Untagged
@@ -450,6 +555,18 @@ Transform:
   m_Father: {fileID: 4247665606949161}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &7987479935681320890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349282974704524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399303860383253
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4926373880143095}
+  - component: {fileID: 3355057311789414007}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayLine4
   m_TagString: Untagged
@@ -481,6 +599,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90.27753, y: -89.99982, z: 90.27753}
+--- !u!114 &3355057311789414007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399303860383253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399678754191967
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +622,7 @@ GameObject:
   - component: {fileID: 4399273108171606}
   - component: {fileID: 33581738627074082}
   - component: {fileID: 23035671267557823}
+  - component: {fileID: 6382701163768438772}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_PowerboxA_LOD0
   m_TagString: Untagged
@@ -564,6 +695,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6382701163768438772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399678754191967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1464108223919989
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +718,7 @@ GameObject:
   - component: {fileID: 4813163272729858}
   - component: {fileID: 33577490180168918}
   - component: {fileID: 23049000104977884}
+  - component: {fileID: 6625306839813860820}
   m_Layer: 0
   m_Name: cabletray_Deadend
   m_TagString: Untagged
@@ -649,6 +793,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6625306839813860820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464108223919989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1518826529582649
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +816,7 @@ GameObject:
   - component: {fileID: 4478122017134332}
   - component: {fileID: 33399864291448808}
   - component: {fileID: 23725615576924377}
+  - component: {fileID: 1233357684574952221}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Dustpan_LOD0
   m_TagString: Untagged
@@ -732,6 +889,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1233357684574952221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518826529582649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530256137688843
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +912,7 @@ GameObject:
   - component: {fileID: 4550985569656878}
   - component: {fileID: 33044368054738034}
   - component: {fileID: 23433023872130046}
+  - component: {fileID: 3221549523573013357}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_PowerboxA_door_LOD0
   m_TagString: Untagged
@@ -815,6 +985,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3221549523573013357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530256137688843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1548149243860191
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,6 +1006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4553861384464237}
+  - component: {fileID: 3261126084489011559}
   m_Layer: 0
   m_Name: ConstructionLight
   m_TagString: Untagged
@@ -847,6 +1030,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 180, y: 35.130215, z: 180}
+--- !u!114 &3261126084489011559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548149243860191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554023481534317
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +1051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4757073061931961}
+  - component: {fileID: 1496687391145728409}
   m_Layer: 0
   m_Name: Lever_Offset
   m_TagString: Untagged
@@ -879,6 +1075,18 @@ Transform:
   m_Father: {fileID: 4354731721542860}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496687391145728409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554023481534317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1577836099937243
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +1096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4517076941744943}
+  - component: {fileID: 8338860513500367435}
   m_Layer: 0
   m_Name: Door_Offset
   m_TagString: Untagged
@@ -911,6 +1120,18 @@ Transform:
   m_Father: {fileID: 4354731721542860}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8338860513500367435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577836099937243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1579654595902799
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,6 +1141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4295555449345155}
+  - component: {fileID: 4651743377244743230}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayCross1
   m_TagString: Untagged
@@ -942,6 +1164,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 92.71414, y: 89.99984, z: 92.71398}
+--- !u!114 &4651743377244743230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579654595902799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1626625730204491
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +1187,7 @@ GameObject:
   - component: {fileID: 4633535972322388}
   - component: {fileID: 33837830289421212}
   - component: {fileID: 23086230116942347}
+  - component: {fileID: 3306728314914752444}
   m_Layer: 0
   m_Name: Vent_box_holder (1)
   m_TagString: Untagged
@@ -1025,6 +1260,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3306728314914752444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626625730204491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660612628644078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4190233449877450}
+  - component: {fileID: 6361634550475278326}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayCross2
   m_TagString: Untagged
@@ -1056,6 +1304,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90.27753, y: -89.99982, z: 90.27753}
+--- !u!114 &6361634550475278326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660612628644078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1671752793945422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838699600073134}
+  - component: {fileID: 6055079365138274592}
   m_Layer: 0
   m_Name: Decal_Concrete_Damage2
   m_TagString: Untagged
@@ -1087,6 +1348,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -0.00016843338, y: 0.00016602149, z: -89.99899}
+--- !u!114 &6055079365138274592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671752793945422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1714328079655827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1371,7 @@ GameObject:
   - component: {fileID: 4197304272155863}
   - component: {fileID: 33780416565694087}
   - component: {fileID: 23870767139526907}
+  - component: {fileID: 7194182882774766724}
   m_Layer: 0
   m_Name: Vent_box_holder
   m_TagString: Untagged
@@ -1170,6 +1444,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7194182882774766724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714328079655827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1786258298633727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4354731721542860}
+  - component: {fileID: 2756785212427872691}
   m_Layer: 0
   m_Name: Atlas_Electricalassets_PowerboxA
   m_TagString: Untagged
@@ -1205,6 +1492,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 63.299572, y: 0.000002055681, z: -90}
+--- !u!114 &2756785212427872691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786258298633727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1810651782763183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,6 +1515,7 @@ GameObject:
   - component: {fileID: 4434757170817716}
   - component: {fileID: 33100377743040455}
   - component: {fileID: 23139088686906939}
+  - component: {fileID: 2344021669736290868}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Dustbrush_LOD0
   m_TagString: Untagged
@@ -1288,6 +1588,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2344021669736290868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810651782763183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1860156628877982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1611,7 @@ GameObject:
   - component: {fileID: 4458559847870401}
   - component: {fileID: 33754877299969074}
   - component: {fileID: 23345866222017010}
+  - component: {fileID: 7718537451624887421}
   m_Layer: 0
   m_Name: ConstructionWires
   m_TagString: Untagged
@@ -1371,6 +1684,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7718537451624887421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860156628877982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1866050193590954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,6 +1705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4502613283643364}
+  - component: {fileID: 8484632398184877759}
   m_Layer: 0
   m_Name: Construction_Wires
   m_TagString: Untagged
@@ -1403,6 +1729,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8484632398184877759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866050193590954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1889379121854053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4900911752341956}
+  - component: {fileID: 1145915808963586825}
   m_Layer: 0
   m_Name: Atlas_CleaningAssets_Dustbrush
   m_TagString: Untagged
@@ -1435,6 +1774,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -140.49408, y: 0.00017673742, z: -90.00009}
+--- !u!114 &1145915808963586825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889379121854053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1908173828640070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4985890063438045}
+  - component: {fileID: 5337940101104949715}
   m_Layer: 0
   m_Name: Decal_Concrete_Damage1
   m_TagString: Untagged
@@ -1466,6 +1818,18 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -90, y: 0.000998915, z: -90.00016}
+--- !u!114 &5337940101104949715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908173828640070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1908983695693400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1841,7 @@ GameObject:
   - component: {fileID: 4340212354465573}
   - component: {fileID: 33346202168666328}
   - component: {fileID: 23589813767849028}
+  - component: {fileID: 6069171049224344800}
   m_Layer: 0
   m_Name: ConstructionLight
   m_TagString: Untagged
@@ -1550,6 +1915,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6069171049224344800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908983695693400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1999383383036779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4064310588883065}
+  - component: {fileID: 325682653732091956}
   m_Layer: 0
   m_Name: Decal_Cautions_SprayCircle2
   m_TagString: Untagged
@@ -1581,3 +1959,15 @@ Transform:
   m_Father: {fileID: 4741398058357495}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90.00016, y: -34.800316, z: 89.99998}
+--- !u!114 &325682653732091956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999383383036779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

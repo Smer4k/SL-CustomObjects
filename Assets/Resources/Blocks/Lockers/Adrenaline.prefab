@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4401702046314547719}
+  - component: {fileID: 5654490229117846647}
   m_Layer: 0
   m_Name: Chamber
   m_TagString: EditorOnly
@@ -33,6 +34,18 @@ Transform:
   m_Father: {fileID: 4398648010032217482}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -179.9999, y: -0.00009903771, z: 180}
+--- !u!114 &5654490229117846647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395560887027804361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4395568315423896666
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +57,7 @@ GameObject:
   - component: {fileID: 4398512968042960267}
   - component: {fileID: 4430658096111343104}
   - component: {fileID: 4418274649294090425}
+  - component: {fileID: 292082757788805972}
   m_Layer: 0
   m_Name: Body
   m_TagString: EditorOnly
@@ -117,6 +131,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &292082757788805972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395568315423896666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4395571062727139366
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4401219298885882468}
+  - component: {fileID: 1653108653833483290}
   m_Layer: 9
   m_Name: Medkit Chamber
   m_TagString: EditorOnly
@@ -148,6 +175,18 @@ Transform:
   m_Father: {fileID: 4401702046314547719}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
+--- !u!114 &1653108653833483290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395571062727139366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4395583538200526967
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4398427536289007956}
+  - component: {fileID: 3967815709832436032}
   m_Layer: 9
   m_Name: Adrenaline Chamber
   m_TagString: EditorOnly
@@ -179,6 +219,18 @@ Transform:
   m_Father: {fileID: 4401702046314547719}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.242, y: 89.99838, z: -1.242}
+--- !u!114 &3967815709832436032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395583538200526967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4396330084524856915
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a1663237b9463697c2bacc0b552379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSmoothing: 60
   Chambers:
   - AcceptableItems: 0e000000
     IsOpen: 0
@@ -263,6 +316,7 @@ GameObject:
   - component: {fileID: 8148319444021324230}
   - component: {fileID: 8173043321302835407}
   - component: {fileID: 8162921935178906267}
+  - component: {fileID: 4817763633043981276}
   m_Layer: 30
   m_Name: AdrenalineDoor
   m_TagString: EditorOnly
@@ -335,3 +389,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4817763633043981276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151063157668880859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a971b35621b4e8c9ff1c998b4d421bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
