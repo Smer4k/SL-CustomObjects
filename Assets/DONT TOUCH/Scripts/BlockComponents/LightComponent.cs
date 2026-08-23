@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using DONT_TOUCH.Enums;
-using DONT_TOUCH.Scripts.BlockComponents;
 using DONT_TOUCH.Scripts.BlockSerialization;
 using UnityEngine;
 
@@ -101,7 +100,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
                 ? (LightType)Convert.ToInt32(objLightType)
                 : LightType.Point;
             
-            if (lightType == LightType.Area)
+            if ((int)lightType == 3)
                 lightType = LightType.Rectangle;
             
             var lightComponent = Create<LightComponent>($"Assets/Resources/Blocks/Lights/{lightType} Light.prefab");

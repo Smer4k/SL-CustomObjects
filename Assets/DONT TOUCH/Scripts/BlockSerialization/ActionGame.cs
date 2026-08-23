@@ -14,7 +14,12 @@ namespace DONT_TOUCH.Scripts.BlockSerialization
 
         [JsonIgnore] public GameObject Target;
         public BlockType BlockType;
+
+#if UNITY_6000_5_OR_NEWER
+        public long TargetId;
+#else
         public int TargetId;
+#endif
         public string Param = string.Empty;
         public AnimatorControllerParameterType ParamType;
 

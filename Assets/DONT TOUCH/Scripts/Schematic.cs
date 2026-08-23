@@ -6,6 +6,7 @@ using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts;
 using DONT_TOUCH.Scripts.BlockComponents;
 using DONT_TOUCH.Scripts.BlockSerialization;
+using DONT_TOUCH.Scripts.Extensions;
 using UnityEditor;
 using UnityEngine;
 
@@ -18,7 +19,6 @@ public class Schematic : SchematicBlock
     [SerializeField] private SchematicClusterOptimizerSettings clusterOptimizer = new();
 
     public SchematicClusterOptimizerSettings ClusterOptimizer => clusterOptimizer;
-
     public int OptimizeClusters() => SchematicClusterOptimizer.Optimize(this);
 
     public void CompileSchematic()
@@ -26,7 +26,7 @@ public class Schematic : SchematicBlock
         SetupOutput(out string schematicDirectoryPath);
         CheckEmptyObjects();
         
-        int rootObjectId = transform.GetInstanceID();
+        var rootObjectId = transform.GetId();
         BlockList.RootObjectId = rootObjectId;
         BlockList.Blocks.Clear();
         RigidbodyDictionary.Clear();
@@ -64,15 +64,16 @@ public class Schematic : SchematicBlock
             {
                 RuntimeAnimatorController runtimeAnimatorController = animator.runtimeAnimatorController;
                 data.AnimatorName = runtimeAnimatorController.name;
-
+#if UNITY_2021
                 BuildPipeline.BuildAssetBundle(runtimeAnimatorController,
                     runtimeAnimatorController.animationClips,
                     Path.Combine(schematicDirectoryPath, runtimeAnimatorController.name),
                     AssetBundleBuildOptions, EditorUserBuildSettings.activeBuildTarget);
+#endif
             }
 
             if (block.TryGetComponent(out rigidbody))
-                RigidbodyDictionary.Add(block.transform.GetInstanceID(), new SerializableRigidbody(rigidbody));
+                RigidbodyDictionary.Add(block.transform.GetId(), new SerializableRigidbody(rigidbody));
 
             BlockList.Blocks.Add(data);
         }
@@ -120,13 +121,13 @@ public class Schematic : SchematicBlock
     public override void Compile(SchematicBlockData block)
     {
         return;
-        block.Rotation = transform.localEulerAngles;
-
-        block.BlockType = BlockType.Schematic;
-        block.Properties = new Dictionary<string, object>
-        {
-            { "SchematicName", name }
-        };
+        // block.Rotation = transform.localEulerAngles;
+        //
+        // block.BlockType = BlockType.Schematic;
+        // block.Properties = new Dictionary<string, object>
+        // {
+        //     { "SchematicName", name }
+        // };
 
         // return false;
     }
@@ -211,9 +212,15 @@ public class Schematic : SchematicBlock
         Directory.Delete(path, false);
     }
 
-    internal readonly SchematicObjectDataList BlockList = new SchematicObjectDataList();
-    internal readonly Dictionary<int, SerializableRigidbody> RigidbodyDictionary = new Dictionary<int, SerializableRigidbody>();
-    internal readonly List<SerializableTeleport> Teleports = new List<SerializableTeleport>();
+    internal readonly SchematicObjectDataList BlockList = new();
+    
+#if UNITY_6000_5_OR_NEWER
+    internal readonly Dictionary<long, SerializableRigidbody> RigidbodyDictionary = new();
+#else 
+    internal readonly Dictionary<int, SerializableRigidbody> RigidbodyDictionary = new();
+#endif
+    
+    internal readonly List<SerializableTeleport> Teleports = new();
 
     private static BuildAssetBundleOptions AssetBundleBuildOptions => BuildAssetBundleOptions.ChunkBasedCompression |
                                                                       BuildAssetBundleOptions.ForceRebuildAssetBundle |

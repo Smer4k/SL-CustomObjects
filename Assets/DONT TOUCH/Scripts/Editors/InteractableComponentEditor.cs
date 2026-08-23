@@ -1,3 +1,4 @@
+using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts.BlockComponents;
 using UnityEditor;
 using UnityEngine;
@@ -13,8 +14,15 @@ namespace DONT_TOUCH.Scripts.Editors
             serializedObject.Update();
             DrawPropertiesExcluding(
                 serializedObject,
-                "m_Script",
-                nameof(InteractableComponent.ActionEvents));
+                nameof(InteractableComponent.ActionEvents),
+                nameof(InteractableComponent.Permissions));
+            
+            var permissionProp = serializedObject.FindProperty(nameof(InteractableComponent.Permissions));
+            permissionProp.intValue = EditorGUILayout.MaskField(
+                permissionProp.displayName,
+                permissionProp.intValue,
+                System.Enum.GetNames(typeof(DoorPermissionFlags)));
+            
             serializedObject.ApplyModifiedProperties();
 
             GUILayout.Space(6f);

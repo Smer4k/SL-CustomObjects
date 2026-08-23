@@ -28,7 +28,11 @@ public class SchematicManager : EditorWindow
 
         if (!EditorApplication.isPlayingOrWillChangePlaymode)
         {
+#if UNITY_6000_5_OR_NEWER
+            if (FindObjectsByType<ModifierBase>().Length > 0)
+#else
             if (FindObjectsOfType<ModifierBase>().Length > 0)
+#endif
             {
                 EditorApplication.ExecuteMenuItem("Edit/Play");
                 return;
@@ -68,7 +72,11 @@ public class SchematicManager : EditorWindow
 
     private static void CompileAll()
     {
+#if UNITY_6000_5_OR_NEWER
+        foreach (Schematic schematic in FindObjectsByType<Schematic>())
+#else
         foreach (Schematic schematic in FindObjectsOfType<Schematic>())
+#endif
         {
             schematic.CompileSchematic();
         }
@@ -95,6 +103,11 @@ public class SchematicManager : EditorWindow
             Config.ZipCompiledSchematics,
             UnityRichTextStyle);
         
+        Config.SafeBackwardCompatibility = EditorGUILayout.ToggleLeft(
+            "<color=white><i>Check the schematic for errors for backward compatibility (if <b>backwardCompatibility</b> is enabled in the ProjectMER config).</i></color>",
+            Config.SafeBackwardCompatibility,
+            UnityRichTextStyle);
+
         Config.SafeBackwardCompatibility = EditorGUILayout.ToggleLeft(
             "<color=white><i>Check the schematic for errors for backward compatibility (if <b>backwardCompatibility</b> is enabled in the ProjectMER config).</i></color>",
             Config.SafeBackwardCompatibility,

@@ -4,6 +4,7 @@ using System.Globalization;
 using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts.BlockComponents;
 using DONT_TOUCH.Scripts.BlockSerialization;
+using DONT_TOUCH.Scripts.Extensions;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEditorInternal;
@@ -405,8 +406,12 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                int newTargetIdProp = targetPropObj != null ? targetPropObj.transform.GetInstanceID() : 0;
+                var newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+#if UNITY_6000_5_OR_NEWER
+                if (targetIdProperty.longValue != newTargetIdProp) targetIdProperty.longValue = newTargetIdProp;
+#else
                 if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
+#endif
                 y += LineWithSpacing();
 
                 DrawComponentPropertySelection(paramProperty, valueProperty, targetPropObj, rect.x, ref y, rect.width);
@@ -418,15 +423,23 @@ namespace DONT_TOUCH.Scripts.Editors
                 EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight),
                     targetProperty);
                 GameObject targetPropObj = targetProperty.objectReferenceValue as GameObject;
-                int newTargetIdProp = targetPropObj != null ? targetPropObj.transform.GetInstanceID() : 0;
+                var newTargetIdProp = targetPropObj != null ? targetPropObj.GetId() : 0;
+#if UNITY_6000_5_OR_NEWER
+                if (targetIdProperty.longValue != newTargetIdProp) targetIdProperty.longValue = newTargetIdProp;
+#else
                 if (targetIdProperty.intValue != newTargetIdProp) targetIdProperty.intValue = newTargetIdProp;
+#endif
                 return;
             }
 
             EditorGUI.PropertyField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), targetProperty);
             GameObject targetObject = targetProperty.objectReferenceValue as GameObject;
-            int newTargetId = targetObject != null ? targetObject.GetInstanceID() : 0;
+            var newTargetId = targetObject != null ? targetObject.GetId() : 0;
+#if UNITY_6000_5_OR_NEWER
+            if (targetIdProperty.longValue != newTargetId) targetIdProperty.longValue = newTargetId;
+#else
             if (targetIdProperty.intValue != newTargetId) targetIdProperty.intValue = newTargetId;
+#endif
             y += LineWithSpacing();
 
             Animator animator = GetAnimator(targetObject);

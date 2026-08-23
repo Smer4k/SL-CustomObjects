@@ -8,6 +8,7 @@ using UnityEngine;
 
 namespace DONT_TOUCH.Scripts.BlockComponents
 {
+    [ExecuteInEditMode]
     public class EmptyComponent : ActionEventHostBlockBase
     {
         public override BlockType BlockType => BlockType.Empty;

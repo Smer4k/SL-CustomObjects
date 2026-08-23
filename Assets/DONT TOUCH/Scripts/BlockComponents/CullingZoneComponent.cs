@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DONT_TOUCH.Enums;
+using DONT_TOUCH.Scripts.Extensions;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -35,11 +36,15 @@ namespace DONT_TOUCH.Scripts.BlockComponents
             var targetCenter = Center;
             if (Type is ColliderShape.Capsule or ColliderShape.Sphere)
                 targetCenter = Vector3.zero;
-            
+
+#if UNITY_6000_5_OR_NEWER
+            var ids = new List<long>();
+#else
             var ids = new List<int>();
+#endif
             foreach (var cullingZone in ConnectedZones)
             {
-                ids.Add(cullingZone.transform.GetInstanceID());
+                ids.Add(cullingZone.transform.GetId());
             }
             
             block.Properties = new Dictionary<string, object>()

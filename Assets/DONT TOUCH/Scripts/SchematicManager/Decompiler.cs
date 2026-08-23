@@ -15,399 +15,427 @@ using Object = UnityEngine.Object;
 
 public static class Decompiler
 {
-	public class SchematicBuilder : MonoBehaviour
-	{
-		public bool TryGetBlockFromType(BlockType blockType, out SchematicBlock schematicBlock) =>
-			Dict.TryGetValue(blockType, out schematicBlock);
+    public class SchematicBuilder : MonoBehaviour
+    {
+        public bool TryGetBlockFromType(BlockType blockType, out SchematicBlock schematicBlock) =>
+            Dict.TryGetValue(blockType, out schematicBlock);
 
-		private readonly Dictionary<BlockType, SchematicBlock> Dict = new();
+        private readonly Dictionary<BlockType, SchematicBlock> Dict = new();
 
-		public SchematicBuilder Init()
-		{
-			Dict.Add(BlockType.Empty, gameObject.AddComponent<EmptyComponent>());
-			Dict.Add(BlockType.Primitive, gameObject.AddComponent<PrimitiveComponent>());
-			Dict.Add(BlockType.Light, gameObject.AddComponent<LightComponent>());
-			Dict.Add(BlockType.Pickup, gameObject.AddComponent<PickupComponent>());
-			Dict.Add(BlockType.Workstation, gameObject.AddComponent<WorkstationComponent>());
-			Dict.Add(BlockType.Teleport, gameObject.AddComponent<TeleportComponent>());
-			Dict.Add(BlockType.Locker, gameObject.AddComponent<LockerComponent>());
-			Dict.Add(BlockType.Text, gameObject.AddComponent<TextComponent>());
-			Dict.Add(BlockType.Interactable, gameObject.AddComponent<InteractableComponent>());
-			Dict.Add(BlockType.Waypoint, gameObject.AddComponent<WaypointComponent>());
-			Dict.Add(BlockType.Door, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.DoorComponent>());
-			Dict.Add(BlockType.Camera, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.Scp079CameraComponent>());
-			Dict.Add(BlockType.ShootingTarget, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.ShootingTargetComponent>());
-			Dict.Add(BlockType.PlayerSpawnPoint, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.PlayerSpawnPointComponent>());
-			Dict.Add(BlockType.Capybara, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CapybaraComponent>());
-			Dict.Add(BlockType.PlayerBlocker, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.PlayerBlockerComponent>());
-			Dict.Add(BlockType.CullingParent, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingParentComponent>());
-			Dict.Add(BlockType.MirrorPrefab, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.MirrorPrefabComponent>());
-			Dict.Add(BlockType.Clutter, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.ClutterComponent>());
-			Dict.Add(BlockType.Trigger, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.TriggerComponent>());
-			Dict.Add(BlockType.AudioPlayer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.AudioPlayerComponent>());
-			Dict.Add(BlockType.CullingZone, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingZoneComponent>());
-			Dict.Add(BlockType.Generator, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.GeneratorComponent>());
-			Dict.Add(BlockType.CameraTransfer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.Scp079CameraTransferComponent>());
-			return this;
-		}
-	}
+        public SchematicBuilder Init()
+        {
+            Dict.Add(BlockType.Empty, gameObject.AddComponent<EmptyComponent>());
+            Dict.Add(BlockType.Primitive, gameObject.AddComponent<PrimitiveComponent>());
+            Dict.Add(BlockType.Light, gameObject.AddComponent<LightComponent>());
+            Dict.Add(BlockType.Pickup, gameObject.AddComponent<PickupComponent>());
+            Dict.Add(BlockType.Workstation, gameObject.AddComponent<WorkstationComponent>());
+            Dict.Add(BlockType.Teleport, gameObject.AddComponent<TeleportComponent>());
+            Dict.Add(BlockType.Locker, gameObject.AddComponent<LockerComponent>());
+            Dict.Add(BlockType.Text, gameObject.AddComponent<TextComponent>());
+            Dict.Add(BlockType.Interactable, gameObject.AddComponent<InteractableComponent>());
+            Dict.Add(BlockType.Waypoint, gameObject.AddComponent<WaypointComponent>());
+            Dict.Add(BlockType.Door, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.DoorComponent>());
+            Dict.Add(BlockType.Camera, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.Scp079CameraComponent>());
+            Dict.Add(BlockType.ShootingTarget, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.ShootingTargetComponent>());
+            Dict.Add(BlockType.PlayerSpawnPoint, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.PlayerSpawnPointComponent>());
+            Dict.Add(BlockType.Capybara, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CapybaraComponent>());
+            Dict.Add(BlockType.PlayerBlocker, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.PlayerBlockerComponent>());
+            Dict.Add(BlockType.CullingParent, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingParentComponent>());
+            Dict.Add(BlockType.MirrorPrefab, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.MirrorPrefabComponent>());
+            Dict.Add(BlockType.Clutter, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.ClutterComponent>());
+            Dict.Add(BlockType.Trigger, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.TriggerComponent>());
+            Dict.Add(BlockType.AudioPlayer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.AudioPlayerComponent>());
+            Dict.Add(BlockType.CullingZone, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingZoneComponent>());
+            Dict.Add(BlockType.Generator, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.GeneratorComponent>());
+          	Dict.Add(BlockType.CameraTransfer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.Scp079CameraTransferComponent>());
+            return this;
+        }
+    }
 
-	private static SchematicBuilder _schematicBuilder;
+    private static SchematicBuilder _schematicBuilder;
 
-	[MenuItem("SchematicManager/Import Schematic/JSON")]
-	private static void ImportSchematicJson()
-	{
-		string importPath = SchematicManager.Config.ExportPath;
-		if (!Directory.Exists(importPath))
-			Directory.CreateDirectory(importPath);
+    [MenuItem("SchematicManager/Import Schematic/JSON")]
+    private static void ImportSchematicJson()
+    {
+        string importPath = SchematicManager.Config.ExportPath;
+        if (!Directory.Exists(importPath))
+            Directory.CreateDirectory(importPath);
 
-		string jsonFilePath = EditorUtility.OpenFilePanelWithFilters("Select json with the schemaitc", importPath,
-			new string[] { "Schematic", "json" });
-		if (string.IsNullOrEmpty(jsonFilePath))
-		{
-			Debug.LogError("Invalid schematic file. Path is empty.");
-			return;
-		}
+        string jsonFilePath = EditorUtility.OpenFilePanelWithFilters("Select json with the schemaitc", importPath,
+            new string[] { "Schematic", "json" });
+        if (string.IsNullOrEmpty(jsonFilePath))
+        {
+            Debug.LogError("Invalid schematic file. Path is empty.");
+            return;
+        }
 
-		_schematicDirectoryPath = null;
-		_schematicName = Path.GetFileNameWithoutExtension(jsonFilePath);
-		_schematicData = JsonConvert.DeserializeObject<SchematicObjectDataList>(File.ReadAllText(jsonFilePath));
+        _schematicDirectoryPath = null;
+        _schematicName = Path.GetFileNameWithoutExtension(jsonFilePath);
+        _schematicData = JsonConvert.DeserializeObject<SchematicObjectDataList>(File.ReadAllText(jsonFilePath));
 
-		PortBack();
-	}
+        PortBack();
+    }
 
-	[MenuItem("SchematicManager/Import Schematic/Folder")]
-	private static void ImportSchematicFolder()
-	{
-		string importPath = SchematicManager.Config.ExportPath;
-		if (!Directory.Exists(importPath))
-			Directory.CreateDirectory(importPath);
+    [MenuItem("SchematicManager/Import Schematic/Folder")]
+    private static void ImportSchematicFolder()
+    {
+        string importPath = SchematicManager.Config.ExportPath;
+        if (!Directory.Exists(importPath))
+            Directory.CreateDirectory(importPath);
 
-		_schematicDirectoryPath = EditorUtility.OpenFolderPanel("Select folder with the schematic", importPath, "");
-		if (string.IsNullOrEmpty(_schematicDirectoryPath))
-		{
-			Debug.LogError("Invalid schematic directory. Path is empty.");
-			return;
-		}
+        _schematicDirectoryPath = EditorUtility.OpenFolderPanel("Select folder with the schematic", importPath, "");
+        if (string.IsNullOrEmpty(_schematicDirectoryPath))
+        {
+            Debug.LogError("Invalid schematic directory. Path is empty.");
+            return;
+        }
 
-		_schematicName = Path.GetFileNameWithoutExtension(_schematicDirectoryPath);
-		string jsonFilePath = Path.Combine(_schematicDirectoryPath, $"{_schematicName}.json");
-		if (!File.Exists(jsonFilePath))
-		{
-			Debug.LogError("No json file found in the schematic directory!");
-			return;
-		}
+        _schematicName = Path.GetFileNameWithoutExtension(_schematicDirectoryPath);
+        string jsonFilePath = Path.Combine(_schematicDirectoryPath, $"{_schematicName}.json");
+        if (!File.Exists(jsonFilePath))
+        {
+            Debug.LogError("No json file found in the schematic directory!");
+            return;
+        }
 
-		_schematicData = JsonConvert.DeserializeObject<SchematicObjectDataList>(File.ReadAllText(jsonFilePath));
+        _schematicData = JsonConvert.DeserializeObject<SchematicObjectDataList>(File.ReadAllText(jsonFilePath));
 
-		PortBack();
-	}
+        PortBack();
+    }
 
-	private static void PortBack()
-	{
-		_rootTransform = new GameObject(_schematicName).AddComponent<Schematic>().transform;
-		_objectFromId = new Dictionary<int, Transform>(_schematicData.Blocks.Count + 1)
-		{
-			{ _schematicData.RootObjectId, _rootTransform },
-		};
+    private static void PortBack()
+    {
+        _rootTransform = new GameObject(_schematicName).AddComponent<Schematic>().transform;
+        
+#if UNITY_6000_5_OR_NEWER
+        _objectFromId = new Dictionary<long, Transform>(_schematicData.Blocks.Count + 1)
+#else
+        _objectFromId = new Dictionary<int, Transform>(_schematicData.Blocks.Count + 1)
+#endif
+        {
+            { _schematicData.RootObjectId, _rootTransform },
+        };
 
-		System.Diagnostics.Stopwatch stopwatch = System.Diagnostics.Stopwatch.StartNew();
-		Debug.Log("<color=#FFFF00>Importing schematic...</color>");
+        System.Diagnostics.Stopwatch stopwatch = System.Diagnostics.Stopwatch.StartNew();
+        Debug.Log("<color=#FFFF00>Importing schematic...</color>");
 
-		_schematicBuilder = new GameObject("SchematicBuilder").AddComponent<SchematicBuilder>().Init();
+        _schematicBuilder = new GameObject("SchematicBuilder").AddComponent<SchematicBuilder>().Init();
 
-		CreateRecursiveFromID(_schematicData.RootObjectId, _schematicData.Blocks, _rootTransform);
-		CreateCullingZone(_schematicData.Blocks);
-		CreateCameraTransfers(_schematicData.Blocks);
-		CreateTeleporters(_schematicData.Blocks);
-		CreateActionTargets(_schematicData.Blocks);
-		if (_schematicDirectoryPath != null)
-		{
-			// CreateTeleporters();
-			AddRigidbodies();
-		}
+        CreateRecursiveFromID(_schematicData.RootObjectId, _schematicData.Blocks, _rootTransform);
+        CreateCullingZone(_schematicData.Blocks);
+      	CreateCameraTransfers(_schematicData.Blocks);
+        CreateTeleporters(_schematicData.Blocks);
+        CreateActionTargets(_schematicData.Blocks);
+        if (_schematicDirectoryPath != null)
+        {
+            // CreateTeleporters();
+            AddRigidbodies();
+        }
 
-		Debug.Log(
-			$"<color=#00FF00>Successfully imported <b>{_schematicName}</b> schematic in {stopwatch.ElapsedMilliseconds} ms!</color>");
-		NullifyFields();
+        Debug.Log(
+            $"<color=#00FF00>Successfully imported <b>{_schematicName}</b> schematic in {stopwatch.ElapsedMilliseconds} ms!</color>");
+        NullifyFields();
 
-		Object.DestroyImmediate(_schematicBuilder.gameObject);
-	}
+        Object.DestroyImmediate(_schematicBuilder.gameObject);
+    }
 
-	private static void CreateRecursiveFromID(int id, List<SchematicBlockData> blocks, Transform parentGameObject)
-	{
-		Transform childGameObjectTransform =
-			CreateObject(blocks.Find(c => c.ObjectId == id), parentGameObject) ??
-			_rootTransform; // Create the object first before creating children.
-		int[] parentSchematics =
-			blocks.Where(bl => bl.BlockType == BlockType.Schematic).Select(bl => bl.ObjectId).ToArray();
+#if UNITY_6000_5_OR_NEWER
+    private static void CreateRecursiveFromID(long id, List<SchematicBlockData> blocks, Transform parentGameObject)
+#else
+    private static void CreateRecursiveFromID(int id, List<SchematicBlockData> blocks, Transform parentGameObject)
+#endif
+    {
+        Transform childGameObjectTransform =
+            CreateObject(blocks.Find(c => c.ObjectId == id), parentGameObject) ??
+            _rootTransform; // Create the object first before creating children.
+        
+        var parentSchematics =
+            blocks.Where(bl => bl.BlockType == BlockType.Schematic).Select(bl => bl.ObjectId).ToArray();
 
-		// Gets all the ObjectIds of all the schematic blocks inside "blocks" argument.
-		foreach (SchematicBlockData block in blocks.FindAll(c => c.ParentId == id))
-		{
-			if (parentSchematics.Contains(block
-				    .ParentId)) // The block is a child of some schematic inside "parentSchematics" array, therefore it will be skipped to avoid spawning it and its children twice.
-				continue;
+        // Gets all the ObjectIds of all the schematic blocks inside "blocks" argument.
+        foreach (SchematicBlockData block in blocks.FindAll(c => c.ParentId == id))
+        {
+            if (parentSchematics.Contains(block
+                    .ParentId)) // The block is a child of some schematic inside "parentSchematics" array, therefore it will be skipped to avoid spawning it and its children twice.
+                continue;
 
-			CreateRecursiveFromID(block.ObjectId, blocks, childGameObjectTransform); // The child now becomes the parent
-		}
-	}
+            CreateRecursiveFromID(block.ObjectId, blocks, childGameObjectTransform); // The child now becomes the parent
+        }
+    }
 
-	private static Transform CreateObject(SchematicBlockData block, Transform rootObject)
-	{
-		if (block == null)
-			return null;
+    private static Transform CreateObject(SchematicBlockData block, Transform rootObject)
+    {
+        if (block == null)
+            return null;
 
-		GameObject gameObject = null;
-		if (block.Properties == null)
-		{
-			block.Properties = new();
-		}
+        GameObject gameObject = null;
+      	if (block.Properties == null)
+		    {
+			      block.Properties = new();
+		    }
 
-		if (_schematicBuilder.TryGetBlockFromType(block.BlockType, out SchematicBlock schematicBlock))
-		{
-			schematicBlock.Decompile(ref gameObject, block, rootObject);
-			_objectFromId.Add(block.ObjectId, gameObject.transform);
-		}
-		else
-		{
-			Debug.LogError($"{block.BlockType} not implemented");
-		}
+        if (_schematicBuilder.TryGetBlockFromType(block.BlockType, out SchematicBlock schematicBlock))
+        {
+            schematicBlock.Decompile(ref gameObject, block, rootObject);
+            _objectFromId.Add(block.ObjectId, gameObject.transform);
+        }
+        else
+        {
+            Debug.LogError($"{block.BlockType} not implemented");
+        }
 
-		if (_schematicDirectoryPath != null &&
-		    TryGetAnimatorController(block.AnimatorName, out RuntimeAnimatorController animatorController))
-			gameObject.AddComponent<Animator>().runtimeAnimatorController = animatorController;
+        if (_schematicDirectoryPath != null &&
+            TryGetAnimatorController(block.AnimatorName, out RuntimeAnimatorController animatorController))
+            gameObject.AddComponent<Animator>().runtimeAnimatorController = animatorController;
 
-		if (gameObject == null)
-		{
-			Debug.Log(block.Name);
-		}
-		
-		return gameObject.transform;
-	}
+        if (gameObject == null)
+        {
+            Debug.Log(block.Name);
+        }
 
-	private static bool TryGetAnimatorController(string animatorName, out RuntimeAnimatorController animatorController)
-	{
-		animatorController = null;
+        return gameObject.transform;
+    }
 
-		if (!string.IsNullOrEmpty(animatorName))
-		{
-			Object animatorObject = null;
-			var list = AssetBundle.GetAllLoadedAssetBundles();
-			if (list != null)
-			{
-				AssetBundle assetBundle = null;
-				foreach (var asset in list)
-				{
-					if (asset?.mainAsset?.name == animatorName)
-					{
-						assetBundle = asset;
-						break;
-					}
-				}
-				if (assetBundle != null)
-				{
-					foreach (var asset in assetBundle.LoadAllAssets())
-					{
-						if (asset is RuntimeAnimatorController controller)
-						{
-							animatorObject = controller;
-							break;
-						}
-					}
-				}
-			}
+    private static bool TryGetAnimatorController(string animatorName, out RuntimeAnimatorController animatorController)
+    {
+        animatorController = null;
 
-			if (animatorObject == null)
-			{
-				string path = Path.Combine(_schematicDirectoryPath, animatorName);
+        if (!string.IsNullOrEmpty(animatorName))
+        {
+            Object animatorObject = null;
+            var list = AssetBundle.GetAllLoadedAssetBundles();
+            if (list != null)
+            {
+                AssetBundle assetBundle = null;
+                foreach (var asset in list)
+                {
+                    if (asset?.mainAsset?.name == animatorName)
+                    {
+                        assetBundle = asset;
+                        break;
+                    }
+                }
 
-				if (!File.Exists(path))
-					return false;
-				Debug.Log($"Trying to find animator controller at {path}");
-				var assets = AssetBundle.LoadFromFile(path).LoadAllAssets();
-				foreach (var asset in assets)
-				{
-					if (asset is RuntimeAnimatorController controller)
-					{
-						animatorObject = controller;
-						break;
-					}
-				}
-			}
+                if (assetBundle != null)
+                {
+                    foreach (var asset in assetBundle.LoadAllAssets())
+                    {
+                        if (asset is RuntimeAnimatorController controller)
+                        {
+                            animatorObject = controller;
+                            break;
+                        }
+                    }
+                }
+            }
 
-			if (animatorObject == null)
-			{
-				Debug.LogError($"Failed to load animator \"{animatorName}\" for some reason.\nTry recreating the animation, or there is some other issue. Possibly the animation was in RAM when saving the schematic and everything broke.");
-				return false;
-			}
-			
-			animatorController = animatorObject as RuntimeAnimatorController;
-			return true;
-		}
+            if (animatorObject == null)
+            {
+                string path = Path.Combine(_schematicDirectoryPath, animatorName);
 
-		return false;
-	}
+                if (!File.Exists(path))
+                    return false;
+                Debug.Log($"Trying to find animator controller at {path}");
+                var assets = AssetBundle.LoadFromFile(path).LoadAllAssets();
+                foreach (var asset in assets)
+                {
+                    if (asset is RuntimeAnimatorController controller)
+                    {
+                        animatorObject = controller;
+                        break;
+                    }
+                }
+            }
 
-	private static void CreateTeleporters(List<SchematicBlockData> blocks)
-	{
-		var teleports = GameObject.FindObjectsOfType<TeleportComponent>();
-		foreach (var block in blocks)
-		{
-			if (block.BlockType != BlockType.Teleport) continue;
-			TeleportComponent source = null;
-			foreach (var teleportComponent in teleports)
-			{
-				if (teleportComponent.name == block.Name)
-				{
-					source = teleportComponent;
-					break;
-				}
-			}
+            if (animatorObject == null)
+            {
+                Debug.LogError($"Failed to load animator \"{animatorName}\" for some reason.\nTry recreating the animation, or there is some other issue. Possibly the animation was in RAM when saving the schematic and everything broke.");
+                return false;
+            }
 
-			if (source == null) continue;
-			foreach (var target in ((JArray)block.Properties["Targets"]).ToObject<List<string>>())
-			{
-				foreach (var teleportComponent in teleports)
-				{
-					if (teleportComponent.name == (string)target)
-					{
-						source.TargetTeleporters.Add(new TargetTeleport()
-							{ Id = teleportComponent.Id, Teleport = teleportComponent });
-					}
-				}
-			}
-		}
+            animatorController = animatorObject as RuntimeAnimatorController;
+            return true;
+        }
 
-		// string teleportPath = Path.Combine(_schematicDirectoryPath, $"{_schematicName}-Teleports.json");
-		// if (!File.Exists(teleportPath))
-		//     return;
-		//
-		// foreach (SerializableTeleport teleport in JsonConvert.DeserializeObject<List<SerializableTeleport>>(File.ReadAllText(teleportPath)))
-		// {
-		//     GameObject gameObject = Object.Instantiate(_blockPrefabs.FirstOrDefault(x => x.name == "Teleporter"));
-		//     gameObject.name = teleport.Name;
-		//     gameObject.transform.parent = _objectFromId[teleport.ParentId];
-		//     gameObject.transform.localPosition = teleport.Position;
-		//     gameObject.transform.localEulerAngles = teleport.Rotation;
-		//     gameObject.transform.localScale = teleport.Scale;
-		//
-		//     if (gameObject.TryGetComponent(out TeleportComponent teleportComponent))
-		//     {
-		//         teleportComponent.TargetTeleporters = teleport.TargetTeleporters.ToArray();
-		//         teleportComponent.RoomType = teleport.RoomType;
-		//         teleportComponent.AllowedRoleTypes = teleport.AllowedRoles.ToArray();
-		//         teleportComponent.Cooldown = teleport.Cooldown;
-		//         teleportComponent.TeleportFlags = teleport.TeleportFlags;
-		//         teleportComponent.LockOnEvent = teleport.LockOnEvent;
-		//         teleportComponent.SoundOnTeleport = teleport.TeleportSoundId;
-		//
-		//         if (teleport.PlayerRotationX.HasValue)
-		//         {
-		//             teleportComponent.OverridePlayerXRotation = true;
-		//             teleportComponent.PlayerRotationX = teleport.PlayerRotationX.Value;
-		//         }
-		//
-		//         if (teleport.PlayerRotationY.HasValue)
-		//         {
-		//             teleportComponent.OverridePlayerYRotation = true;
-		//             teleportComponent.PlayerRotationY = teleport.PlayerRotationY.Value;
-		//         }
-		//     }
-		//
-		//     _objectFromId.Add(teleport.ObjectId, gameObject.transform);
-		// }
-		//
-		// foreach (TeleportComponent teleport in _rootTransform.GetComponentsInChildren<TeleportComponent>())
-		// {
-		//     foreach (TargetTeleporter targetTeleporter in teleport.TargetTeleporters)
-		//     {
-		//         targetTeleporter.Teleporter = _objectFromId[targetTeleporter.Id].GetComponent<TeleportComponent>();
-		//     }
-		// }
-	}
+        return false;
+    }
 
-	private static void CreateActionTargets(List<SchematicBlockData> blocks)
-	{
-		foreach (SchematicBlockData block in blocks)
-		{
-			if (!_objectFromId.TryGetValue(block.ObjectId, out Transform objectTransform))
-				continue;
+    private static void CreateTeleporters(List<SchematicBlockData> blocks)
+    {
+#if UNITY_6000_5_OR_NEWER
+        var teleports = GameObject.FindObjectsByType<TeleportComponent>();
+#else
+        var teleports = GameObject.FindObjectsOfType<TeleportComponent>();
+#endif
+        foreach (var block in blocks)
+        {
+            if (block.BlockType != BlockType.Teleport) continue;
+            TeleportComponent source = null;
+            foreach (var teleportComponent in teleports)
+            {
+                if (teleportComponent.name == block.Name)
+                {
+                    source = teleportComponent;
+                    break;
+                }
+            }
 
-			if (!objectTransform.TryGetComponent(out SchematicBlock schematicBlock) ||
-			    schematicBlock is not IActionEventHost actionEventHost)
-				continue;
+            if (source == null) continue;
+            foreach (var target in ((JArray)block.Properties["Targets"]).ToObject<List<string>>())
+            {
+                foreach (var teleportComponent in teleports)
+                {
+                    if (teleportComponent.name == (string)target)
+                    {
+                        source.TargetTeleporters.Add(new TargetTeleport()
+                            { Id = teleportComponent.Id, Teleport = teleportComponent });
+                    }
+                }
+            }
+        }
 
-			actionEventHost.EnsureActionEventsInitialized();
-			ActionEventSerialization.RebindTargets(actionEventHost.ActionEvents, _objectFromId);
-		}
-	}
+        // string teleportPath = Path.Combine(_schematicDirectoryPath, $"{_schematicName}-Teleports.json");
+        // if (!File.Exists(teleportPath))
+        //     return;
+        //
+        // foreach (SerializableTeleport teleport in JsonConvert.DeserializeObject<List<SerializableTeleport>>(File.ReadAllText(teleportPath)))
+        // {
+        //     GameObject gameObject = Object.Instantiate(_blockPrefabs.FirstOrDefault(x => x.name == "Teleporter"));
+        //     gameObject.name = teleport.Name;
+        //     gameObject.transform.parent = _objectFromId[teleport.ParentId];
+        //     gameObject.transform.localPosition = teleport.Position;
+        //     gameObject.transform.localEulerAngles = teleport.Rotation;
+        //     gameObject.transform.localScale = teleport.Scale;
+        //
+        //     if (gameObject.TryGetComponent(out TeleportComponent teleportComponent))
+        //     {
+        //         teleportComponent.TargetTeleporters = teleport.TargetTeleporters.ToArray();
+        //         teleportComponent.RoomType = teleport.RoomType;
+        //         teleportComponent.AllowedRoleTypes = teleport.AllowedRoles.ToArray();
+        //         teleportComponent.Cooldown = teleport.Cooldown;
+        //         teleportComponent.TeleportFlags = teleport.TeleportFlags;
+        //         teleportComponent.LockOnEvent = teleport.LockOnEvent;
+        //         teleportComponent.SoundOnTeleport = teleport.TeleportSoundId;
+        //
+        //         if (teleport.PlayerRotationX.HasValue)
+        //         {
+        //             teleportComponent.OverridePlayerXRotation = true;
+        //             teleportComponent.PlayerRotationX = teleport.PlayerRotationX.Value;
+        //         }
+        //
+        //         if (teleport.PlayerRotationY.HasValue)
+        //         {
+        //             teleportComponent.OverridePlayerYRotation = true;
+        //             teleportComponent.PlayerRotationY = teleport.PlayerRotationY.Value;
+        //         }
+        //     }
+        //
+        //     _objectFromId.Add(teleport.ObjectId, gameObject.transform);
+        // }
+        //
+        // foreach (TeleportComponent teleport in _rootTransform.GetComponentsInChildren<TeleportComponent>())
+        // {
+        //     foreach (TargetTeleporter targetTeleporter in teleport.TargetTeleporters)
+        //     {
+        //         targetTeleporter.Teleporter = _objectFromId[targetTeleporter.Id].GetComponent<TeleportComponent>();
+        //     }
+        // }
+    }
 
-	private static void CreateCullingZone(List<SchematicBlockData> blocks)
-	{
-		foreach (var block in blocks)
-		{
-			if (block.BlockType != BlockType.CullingZone)
-				continue;
-			var connector = _objectFromId[block.ObjectId].GetComponent<CullingZoneComponent>();
-			foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<int>>())
-			{
-				if (!_objectFromId.TryGetValue(id, out Transform objectTransform) 
-				    || !objectTransform.TryGetComponent<CullingZoneComponent>(out var zoneComponent))
-					continue;
-				connector.ConnectedZones.Add(zoneComponent);
-			}
-		}
-	}
+    private static void CreateActionTargets(List<SchematicBlockData> blocks)
+    {
+        foreach (SchematicBlockData block in blocks)
+        {
+            if (!_objectFromId.TryGetValue(block.ObjectId, out Transform objectTransform))
+                continue;
 
-	private static void CreateCameraTransfers(List<SchematicBlockData> blocks)
-	{
-		foreach (var block in blocks)
-		{
-			if (block.BlockType != BlockType.CameraTransfer)
-				continue;
-			var transfer = _objectFromId[block.ObjectId].GetComponent<Scp079CameraTransferComponent>();
-			if (!block.Properties.TryGetValue(nameof(Scp079CameraTransferComponent.TargetCamera), out var targetCameraObj))
-				continue;
-			if (!_objectFromId.TryGetValue(Convert.ToInt32(targetCameraObj), out var target) ||
-			    !target.TryGetComponent(out Scp079CameraComponent targetCamera))
-				continue;
-			transfer.TargetCamera = targetCamera;
-		}
-	}
+            if (!objectTransform.TryGetComponent(out SchematicBlock schematicBlock) ||
+                schematicBlock is not IActionEventHost actionEventHost)
+                continue;
 
-	private static void AddRigidbodies()
-	{
-		string rigidbodyPath = Path.Combine(_schematicDirectoryPath, $"{_schematicName}-Rigidbodies.json");
-		if (!File.Exists(rigidbodyPath))
-			return;
+            actionEventHost.EnsureActionEventsInitialized();
+            ActionEventSerialization.RebindTargets(actionEventHost.ActionEvents, _objectFromId);
+        }
+    }
 
-		foreach (KeyValuePair<int, SerializableRigidbody> dict in JsonConvert
-			         .DeserializeObject<Dictionary<int, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
-		{
-			if (!_objectFromId[dict.Key].gameObject.TryGetComponent(out Rigidbody rigidbody))
-				rigidbody = _objectFromId[dict.Key].gameObject.AddComponent<Rigidbody>();
+    private static void CreateCullingZone(List<SchematicBlockData> blocks)
+    {
+        foreach (var block in blocks)
+        {
+            if (block.BlockType != BlockType.CullingZone)
+                continue;
+            var connector = _objectFromId[block.ObjectId].GetComponent<CullingZoneComponent>();
+#if UNITY_6000_5_OR_NEWER
+            foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<long>>())
+#else
+            foreach (var id in ((JArray)block.Properties["ConnectedZones"]).ToObject<List<int>>())
+#endif
+            {
+                if (!_objectFromId.TryGetValue(id, out Transform objectTransform)
+                    || !objectTransform.TryGetComponent<CullingZoneComponent>(out var zoneComponent))
+                    continue;
+                connector.ConnectedZones.Add(zoneComponent);
+            }
+        }
+    }
+  
+    private static void CreateCameraTransfers(List<SchematicBlockData> blocks)
+	  {
+		    foreach (var block in blocks)
+		    {
+			    if (block.BlockType != BlockType.CameraTransfer)
+				    continue;
+			    var transfer = _objectFromId[block.ObjectId].GetComponent<Scp079CameraTransferComponent>();
+			    if (!block.Properties.TryGetValue(nameof(Scp079CameraTransferComponent.TargetCamera), out var targetCameraObj))
+				    continue;
+			    if (!_objectFromId.TryGetValue(Convert.ToInt32(targetCameraObj), out var target) ||
+			        !target.TryGetComponent(out Scp079CameraComponent targetCamera))
+				    continue;
+			    transfer.TargetCamera = targetCamera;
+		    }
+	  }
 
-			rigidbody.isKinematic = dict.Value.IsKinematic;
-			rigidbody.useGravity = dict.Value.UseGravity;
-			rigidbody.constraints = dict.Value.Constraints;
-			rigidbody.mass = dict.Value.Mass;
-		}
-	}
+    private static void AddRigidbodies()
+    {
+        string rigidbodyPath = Path.Combine(_schematicDirectoryPath, $"{_schematicName}-Rigidbodies.json");
+        if (!File.Exists(rigidbodyPath))
+            return;
 
-	private static void NullifyFields()
-	{
-		_rootTransform = null;
-		_schematicName = null;
-		_schematicDirectoryPath = null;
-		_schematicData = null;
-		_objectFromId = null;
-		AssetBundle.UnloadAllAssetBundles(false);
-	}
+#if UNITY_6000_5_OR_NEWER
+        foreach (var dict in JsonConvert
+                     .DeserializeObject<Dictionary<long, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
+#else
+        foreach (var dict in JsonConvert
+                     .DeserializeObject<Dictionary<int, SerializableRigidbody>>(File.ReadAllText(rigidbodyPath)))
+#endif
+        {
+            if (!_objectFromId[dict.Key].gameObject.TryGetComponent(out Rigidbody rigidbody))
+                rigidbody = _objectFromId[dict.Key].gameObject.AddComponent<Rigidbody>();
 
-	private static Transform _rootTransform;
-	private static string _schematicName;
-	private static string _schematicDirectoryPath;
-	private static SchematicObjectDataList _schematicData;
+            rigidbody.isKinematic = dict.Value.IsKinematic;
+            rigidbody.useGravity = dict.Value.UseGravity;
+            rigidbody.constraints = dict.Value.Constraints;
+            rigidbody.mass = dict.Value.Mass;
+        }
+    }
+
+    private static void NullifyFields()
+    {
+        _rootTransform = null;
+        _schematicName = null;
+        _schematicDirectoryPath = null;
+        _schematicData = null;
+        _objectFromId = null;
+        AssetBundle.UnloadAllAssetBundles(false);
+    }
+
+    private static Transform _rootTransform;
+    private static string _schematicName;
+    private static string _schematicDirectoryPath;
+    private static SchematicObjectDataList _schematicData;
+#if UNITY_6000_5_OR_NEWER
+    private static Dictionary<long, Transform> _objectFromId;
+#else
 	private static Dictionary<int, Transform> _objectFromId;
+#endif
 }

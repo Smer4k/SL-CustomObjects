@@ -42,7 +42,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 
 		public override void Decompile(ref GameObject gameObject, SchematicBlockData block, Transform parent)
 		{
-			InteractableComponent interactable = Instantiate(AssetDatabase.LoadAssetAtPath<InteractableComponent>("Assets/Resources/Blocks/Interactable.prefab"));
+			InteractableComponent interactable = Create<InteractableComponent>("Assets/Resources/Blocks/Interactable.prefab");
 			gameObject = interactable.gameObject;
 
 			interactable.Shape = (ColliderShape)Convert.ToInt32(block.Properties["Shape"]);
