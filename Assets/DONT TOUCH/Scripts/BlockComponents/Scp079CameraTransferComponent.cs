@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using DONT_TOUCH.Enums;
+using DONT_TOUCH.Scripts.Extensions;
 using UnityEngine;
 using CameraType = DONT_TOUCH.Enums.CameraType;
 
@@ -16,7 +17,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents
             if (TargetCamera != null)
             {
                 block.Properties[nameof(CameraType)] = TargetCamera.CameraType;
-                block.Properties[nameof(TargetCamera)] = TargetCamera.transform.GetInstanceID();
+                block.Properties[nameof(TargetCamera)] = TargetCamera.transform.GetId();
             }
             base.Compile(block);
         }
