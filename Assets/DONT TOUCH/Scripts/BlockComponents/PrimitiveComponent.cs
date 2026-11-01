@@ -21,7 +21,8 @@ public class PrimitiveComponent : SchematicBlock
 
     [Tooltip("Can SCP-106 pass through the object?")]
     public bool Scp106Passable = false;
-
+    public bool GhostlyPassable = false;
+    
     public override BlockType BlockType => BlockType.Primitive;
 
     public override void Compile(SchematicBlockData block)
@@ -43,7 +44,8 @@ public class PrimitiveComponent : SchematicBlock
             { "PrimitiveType", primitiveType },
             { "Color", ColorString },
             { "PrimitiveFlags", primitiveFlags },
-            { nameof(Scp106Passable), Scp106Passable }
+            { nameof(Scp106Passable), Scp106Passable },
+            { nameof(GhostlyPassable), GhostlyPassable },
         };
 
         base.Compile(block);
